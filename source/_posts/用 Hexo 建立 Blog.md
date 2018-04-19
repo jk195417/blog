@@ -103,3 +103,21 @@ feed:
 subnav:
   rss: '/atom.xml'
 ```
+
+# 部署至 Github Page
+
+至 `_config.yml` 填寫部署配置
+
+```yaml
+deploy:
+  type: git
+  repo: 'https://github.com/jk195417/blog.git'
+```
+
+指令
+```bash
+# 生成靜態文件
+$ hexo g
+# 部屬
+$ hexo d
+```
