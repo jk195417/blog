@@ -2,8 +2,8 @@
 title: 用 Hexo 建立 Blog
 date: 2018-04-18 20:44:32
 tags:
-- 程式
 - hexo
+- 技術文章
 ---
 
 # 安裝 Hexo
