@@ -20,6 +20,8 @@ toc: true
 官方介紹：<https://pages.github.com/>
 只要會一點 `git` 即可輕鬆且免費地部署靜態資源到 Github Pages 上，通常被拿來建立 Blog，或是做成文檔和 Demo 網頁，也可以放一些簡單的 SPA 網頁應用。
 
+<!-- more -->
+
 # 需要
 
 -   Github 帳號
