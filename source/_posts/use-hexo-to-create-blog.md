@@ -1,9 +1,11 @@
 ---
 title: 用 Hexo 建立 Blog
 date: 2018-04-18 20:44:32
+categories:
+- 技術文章
 tags:
 - hexo
-- 技術文章
+- yilia
 ---
 
 # 安裝 Hexo

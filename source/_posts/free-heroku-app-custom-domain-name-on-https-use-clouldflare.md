@@ -1,6 +1,8 @@
 ---
 title: 幫 Free Dyno Heroku App 自訂網址再透過 CloudFlare 加上 https
 date: 2018-04-22 16:06:39
+categories:
+- 技術文章
 tags:
 - heroku
 - cloudflare
@@ -8,7 +10,6 @@ tags:
 - dns
 - https
 - free
-- 技術文章
 toc: true
 ---
 
@@ -71,7 +72,7 @@ Domains and certificates 設定的地方點選 Add domain，填入你的網域
 
 不解釋
 
-## 更改網域 NS
+## 更改網域 Nameservers
 
 把網域的 Nameservers 改成 CloudFlare 提供的 Nameservers（DNS 頁籤往下翻），這樣一來，剛剛在 CloudFlare 設定的 DNS 才會生效。
 
