@@ -13,8 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: 'https://yanghongxin.com/blog/'
-root: '/blog/'
+url: 'https://yang-hong-xin.com/'
+root: '/'
 permalink: ':title/'
 permalink_defaults:
 
