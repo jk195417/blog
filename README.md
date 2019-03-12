@@ -2,13 +2,13 @@
 
 用 [hexo](https://github.com/hexojs/hexo) + [yilia](https://github.com/litten/hexo-theme-yilia) 搭建
 
-# hexo 常用指令
+# Usage
 
 ```bash
-# 開 server 在 localhost 預覽
+# localhost server
 $ hexo s
-# 生成靜態文件
+# 產生靜態檔案
 $ hexo g
-# 部屬
+# 部屬至 gitpage
 $ hexo d
 ```
