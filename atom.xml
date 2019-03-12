@@ -131,6 +131,8 @@
       <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
+      <category term="github" scheme="https://blog.yang-hong-xin.com/tags/github/"/>
+    
       <category term="cloudflare" scheme="https://blog.yang-hong-xin.com/tags/cloudflare/"/>
     
       <category term="ssl" scheme="https://blog.yang-hong-xin.com/tags/ssl/"/>
@@ -140,8 +142,6 @@
       <category term="https" scheme="https://blog.yang-hong-xin.com/tags/https/"/>
     
       <category term="free" scheme="https://blog.yang-hong-xin.com/tags/free/"/>
-    
-      <category term="github" scheme="https://blog.yang-hong-xin.com/tags/github/"/>
     
   </entry>
   
@@ -170,8 +170,6 @@
       <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
-      <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
-    
       <category term="cloudflare" scheme="https://blog.yang-hong-xin.com/tags/cloudflare/"/>
     
       <category term="ssl" scheme="https://blog.yang-hong-xin.com/tags/ssl/"/>
@@ -181,6 +179,8 @@
       <category term="https" scheme="https://blog.yang-hong-xin.com/tags/https/"/>
     
       <category term="free" scheme="https://blog.yang-hong-xin.com/tags/free/"/>
+    
+      <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
     
   </entry>
   
