@@ -2,6 +2,8 @@
 title: 好用的軟體 for Mac OSX （一般使用者）
 date: 2018-04-30 16:32:02
 toc: true
+categories:
+- 其他
 tags:
 - mac
 - free
