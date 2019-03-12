@@ -33,6 +33,8 @@ export PATH="$PATH:/usr/local/cuda-9.0/bin"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
 ```
 
+<!-- more -->
+
 # 安裝 cuDNN
 
 到 [https://developer.nvidia.com/rdp/cudnn-download](https://developer.nvidia.com/rdp/cudnn-download)，選擇 `Download cuDNN v7.4.2 (Dec 14, 2018), for CUDA 9.0` 的 `cuDNN Library for Linux`，將檔案下載至 `~/下載/`：
