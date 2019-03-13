@@ -1,7 +1,6 @@
 ---
 title: 為 Ubuntu 18.04 LST 安裝 Tensorflow 1.12 with GPU support
 date: 2019-03-13 12:43:13
-toc: true
 categories:
 - 技術文章
 tags:
@@ -18,6 +17,8 @@ tags:
 當前的 TensorFlow 版本為 1.12，只支援 CUDA 9.0，當前 CUDA 9.0 的 cuDNN 版本為 7.4.2。
 
 # 安裝 CUDA
+
+<!-- more -->
 
 至 [https://developer.nvidia.com/cuda-90-download-archive](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1704&target_type=runfilelocal) 下載安裝，選擇 `Linux`+`x86_64`+`Ubuntu+17.04`+`runfile(local)`，下載至 `~/下載/`，並透過下列指令執行：
 

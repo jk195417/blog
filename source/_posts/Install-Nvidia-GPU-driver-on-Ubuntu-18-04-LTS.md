@@ -23,6 +23,8 @@ ubuntu-drivers devices
 
 看看是否有更新的驅動程式版本可以使用。
 
+<!-- more -->
+
 接著安裝執行`ubuntu-drivers devices`所列出來 recommended 的驅動程式，安裝完畢後重新開機：
 
 ```sh

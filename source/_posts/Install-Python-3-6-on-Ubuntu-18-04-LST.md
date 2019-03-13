@@ -1,7 +1,6 @@
 ---
-title: Install Python 3.6 on Ubuntu 18.04 LST
+title: 為 Ubuntu 18.04 LST 安裝 Python 3.6
 date: 2019-03-13 12:42:13
-toc: true
 categories:
 - 技術文章
 tags:
@@ -20,6 +19,8 @@ python3 -v
 此時的 Python 的版本應有 3.6 以上，我的版本為 3.6.7。
 
 # 安裝 pip 3
+
+<!-- more -->
 
 接著安裝 Python 的套件管理模組 pip，和一些常用的開發工具：
 
