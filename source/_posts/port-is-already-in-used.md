@@ -5,9 +5,6 @@ categories:
   - 技術文章
 tags:
   - kill process
-keywords:
-  - port is already in use
-
 ---
 
 有看過即刻救援嗎？我們只需要像史上最強老爸一樣，即可解決此問題。

@@ -1,10 +1,6 @@
 ---
 title: Homebrew — mac 必裝的套件管理
 date: 2019-06-11 10:57:00
-keywords:
-  - OS X
-  - Homebrew
-  - Package Manager
 categories:
   - 技術文章
 tags:

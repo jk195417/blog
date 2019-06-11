@@ -1,10 +1,6 @@
 ---
 title: Install ruby on mac
 date: 2019-06-11 11:17:22
-keywords:
-  - ruby
-  - rvm
-  - mac
 categories:
   - 技術文章
 tags:
