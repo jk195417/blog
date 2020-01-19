@@ -1,7 +1,6 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "name": "blog",
+  "version": "2020.1.18",
   "hexo": {
     "version": "3.8.0"
   },
@@ -21,9 +20,9 @@
     "hexo-server": "^0.3.3"
   },
   "scripts": {
-    "s": "yarn && hexo s",
-    "g": "yarn && hexo g",
-    "d": "yarn && hexo g && hexo d",
-    "gs": "yarn && hexo g && hexo s"
+    "start": "hexo server",
+    "generate": "hexo generate",
+    "deploy": "hexo deploy --generate",
+    "clean": "hexo clean"
   }
 }

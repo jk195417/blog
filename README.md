@@ -2,13 +2,22 @@
 
 用 [hexo](https://github.com/hexojs/hexo) + [yilia](https://github.com/litten/hexo-theme-yilia) 搭建
 
-# Usage
+## Usage
+
+localhost server
 
 ```bash
-# localhost server
-$ hexo s
-# 產生靜態檔案
-$ hexo g
-# 部屬至 gitpage
-$ hexo d
+yarn start
+```
+
+產生靜態檔案
+
+```bash
+yarn generate
+```
+
+部屬至 Github Pages
+
+```bash
+yarn deploy
 ```
