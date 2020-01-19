@@ -136,9 +136,9 @@ jsonContent:
     tags: true
 
 ## Themes: https://hexo.io/themes/
-### yilia
-### https://github.com/litten/hexo-theme-yilia
-theme: yilia
+### icarus
+### https://github.com/ppoffice/hexo-theme-icarus
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
