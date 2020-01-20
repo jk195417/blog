@@ -1,16 +1,17 @@
 ---
 title: 幫 Free Dyno Heroku App 自訂網址再透過 CloudFlare 加上 https
 date: 2018-04-22 16:06:39
-categories:
-- 技術文章
-tags:
-- heroku
-- cloudflare
-- ssl
-- dns
-- https
-- free
 toc: true
+thumbnail: free-heroku-app-custom-domain-name-on-https-use-cloudflare/cloudflare-add-site.png
+categories:
+  - 技術文章
+tags:
+  - heroku
+  - cloudflare
+  - ssl
+  - dns
+  - https
+  - free
 ---
 
 近年來資安漏洞頻傳，透過 http 明文傳送機敏資訊造成的傷害也早已不是什麼新聞了，替網站加上 https 是勢在必行。
@@ -18,10 +19,10 @@ toc: true
 {% asset_img https-green-lock.png %}
 瀏覽器網址列旁的綠色鎖頭有沒有帶來一種安全的感覺。
 
-# 如何免費得到 https 保護呢？
+# 如何免費得到 https 保護呢
 
--   [Let's Encrypt](https://letsencrypt.org/) - 自行申請免費的 SSL
--   [CloudFlare](https://www.cloudflare.com/) - 與他人共用 CloudFlare 免費提供的 SSL
+- [Let's Encrypt](https://letsencrypt.org/) - 自行申請免費的 SSL
+- [CloudFlare](https://www.cloudflare.com/) - 與他人共用 CloudFlare 免費提供的 SSL
 
 本次的目標網站是架設在 [Heroku](https://www.heroku.com/) 上的 Free Dyno 型應用程式，Free Dyno 其實已經有提供免費的 https 給預設的 `<app-name>.herokuapp.com`
 
@@ -35,9 +36,9 @@ toc: true
 
 # 需要
 
--   一個 Free Dyno Heroku App
--   一個 Domain Name
--   註冊 CloudFlare
+- 一個 Free Dyno Heroku App
+- 一個 Domain Name
+- 註冊 CloudFlare
 
 # 步驟
 
@@ -63,8 +64,8 @@ Domains and certificates 設定的地方點選 Add domain，填入你的網域
 
 {% asset_img cloudflare-dns-setting.png %}
 
->  根網域通常需要 A Record 填入 IP Address，Heroku App 提供的網址為浮動 IP，只能透過 Heroku 提供的網址用 CNAME flattening 動態指向過去，才能指定根網域。
->  CloudFlare 剛好有提供 [CNAME flattening](https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root)，想要讓根網域直接對應到 Heroku app，新增 `CNANE`，`Name` 填入 `@`，`Value` 一樣填入 Heroku 預設的網址 `<app-name>.herokuapp.com`。
+> 根網域通常需要 A Record 填入 IP Address，Heroku App 提供的網址為浮動 IP，只能透過 Heroku 提供的網址用 CNAME flattening 動態指向過去，才能指定根網域。
+> CloudFlare 剛好有提供 [CNAME flattening](https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root)，想要讓根網域直接對應到 Heroku app，新增 `CNANE`，`Name` 填入 `@`，`Value` 一樣填入 Heroku 預設的網址 `<app-name>.herokuapp.com`。
 
 ## CloudFlare 選擇方案 Free
 
@@ -109,18 +110,20 @@ Domains and certificates 設定的地方點選 Add domain，填入你的網域
 ### 等 SSL 憑證發行太久
 
 用 Chrome 瀏覽會噴錯誤訊息：
+
 ```
 這個網站無法提供安全連線
 <domain> 使用了不支援的通訊協定。
 ERR_SSL_VERSION_OR_CIPHER_MISMATCH`
 ```
+
 {% asset_img chrome-err.png %}
 
 如果超過一天了憑證還是沒有發下來，你可以：
 
-1.  檢查設定有沒有出錯 <https://support.cloudflare.com/hc/en-us/articles/200170566-Why-isn-t-SSL-working-for-my-site>
-2.  CloudFlare > Select Website > Overview > Advanced > Delete，然後把 Nameservers 改回預設值，再重新跑一次 [CloudFlare 設定 DNS](## CloudFlare 設定 DNS)，等了三天 **親測有效!**
-3.  到 Support 發票，然後到官方論壇 <https://community.cloudflare.com/t/ssl-delays-authorizing-certificate/3682> 求救，許多前輩的過關案例在此。
+1. 檢查設定有沒有出錯 <https://support.cloudflare.com/hc/en-us/articles/200170566-Why-isn-t-SSL-working-for-my-site>
+2. CloudFlare > Select Website > Overview > Advanced > Delete，然後把 Nameservers 改回預設值，再重新跑一次 [CloudFlare 設定 DNS](## CloudFlare 設定 DNS)，等了三天 **親測有效!**
+3. 到 Support 發票，然後到官方論壇 <https://community.cloudflare.com/t/ssl-delays-authorizing-certificate/3682> 求救，許多前輩的過關案例在此。
 
 ## 把 http 請求全部導向 https（選擇性）
 
@@ -132,7 +135,7 @@ CloudFlare > Select Website > Crypto > Always use HTTPS > On
 
 # 參考資料
 
--   <https://devcenter.heroku.com/articles/custom-domains#configuring-dns-for-root-domains>
--   <https://support.cloudflare.com/hc/en-us/articles/205893698>
--   <https://robots.thoughtbot.com/set-up-cloudflare-free-ssl-on-heroku>
--   <https://support.cloudflare.com/hc/en-us/articles/203445970-What-does-SSL-Authorizing-mean-after-activating-free-Universal-SSL>
+- <https://devcenter.heroku.com/articles/custom-domains#configuring-dns-for-root-domains>
+- <https://support.cloudflare.com/hc/en-us/articles/205893698>
+- <https://robots.thoughtbot.com/set-up-cloudflare-free-ssl-on-heroku>
+- <https://support.cloudflare.com/hc/en-us/articles/203445970-What-does-SSL-Authorizing-mean-after-activating-free-Universal-SSL>

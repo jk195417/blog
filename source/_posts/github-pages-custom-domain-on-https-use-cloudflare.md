@@ -1,16 +1,17 @@
 ---
 title: 幫 Github Pages 自訂網址再透過 CloudFlare 加上 https
 date: 2018-04-25 23:28:25
-categories:
-- 技術文章
-tags:
-- github
-- cloudflare
-- ssl
-- dns
-- https
-- free
 toc: true
+thumbnail: github-pages-custom-domain-on-https-use-cloudflare/github-pages-custom-domain.png
+categories:
+  - 技術文章
+tags:
+  - github
+  - cloudflare
+  - ssl
+  - dns
+  - https
+  - free
 ---
 
 上一篇 {% post_link free-heroku-app-custom-domain-name-on-https-use-clouldflare %} 之後，這次要來幫 Github Pages 加上自訂網址與 https。本次就跳過了一些上次說過的事情（有興趣的讀者可以自行前往閱讀），直接帶大家走一遍設定流程。
@@ -24,9 +25,9 @@ toc: true
 
 # 需要
 
--   Github 帳號
--   Domain name
--   CloudFlare 帳號
+- Github 帳號
+- Domain name
+- CloudFlare 帳號
 
 # 步驟
 
@@ -100,4 +101,4 @@ CloudFlare > Select Website > Crypto > Always use HTTPS > On
 
 # 參考連結
 
--   <https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/>
+- <https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/>

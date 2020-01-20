@@ -1,11 +1,13 @@
 ---
 title: 為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver
 date: 2019-03-11 20:12:50
+toc: true
 categories:
-- 技術文章
+  - 技術文章
+  - 碩論
 tags:
-- nvidia gpu driver
-- ubuntu
+  - nvidia gpu driver
+  - ubuntu
 ---
 列出支援的顯示卡驅動：
 

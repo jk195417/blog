@@ -1,11 +1,13 @@
 ---
 title: 為 Ubuntu 18.04 LST 安裝 Python 3.6
 date: 2019-03-13 12:42:13
+toc: true
 categories:
-- 技術文章
+  - 技術文章
+  - 碩論
 tags:
-- python 3
-- ubuntu
+  - python
+  - ubuntu
 ---
 
 原則上，Ubuntu 18.04.1 LTS 已經內建 Python 3 了，保險起見先檢查一下：

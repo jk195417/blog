@@ -1,18 +1,20 @@
 ---
 title: 為 Ubuntu 18.04 LST 安裝 Tensorflow 1.12 with GPU support
 date: 2019-03-13 12:43:13
+toc: true
 categories:
-- 技術文章
+  - 技術文章
+  - 碩論
 tags:
-- tensorflow
-- gpu
-- cuda
-- ubuntu
+  - tensorflow
+  - gpu
+  - cuda
+  - ubuntu
+  - nlp
+  - python
 ---
 
 執行完之前介紹的 {% post_link Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS %} 與 {% post_link Install-Python-3-6-on-Ubuntu-18-04-LST %} 後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。
-
-
 
 當前的 TensorFlow 版本為 1.12，只支援 CUDA 9.0，當前 CUDA 9.0 的 cuDNN 版本為 7.4.2。
 
@@ -25,6 +27,7 @@ tags:
 ```sh
 sudo sh ~/下載/cuda_9.0.176_384.81_linux.run --override
 ```
+
 Installing with an unsupported configuration 回答 `yes`
 
 Install NVIDIA Accelerated Graphics Driver 回答 `no`

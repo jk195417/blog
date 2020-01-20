@@ -1,23 +1,25 @@
 ---
 title: 用 Hexo 建立 Blog
 date: 2018-04-18 20:44:32
+toc: true
 categories:
-- 技術文章
+  - 技術文章
 tags:
-- hexo
-- yilia
+  - hexo
+  - hexo-theme
+  - yilia
 ---
 
 # 安裝 Hexo
 
 ```bash
-$ yarn global add hexo-cli
+yarn global add hexo-cli
 ```
 
 建立 blog 專案
 
 ```bash
-$ hexo init blog
+hexo init blog
 ```
 
 # 主題設定
@@ -31,7 +33,7 @@ $ hexo init blog
 添加成 git submodule 到專案的 `themes/yilia`
 
 ```bash
-$ git submodule add https://github.com/jk195417/hexo-theme-yilia.git themes/yilia
+git submodule add https://github.com/jk195417/hexo-theme-yilia.git themes/yilia
 ```
 
 修改`_config.yml`
@@ -45,7 +47,7 @@ theme: yilia
 ## hexo-generator-json-content
 
 ```bash
-$ yarn add hexo-generator-json-content
+yarn add hexo-generator-json-content
 ```
 
 `_config.yml` 加上
@@ -53,29 +55,29 @@ $ yarn add hexo-generator-json-content
 ```yaml
 # hexo-generator-json-content
 jsonContent:
-    meta: false
-    pages: false
-    posts:
-      title: true
-      date: true
-      path: true
-      text: false
-      raw: false
-      content: false
-      slug: false
-      updated: false
-      comments: false
-      link: false
-      permalink: false
-      excerpt: false
-      categories: false
-      tags: true
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true
 ```
 
 ## hexo-generator-sitemap
 
 ```bash
-$ yarn add hexo-generator-sitemap
+yarn add hexo-generator-sitemap
 ```
 
 `_config.yml` 加上
@@ -88,7 +90,7 @@ sitemap:
 ## hexo-generator-feed
 
 ```bash
-$ yarn add hexo-generator-feed
+yarn add hexo-generator-feed
 ```
 
 `_config.yml` 加上
@@ -101,9 +103,10 @@ feed:
 ```
 
 再到 `themes/yilia/_config.yml` 修改
+
 ```yaml
 subnav:
-  rss: '/atom.xml'
+  rss: "/atom.xml"
 ```
 
 # 部署至 Github Page
@@ -113,13 +116,14 @@ subnav:
 ```yaml
 deploy:
   type: git
-  repo: 'https://github.com/jk195417/blog.git'
+  repo: "https://github.com/jk195417/blog.git"
 ```
 
 指令
+
 ```bash
 # 生成靜態文件
 $ hexo g
 # 部屬
-$ hexo d
+hexo d
 ```

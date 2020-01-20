@@ -1,10 +1,12 @@
 ---
 title: Homebrew — mac 必裝的套件管理
 date: 2019-06-11 10:57:00
+toc: true
+thumbnail: homebrew-best-package-manager-on-mac/brew-icon.png
 categories:
   - 技術文章
 tags:
-  - mac
+  - osx
   - brew
 ---
 
@@ -12,59 +14,59 @@ tags:
 
 官網 <https://brew.sh/>，Github <https://github.com/Homebrew/brew/>
 
-{% asset_img brew-icon.png %}
-
 # 安裝
 
 進 <https://brew.sh/> 看其安裝說明，在終端機輸入：
 
-    $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 <!-- more -->
 
 # 常用指令
 
-```sh
+```bash
 # 查看套件資訊  
-$ brew info something
+brew info something
 
 # 安裝套件  
-$ brew install something
+brew install something
 
 # 更新套件  
-$ brew update
+brew update
 
 # 解除安裝套件  
-$ brew uninstall something
+brew uninstall something
 
 # 重新安裝套件  
-$ brew reinstall something
+brew reinstall something
 
 # 把套件連結至 bin  
-$ brew link something
+brew link something
 
 # 檢查 brew 有沒有缺少什麼  
-$ brew doctor
+brew doctor
 
 # 升級 brew  
-$ brew upgrade
+brew upgrade
 
 # 查看可透過 brew 啟用的 services  
-$ brew services list
+brew services list
 
 # 啟用 service  
-$ brew services start something
+brew services start something
 
 # 停用 service  
-$ brew services stop something
+brew services stop something
 ```
 
 # Brew Cask
 
 brew 除了套件也可以安裝應用程式，以 [atom](https://atom.io/) 為例：
 
-```sh
-$ brew cask install atom
+```bash
+brew cask install atom
 ```
 
 ## Cakebrew : Brew GUI
@@ -73,6 +75,6 @@ $ brew cask install atom
 
 透過 brew 來安裝 cakebrew：
 
-```sh
-$ brew cask install cakebrew
+```bash
+brew cask install cakebrew
 ```

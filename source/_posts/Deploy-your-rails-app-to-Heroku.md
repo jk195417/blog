@@ -1,17 +1,18 @@
 ---
 title: 部署你的 rails 應用程式至 Heroku
 date: 2019-06-11 14:57:54
+toc: true
+thumbnail: deploy-your-rails-app-to-heroku/heroku.png
 categories:
   - 技術文章
 tags:
   - heroku
+  - ruby
   - rails
   - deploy
 ---
 
 Heroku 是一個 platform as a service 平台，可以部署專案在此，使用上非常方便的，當然方便的代價是價格，他的單位計算資源價格會高於 AWS。
-
-{% asset_img heroku.png %}
 
 # 安裝 heroku-cli
 
@@ -19,7 +20,7 @@ Heroku 是一個 platform as a service 平台，可以部署專案在此，使�
 
 ```sh
 # 將 heroku 加入 brew 的來源  
-$ brew tap heroku/brew && brew install heroku
+brew tap heroku/brew && brew install heroku
 ```
 
 <!-- more -->
@@ -27,7 +28,7 @@ $ brew tap heroku/brew && brew install heroku
 登入 Heroku 帳號
 
 ```sh
-$ heroku login
+heroku login
 ```
 
 > 一般我們使用 git 來部署應用程式至 Heroku，在下個步驟前，確認你的專案已經使用 git 做版本控制了。
@@ -37,14 +38,14 @@ $ heroku login
 新建一個專案叫 `app_name`:
 
 ```sh
-$ heroku create app_name
+heroku create app_name
 ```
 
 已經在Heroku 上建立專案了則使用：
 
 ```sh
 # set git remote heroku to https://git.heroku.com/app_name.git
-$ heroku git:remote -a app_name
+heroku git:remote -a app_name
 ```
 
 # 設定 Rails app
@@ -101,12 +102,12 @@ sidekid: bundle exec sidekiq -C config/sidekiq.yml
 
 ```sh
 # push master 分支到 heroku remote  
-$ git push heroku master
+git push heroku master
 ```
 
 有新的 database migrations 時執行：
 
 ```sh
 # heroku run + 要運行的指令，這次要做 database migrate  
-$ heroku run rails db:migrate
+heroku run rails db:migrate
 ```
