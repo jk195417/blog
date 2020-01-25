@@ -2,6 +2,7 @@
 title: Developer 最常用的 Proxy 設定
 date: 2020-01-25 18:30:00
 toc: true
+thumbnail: the-most-common-proxy-settings-for-developers/proxy.png
 categories:
   - 技術文章
 tags:
@@ -20,6 +21,10 @@ tags:
 
 ## 系統環境變數 environment
 
+### Windows
+
+**控制台** > **系統及安全性** > **系統** > **進階系統設定** > **進階** > **環境變數** > **系統變數** > **新增**
+
 | 變數       | 值                                |
 | ---------- | -------------------------------- |
 | PROXY      | <http://proxy.company.com:80>    |
@@ -32,10 +37,6 @@ tags:
 | https_proxy| <http://proxy.company.com:80>    |
 | all_proxy  | <http://proxy.company.com:80>    |
 | no_proxy   | localhost,127.0.0.1,.company.com |
-
-### Windows
-
-**控制台** > **系統及安全性** > **系統** > **進階系統設定** > **進階** > **環境變數** > **系統變數** > **新增**
 
 ### Ubuntu
 
@@ -100,7 +101,7 @@ proxy=http://proxy.company.com:80
 
 ## wget
 
-建議使用環境變數設定 `wget`，它預設會套用[環境變數](#系統環境變數-environment)，見[官方文件](https://www.gnu.org/software/wget/manual/html_node/Proxies.html))
+建議使用環境變數設定 `wget`，它預設會套用[環境變數](#系統環境變數-environment)，見[官方文件](https://www.gnu.org/software/wget/manual/html_node/Proxies.html)
 
 或是編輯 `.wgetrc`，填入
 
