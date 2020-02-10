@@ -1,13 +1,12 @@
 ---
 title: 在 Angular 中請這樣用 RxJS
-thumbnail: using-rxjs-this-way-in-angular/angular+rxjs.png
-toc: true
 tags:
   - angular
   - rxjs
+thumbnail: using-rxjs-this-way-in-angular/angular+rxjs.png
+toc: true
+date: 2020-02-10 21:25:06
 ---
-
-{% asset_img angular+rxjs.png %}
 
 本篇只是閱讀原文後的譯文
 原文出處： <https://blog.strongbrew.io/rxjs-best-practices-in-angular>
