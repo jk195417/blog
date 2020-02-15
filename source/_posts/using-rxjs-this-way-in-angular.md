@@ -1,5 +1,7 @@
 ---
 title: 在 Angular 中請這樣用 RxJS
+categories:
+  - 技術文章
 tags:
   - angular
   - rxjs
