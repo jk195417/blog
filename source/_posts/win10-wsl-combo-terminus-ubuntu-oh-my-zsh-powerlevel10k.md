@@ -21,6 +21,8 @@ date: 2020-02-16 22:45:52
 
 <!-- more -->
 
+---
+
 ## 安裝 WSL
 
 直接透過 Microsoft Store 安裝 [Ubuntu 18.04 LTS](https://www.microsoft.com/store/apps/9N9TNGVNDL3Q)，見此[文件](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
@@ -31,6 +33,8 @@ date: 2020-02-16 22:45:52
 
 若公司有擋預設安裝路徑，則將剛下載的 `CanonicalGroupLimited.Ubuntu18.04onWindows_1804.2018.817.Appx` 改成 `Ubuntu 18.04.zip`，解壓縮至 `C:\WSL\Ubuntu 18.04`，進入此資料夾執行 `.exe` 檔 ，見此[文件](https://docs.microsoft.com/en-us/windows/wsl/install-on-server)
 
+---
+
 ## 安裝 Terminus
 
 [Terminus](https://github.com/Eugeny/terminus) 是款跨平台的命令列工具，本次會選擇這個工具的原因有二
@@ -40,6 +44,8 @@ date: 2020-02-16 22:45:52
 2. 我的 Windows 版本尚未升級到 Win 10 1903，所以不能使用 [Windows Terminal](https://github.com/microsoft/terminal)
 
 到 [releases](https://github.com/Eugeny/terminus/releases/latest) 選擇 **setup.exe** 下載並執行
+
+---
 
 ## 安裝 Oh My Zsh
 
@@ -62,6 +68,8 @@ wsl
   ```sh
   sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
   ```
+
+---
 
 ## 安裝 Powerlevel10k
 
@@ -93,6 +101,8 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 p10k configure
 ```
 
+---
+
 ## 設定字型與配色
 
 回到 Windows，打開 **Terminus** > **Setting** > **Appearance** 設定 Terminus 的字型與配色
@@ -103,3 +113,5 @@ p10k configure
 {% asset_img terminus-setting.png %}
 
 這樣就大功告成啦~
+
+---
