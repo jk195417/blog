@@ -1,13 +1,15 @@
 ---
-title: "Win10 WSL combo : Terminus + Ubuntu + Oh My Zsh + Powerlevel10k"
+title: 'Win10 WSL combo : Terminus + Ubuntu + Oh My Zsh + Powerlevel10k'
+tags:
+  - windows
+  - wsl
 thumbnail: win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/microsoft-store.png
 toc: true
 categories:
   - 技術文章
-tags:
-  - windows
-  - wsl
+date: 2020-02-16 22:45:52
 ---
+
 
 ## 簡介
 
