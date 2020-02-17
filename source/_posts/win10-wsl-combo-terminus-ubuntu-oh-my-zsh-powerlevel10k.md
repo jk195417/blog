@@ -105,6 +105,10 @@ p10k configure
 
 ## 設定字型與配色
 
+到 [ryanoasis/nerd-fonts](https://github.com/ryanoasis/nerd-fonts) 下載 [Sauce Code Pro Nerd Font Complete Mono Windows Compatible.ttf](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/SourceCodePro/Regular/complete/Sauce%20Code%20Pro%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf) 並安裝
+
+{% asset_img install-sauce-code-pro-nerd-font.png %}
+
 回到 Windows，打開 **Terminus** > **Setting** > **Appearance** 設定 Terminus 的字型與配色
 
 - Font: `SauceCodePro Nerd Font`
