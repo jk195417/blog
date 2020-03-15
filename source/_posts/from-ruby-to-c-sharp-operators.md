@@ -2,13 +2,15 @@
 title: '從 Ruby 到 C# - operators'
 tags:
   - ruby
-  - c#
+  - 'c#'
 thumbnail: from-ruby-to-c-sharp/ruby-and-c-sharp-icons.png
 toc: true
 categories:
   - 技術文章
-  - 從 Ruby 到 C#
+  - '從 Ruby 到 C#'
+date: 2020-03-15 18:30:42
 ---
+
 
 Ruby 與 C# 的 operators 蠻相近的，應該說整個程式圈的 operators 都大概長那樣阿，~~嗯，沒錯，本篇完~~
 
