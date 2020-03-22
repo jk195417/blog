@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "hexo server",
-    "start-draft": "hexo server --draft",
+    "start:draft": "hexo server --draft",
     "generate": "hexo generate",
     "deploy": "hexo deploy --generate",
     "clean": "hexo clean"
