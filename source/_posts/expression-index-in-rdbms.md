@@ -10,7 +10,6 @@ categories:
 date: 2020-03-22 22:24:39
 ---
 
-
 What is the expression index?
 
 According to the description from [Wikipedia](https://en.wikipedia.org/wiki/Expression_index)
@@ -31,6 +30,8 @@ Then I want to select some profiles where lowercase name is xxx, so the query lo
 SELECT * FROM profiles WHERE lower(name) = 'aaron yang';
 ```
 
+---
+
 ## Create Index
 
 It is very simple to create an index, we need to use `(` and `)` to wrap the expression
@@ -42,6 +43,8 @@ CREATE INDEX index_profiles_on_lower_name ON profiles (lower(name));
 After that we created an expression index, with condition is `(lower((name)::text))`
 
 {% asset_img 'expression-index.png' %}
+
+---
 
 ## Explain Query
 
@@ -57,6 +60,8 @@ EXPLAIN SELECT * FROM profiles WHERE lower(name) = 'aaron yang';
 
 As you may have noticed `Seq Scan on profiles`, it is a **full table scan**
 
+---
+
 Let's try again, the same `EXPLAIN` query after expression index created
 
 ```sql
@@ -68,6 +73,8 @@ EXPLAIN SELECT * FROM profiles WHERE lower(name) = 'aaron yang';
 Yeah, the query is using the expression index.
 
 > If your query still using the `Seq Scan`, that is because the rows of the table are too small, Postgres estimate seq scan will faster than using an index, see more [here](https://stackoverflow.com/a/52833441/9762797) or [here](https://blog.niclin.tw/2018/06/14/%E7%82%BA%E4%BB%80%E9%BA%BC-postgres-%E4%B8%8D%E9%81%B8%E6%93%87-index-scan-%E5%8D%BB%E9%81%B8%E6%93%87-seq-scan/)
+
+---
 
 ## Databases Compatibility
 
