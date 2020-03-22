@@ -1,13 +1,15 @@
 ---
 title: Expression Index in RDBMS
+tags:
+  - rdbms
+  - index
 toc: true
 thumbnail: expression-index-in-rdbms/kolar-io-lRoX0shwjUQ-unsplash.jpg
 categories:
   - 技術文章
-tags:
-  - rdbms
-  - index
+date: 2020-03-22 22:24:39
 ---
+
 
 What is the expression index?
 
