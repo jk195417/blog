@@ -1,13 +1,15 @@
 ---
 title: 在 Mac 上 安裝 Docker for Mac
+tags:
+  - docker
+  - mac
 toc: true
 thumbnail: install-docker-on-mac/docker-app-drag.png
 categories:
   - 技術文章
-tags:
-  - docker
-  - mac
+date: 2020-03-29 23:58:39
 ---
+
 
 ## Install
 
