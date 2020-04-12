@@ -1,0 +1,8 @@
+{
+  "[markdown]": {
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": true
+  }
+}
