@@ -31,6 +31,8 @@ brew cask install docker
 
 當安裝完成後，我們就能在右上角的工具欄看到鯨魚 🐳 icon
 
+<!-- more -->
+
 打開 Docker dashboard 看看，嗯，目前是空的，沒有任何的 container 在執行
 
 {% asset_img 'docker-dashboard.png' %}
