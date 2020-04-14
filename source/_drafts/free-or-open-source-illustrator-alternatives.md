@@ -1,6 +1,6 @@
 ---
 title: 代替 Illustrator 的免費繪圖軟體
-thumbnail: 
+thumbnail: 'free-or-open-source-illustrator-alternatives/green-svg-banner.svg'
 toc: true
 categories:
   - 軟體分享
@@ -16,34 +16,9 @@ tags:
 
 <!-- more -->
 
-## GIMP
-
-- 官網: <https://www.gimp.org/>
-- 原始碼: <https://gitlab.gnome.org/GNOME/gimp>
-- 支援平台: Linux, OS X, Windows
-- 授權: [GPL-3.0](https://www.gimp.org/about/COPYING)
-
-Linux 上可以透過 [snap](https://snapcraft.io/gimp) 安裝
-
-```sh
-sudo snap install gimp
-```
-
-Mac 上可以透過 [brew](https://formulae.brew.sh/cask/gimp) 安裝
-
-```sh
-brew cask install gimp
-```
-
-Windows 上可以透過 [chocolatey](https://chocolatey.org/packages/gimp) 安裝
-
-```sh
-choco install gimp
-```
-
----
-
 ## Inkscape
+
+{% asset_img 'Inkscape-screenshot.png' %}
 
 - 官網: <https://inkscape.org/>
 - 原始碼: <https://gitlab.com/inkscape/inkscape>
@@ -70,7 +45,59 @@ choco install inkscape
 
 ---
 
-## Krita
+## Vectr
+
+{% asset_img 'vectr-editor.png' %}
+
+- 官網: <https://vectr.com/>
+- 未開源但可免費使用
+- 支援平台: Linux, OS X, Windows, 瀏覽器
+- 授權: Proprietary
+
+Ｗeb 直接畫 <https://vectr.com/new>
+
+Linux 上可以透過 [snap](https://snapcraft.io/vectr) 安裝
+
+```sh
+sudo snap install vectr
+```
+
+Mac 上可以透過 [brew](https://formulae.brew.sh/cask/vectr) 安裝
+
+```sh
+brew cask install vectr
+```
+
+---
+
+## Boxy SVG
+
+- 官網: <https://boxy-svg.com/>
+- 未開源，只在 Linux 上可免費使用
+- 支援平台: Linux, OS X, Windows, 瀏覽器
+- 授權: Proprietary
+
+Linux 上可以透過 [snap](https://snapcraft.io/boxy-svg) 安裝
+
+```sh
+sudo snap install boxy-svg
+```
+
+---
+
+## Others
+
+- LibreOffice - Draw <https://www.libreoffice.org/discover/draw/>
+- DRAW SVG <http://www.drawsvg.org/>
+- SVG-Edit <https://svg-edit.github.io/svgedit/editor/svg-editor.html> <https://github.com/SVG-Edit/svgedit>
+- Vector Paint <https://vectorpaint.yaks.co.nz/>
+- macSVG <https://github.com/dsward2/macSVG>
+
+## 點陣圖軟體但是也有支援向量
+
+### Krita
+
+{% asset_img 'krita-screenshot.png' %}
 
 - 官網: <https://krita.org/>
 - 原始碼: <https://invent.kde.org/kde/krita>
@@ -97,92 +124,31 @@ choco install krita
 
 ---
 
-## Autodesk Sketchbook
+### GIMP
 
-- 官網: <https://www.sketchbook.com/>
-- 未開源但[註冊會員後即可免費使用](https://forums.autodesk.com/t5/sketchbook-forum/sketchbook-for-free-faq/td-p/7970245)
-- 支援平台: OS X, Windows
-- 授權: Proprietary
+{% asset_img 'GIMP-screenshot.jpg' %}
 
-Mac 上可以透過 [brew](https://formulae.brew.sh/cask/sketchbook) 安裝
+- 官網: <https://www.gimp.org/>
+- 原始碼: <https://gitlab.gnome.org/GNOME/gimp>
+- 支援平台: Linux, OS X, Windows
+- 授權: [GPL-3.0](https://www.gimp.org/about/COPYING)
+
+Linux 上可以透過 [snap](https://snapcraft.io/gimp) 安裝
 
 ```sh
-brew cask install sketchbook
+sudo snap install gimp
+```
+
+Mac 上可以透過 [brew](https://formulae.brew.sh/cask/gimp) 安裝
+
+```sh
+brew cask install gimp
+```
+
+Windows 上可以透過 [chocolatey](https://chocolatey.org/packages/gimp) 安裝
+
+```sh
+choco install gimp
 ```
 
 ---
-
-## Boxy SVG
-
-- 官網: <https://boxy-svg.com/>
-- 未開源但可免費使用
-- 支援平台: Linux, OS X, Windows, 瀏覽器
-- 授權: Proprietary
-
-Linux 上可以透過 [snap](https://snapcraft.io/boxy-svg) 安裝
-
-```sh
-sudo snap install boxy-svg
-```
-
----
-
-## Vectr
-
-- 官網: <https://vectr.com/>
-- 未開源但可免費使用
-- 支援平台: Linux, OS X, Windows, 瀏覽器
-- 授權: Proprietary
-
-Linux 上可以透過 [snap](https://snapcraft.io/vectr) 安裝
-
-```sh
-sudo snap install vectr
-```
-
-Mac 上可以透過 [brew](https://formulae.brew.sh/cask/vectr) 安裝
-
-```sh
-brew cask install vectr
-```
-
----
-
-## LibreOffice - Draw
-
-<https://www.libreoffice.org/discover/draw/>
-
-<!-- TODO -->
-
----
-
-## DRAW SVG
-
-<http://www.drawsvg.org/>
-
-<!-- TODO -->
-
----
-
-## SVG-Edit
-
-<https://github.com/SVG-Edit/svgedit>
-<https://svg-edit.github.io/svgedit/editor/svg-editor.html>
-
-<!-- TODO -->
-
----
-
-## Vector Paint
-
-<https://vectorpaint.yaks.co.nz/>
-
-<!-- TODO -->
-
----
-
-## macSVG
-
-<https://github.com/dsward2/macSVG>
-
-<!-- TODO -->
