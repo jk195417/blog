@@ -1,14 +1,16 @@
 ---
 title: 代替 Illustrator 的免費繪圖軟體
-thumbnail: 'free-or-open-source-illustrator-alternatives/green-svg-banner.svg'
-toc: true
-categories:
-  - 軟體分享
 tags:
   - free
   - illustrator
   - alternative
+thumbnail: free-or-open-source-illustrator-alternatives/green-svg-banner.svg
+toc: true
+categories:
+  - 軟體分享
+date: 2020-04-15 22:13:37
 ---
+
 
 平面設計的首選 [Adobe Illustrator](https://www.adobe.com/tw/products/illustrator/free-trial-download.html) 專業好用，但價格昂貴，Adobe 提供了 7 天的試用期，試用期過後每月需花費 1000 元訂閱，但有時候我們只是想簡單地處理一些圖形，並不需要使用到這麼專業且複雜的繪圖功能 😔
 
