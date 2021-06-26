@@ -145,3 +145,4 @@ theme: icarus
 deploy:
   type: git
   repo: https://github.com/jk195417/blog.git
+  branch: gh-pages
