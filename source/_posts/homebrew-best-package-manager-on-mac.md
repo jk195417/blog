@@ -27,37 +27,37 @@ tags:
 # 常用指令
 
 ```bash
-# 查看套件資訊  
+# 查看套件資訊
 brew info something
 
-# 安裝套件  
+# 安裝套件
 brew install something
 
-# 更新套件  
+# 更新套件
 brew update
 
-# 解除安裝套件  
+# 解除安裝套件
 brew uninstall something
 
-# 重新安裝套件  
+# 重新安裝套件
 brew reinstall something
 
-# 把套件連結至 bin  
+# 把套件連結至 bin
 brew link something
 
-# 檢查 brew 有沒有缺少什麼  
+# 檢查 brew 有沒有缺少什麼
 brew doctor
 
-# 升級 brew  
+# 升級 brew
 brew upgrade
 
-# 查看可透過 brew 啟用的 services  
+# 查看可透過 brew 啟用的 services
 brew services list
 
-# 啟用 service  
+# 啟用 service
 brew services start something
 
-# 停用 service  
+# 停用 service
 brew services stop something
 ```
 
