@@ -6,7 +6,7 @@
   <link href="https://blog.yang-hong-xin.com/atom.xml" rel="self"/>
   
   <link href="https://blog.yang-hong-xin.com/"/>
-  <updated>2020-06-05T09:55:17.102Z</updated>
+  <updated>2021-06-27T08:09:07.596Z</updated>
   <id>https://blog.yang-hong-xin.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Make your PowerShell fancy by Windows Terminal and Oh My Posh</title>
+    <link href="https://blog.yang-hong-xin.com/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/"/>
+    <id>https://blog.yang-hong-xin.com/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/</id>
+    <published>2021-06-27T07:56:42.000Z</published>
+    <updated>2021-06-27T08:09:07.596Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Goals&quot;&gt;&lt;a href=&quot;#Goals&quot; class=&quot;headerlink&quot; title=&quot;Goals&quot;&gt;&lt;/a&gt;Goals&lt;/h2&gt;&lt;p&gt;Follow steps in this article, and the result will look like this&lt;/p&gt;
+&lt;img src=&quot;/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/goals.png&quot; class=&quot;&quot;&gt;
+
+&lt;h2 id=&quot;Steps&quot;&gt;&lt;a href=&quot;#Steps&quot; class=&quot;headerlink&quot; title=&quot;Steps&quot;&gt;&lt;/a&gt;Steps&lt;/h2&gt;&lt;p&gt;There are only 6 steps to do&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Windows Terminal&lt;/li&gt;
+&lt;li&gt;Install posh-git and oh-my-posh&lt;/li&gt;
+&lt;li&gt;Install powerline font&lt;/li&gt;
+&lt;li&gt;Config powershell profile&lt;/li&gt;
+&lt;li&gt;Config Windows Terminal Settings&lt;/li&gt;
+&lt;li&gt;Config VSCode Settings&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Maybe only need to takes 15 mins to set everything right.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="terminal" scheme="https://blog.yang-hong-xin.com/tags/terminal/"/>
+    
+    <category term="powershell" scheme="https://blog.yang-hong-xin.com/tags/powershell/"/>
+    
+  </entry>
   
   <entry>
     <title>代替 Illustrator 的免費繪圖軟體</title>
@@ -363,9 +396,9 @@
     <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
-    
     <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
     
     <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
     
@@ -389,9 +422,9 @@
     <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
-    
     <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
     
     <category term="sidekiq" scheme="https://blog.yang-hong-xin.com/tags/sidekiq/"/>
     
@@ -414,9 +447,9 @@
     <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
-    
     <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
     
     <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
     
@@ -528,33 +561,6 @@
     <category term="gpu" scheme="https://blog.yang-hong-xin.com/tags/gpu/"/>
     
     <category term="cuda" scheme="https://blog.yang-hong-xin.com/tags/cuda/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>為 Ubuntu 18.04 LST 安裝 Python 3.6</title>
-    <link href="https://blog.yang-hong-xin.com/install-python-3-6-on-ubuntu-18-04-lts/"/>
-    <id>https://blog.yang-hong-xin.com/install-python-3-6-on-ubuntu-18-04-lts/</id>
-    <published>2019-03-13T04:42:13.000Z</published>
-    <updated>2020-06-05T09:55:17.134Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;原則上，Ubuntu 18.04.1 LTS 已經內建 Python 3 了，保險起見先檢查一下：&lt;/p&gt;
-&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt upgrade&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;此時的 Python 的版本應有 3.6 以上，我的版本為 3.6.7。&lt;/p&gt;
-&lt;h1 id=&quot;安裝-pip-3&quot;&gt;&lt;a href=&quot;#安裝-pip-3&quot; class=&quot;headerlink&quot; title=&quot;安裝 pip 3&quot;&gt;&lt;/a&gt;安裝 pip 3&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
-    
-    
-    <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
-    
-    <category term="python" scheme="https://blog.yang-hong-xin.com/tags/python/"/>
     
   </entry>
   

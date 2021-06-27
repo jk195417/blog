@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.yang-hong-xin.com/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/</loc>
+    
+    <lastmod>2021-06-27</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.yang-hong-xin.com/port-is-already-in-used/</loc>
     
     <lastmod>2021-06-27</lastmod>
@@ -186,6 +193,13 @@
 
   
   <url>
+    <loc>https://blog.yang-hong-xin.com/tags/rails/</loc>
+    <lastmod>2021-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yang-hong-xin.com/tags/ruby/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
@@ -222,13 +236,6 @@
   
   <url>
     <loc>https://blog.yang-hong-xin.com/tags/dns/</loc>
-    <lastmod>2021-06-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yang-hong-xin.com/tags/rails/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -361,6 +368,13 @@
   </url>
   
   <url>
+    <loc>https://blog.yang-hong-xin.com/tags/brew/</loc>
+    <lastmod>2021-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yang-hong-xin.com/tags/github/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
@@ -368,7 +382,14 @@
   </url>
   
   <url>
-    <loc>https://blog.yang-hong-xin.com/tags/brew/</loc>
+    <loc>https://blog.yang-hong-xin.com/tags/docker/</loc>
+    <lastmod>2021-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yang-hong-xin.com/tags/mac/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -390,20 +411,6 @@
   
   <url>
     <loc>https://blog.yang-hong-xin.com/tags/python/</loc>
-    <lastmod>2021-06-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yang-hong-xin.com/tags/docker/</loc>
-    <lastmod>2021-06-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yang-hong-xin.com/tags/mac/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -452,6 +459,20 @@
   </url>
   
   <url>
+    <loc>https://blog.yang-hong-xin.com/tags/terminal/</loc>
+    <lastmod>2021-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yang-hong-xin.com/tags/powershell/</loc>
+    <lastmod>2021-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.yang-hong-xin.com/tags/kill/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
@@ -467,6 +488,13 @@
   
   <url>
     <loc>https://blog.yang-hong-xin.com/tags/sidekiq/</loc>
+    <lastmod>2021-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yang-hong-xin.com/tags/proxy/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -494,7 +522,14 @@
   </url>
   
   <url>
-    <loc>https://blog.yang-hong-xin.com/tags/proxy/</loc>
+    <loc>https://blog.yang-hong-xin.com/tags/angular/</loc>
+    <lastmod>2021-06-27</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.yang-hong-xin.com/tags/rxjs/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -514,20 +549,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://blog.yang-hong-xin.com/tags/angular/</loc>
-    <lastmod>2021-06-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.yang-hong-xin.com/tags/rxjs/</loc>
-    <lastmod>2021-06-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   
   <url>
@@ -538,14 +559,14 @@
   </url>
   
   <url>
-    <loc>https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/</loc>
+    <loc>https://blog.yang-hong-xin.com/categories/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.yang-hong-xin.com/categories/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/</loc>
+    <loc>https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/</loc>
     <lastmod>2021-06-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
