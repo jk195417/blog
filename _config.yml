@@ -145,5 +145,5 @@ theme: icarus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/jk195417/blog.git
+  repo: git@github.com:jk195417/blog.git
   branch: gh-pages
