@@ -10,25 +10,33 @@
 </blockquote>
 <p>When you query on something that is <strong>computed from other columns frequently</strong> and want to speed it up, you will need this.</p>
 <p>I will use <strong>PostgreSQL</strong> as an example in this article because it is my favorite database.</p>
-<a id="more"></a>
+<span id="more"></span>
+
 <p>I have a <code>profiles</code> table which has a <code>name</code> column to store the name of users, and I already created an index for the <code>name</code> column</p>
 <p>Then I want to select some profiles where lowercase name is xxx, so the query looks like below:</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">profiles</span> <span class="keyword">WHERE</span> <span class="keyword">lower</span>(<span class="keyword">name</span>) = <span class="string">'aaron yang'</span>;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> profiles <span class="keyword">WHERE</span> <span class="built_in">lower</span>(name) <span class="operator">=</span> <span class="string">&#x27;aaron yang&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
 <hr>
 <h2 id="Create-Index"><a href="#Create-Index" class="headerlink" title="Create Index"></a>Create Index</h2><p>It is very simple to create an index, we need to use <code>(</code> and <code>)</code> to wrap the expression</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> <span class="keyword">INDEX</span> index_profiles_on_lower_name <span class="keyword">ON</span> <span class="keyword">profiles</span> (<span class="keyword">lower</span>(<span class="keyword">name</span>));</span><br></pre></td></tr></table></figure>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">CREATE</span> INDEX index_profiles_on_lower_name <span class="keyword">ON</span> profiles (<span class="built_in">lower</span>(name));</span><br></pre></td></tr></table></figure>
+
 <p>After that we created an expression index, with condition is <code>(lower((name)::text))</code></p>
-<img src="/expression-index-in-rdbms/expression-index.png">
+<img src="/expression-index-in-rdbms/expression-index.png" class="">
+
 <hr>
 <h2 id="Explain-Query"><a href="#Explain-Query" class="headerlink" title="Explain Query"></a>Explain Query</h2><p>To make sure the index has been used.</p>
 <p><code>EXPLAIN</code> query before the expression index created</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">EXPLAIN</span> <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">profiles</span> <span class="keyword">WHERE</span> <span class="keyword">lower</span>(<span class="keyword">name</span>) = <span class="string">'aaron yang'</span>;</span><br></pre></td></tr></table></figure>
-<img src="/expression-index-in-rdbms/explain-before-index-created.png">
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> profiles <span class="keyword">WHERE</span> <span class="built_in">lower</span>(name) <span class="operator">=</span> <span class="string">&#x27;aaron yang&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<img src="/expression-index-in-rdbms/explain-before-index-created.png" class="">
+
 <p>As you may have noticed <code>Seq Scan on profiles</code>, it is a <strong>full table scan</strong></p>
 <hr>
 <p>Let’s try again, the same <code>EXPLAIN</code> query after expression index created</p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">EXPLAIN</span> <span class="keyword">SELECT</span> * <span class="keyword">FROM</span> <span class="keyword">profiles</span> <span class="keyword">WHERE</span> <span class="keyword">lower</span>(<span class="keyword">name</span>) = <span class="string">'aaron yang'</span>;</span><br></pre></td></tr></table></figure>
-<img src="/expression-index-in-rdbms/explain-after-index-created.png">
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">EXPLAIN <span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> profiles <span class="keyword">WHERE</span> <span class="built_in">lower</span>(name) <span class="operator">=</span> <span class="string">&#x27;aaron yang&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<img src="/expression-index-in-rdbms/explain-after-index-created.png" class="">
+
 <p>Yeah, the query is using the expression index.</p>
 <blockquote>
 <p>If your query still using the <code>Seq Scan</code>, that is because the rows of the table are too small, Postgres estimate seq scan will faster than using an index, see more <a target="_blank" rel="noopener" href="https://stackoverflow.com/a/52833441/9762797">here</a> or <a target="_blank" rel="noopener" href="https://blog.niclin.tw/2018/06/14/%E7%82%BA%E4%BB%80%E9%BA%BC-postgres-%E4%B8%8D%E9%81%B8%E6%93%87-index-scan-%E5%8D%BB%E9%81%B8%E6%93%87-seq-scan/">here</a></p>
@@ -46,8 +54,7 @@
 <th>References</th>
 </tr>
 </thead>
-<tbody>
-<tr>
+<tbody><tr>
 <td>PostgreSQL</td>
 <td>Indexes on Expressions</td>
 <td><strong>9.5.0</strong> and the above</td>
@@ -71,38 +78,13 @@
 <td><strong>8.0.13</strong> and the above</td>
 <td><a target="_blank" rel="noopener" href="https://dev.mysql.com/doc/refman/8.0/en/create-index.html#create-index-functional-key-parts">docs</a></td>
 </tr>
-</tbody>
-</table>
+</tbody></table>
 <blockquote>
 <p>The feature name of databases is interesting, do you see the pattern? it shows PostgreSQL and SQLite are closer, and Oracle and MySQL are closer.</p>
 </blockquote>
 <hr>
 <h3 id="Unsupported-❌"><a href="#Unsupported-❌" class="headerlink" title="Unsupported ❌"></a>Unsupported ❌</h3><p>but you can work around by creating a computed column then create an index on it.</p>
-<table>
-<thead>
-<tr>
-<th>Database</th>
-<th>Feature name</th>
-<th>Supported Version</th>
-<th></th>
-<th>References</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MariaDB</td>
-<td>Indexes on Generated columns</td>
-<td><strong>10.2.3</strong> and above support index on virtual column</td>
-<td><a target="_blank" rel="noopener" href="https://mariadb.com/kb/en/generated-columns/">docs</a></td>
-</tr>
-<tr>
-<td>SQL Server</td>
-<td>Indexes on Computed column</td>
-<td>still can’t index on virtual but persisted column</td>
-<td><a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-tw/sql/relational-databases/indexes/indexes-on-computed-columns?view=sql-server-ver15">docs</a></td>
-</tr>
-</tbody>
-</table>
+<p>|Database|Feature name|Supported Version||References|<br>|—|—|—|—|<br>|MariaDB|Indexes on Generated columns|<strong>10.2.3</strong> and above support index on virtual column|<a target="_blank" rel="noopener" href="https://mariadb.com/kb/en/generated-columns/">docs</a>|<br>|SQL Server|Indexes on Computed column|still can’t index on virtual but persisted column|<a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-tw/sql/relational-databases/indexes/indexes-on-computed-columns?view=sql-server-ver15">docs</a>|</p>
 <p>Hello SQL Server?</p>
 <hr>
 <h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>

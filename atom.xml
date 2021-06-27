@@ -50,11 +50,15 @@
     
     <summary type="html">&lt;h2 id=&quot;Install&quot;&gt;&lt;a href=&quot;#Install&quot; class=&quot;headerlink&quot; title=&quot;Install&quot;&gt;&lt;/a&gt;Install&lt;/h2&gt;&lt;p&gt;目前 &lt;a href=&quot;https://docs.docker.com/docker-for-mac/&quot;&gt;Docker for Mac&lt;/a&gt; 最方便的安裝方法就是使用 &lt;a href=&quot;https://github.com/Homebrew/homebrew-cask/blob/master/Casks/docker.rb&quot;&gt;Homebrew Cask&lt;/a&gt; 安裝，打開 Terminal，輸入：&lt;/p&gt;
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew cask install docker&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;img src=&quot;/install-docker-on-mac/brew-cask-install-docker.png&quot;&gt;
+
+&lt;img src=&quot;/install-docker-on-mac/brew-cask-install-docker.png&quot; class=&quot;&quot;&gt;
+
 &lt;p&gt;安裝成功後打開 &lt;code&gt;Docker.app&lt;/code&gt;&lt;/p&gt;
-&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app.png&quot;&gt;
+&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app.png&quot; class=&quot;&quot;&gt;
+
 &lt;p&gt;第一次打開時會需要你的作業系統密碼，安裝額外的套件，提供完整的功能&lt;/p&gt;
-&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app-2.png&quot;&gt;
+&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app-2.png&quot; class=&quot;&quot;&gt;
+
 &lt;p&gt;當安裝完成後，我們就能在右上角的工具欄看到鯨魚 🐳 icon&lt;/p&gt;</summary>
     
     
@@ -201,7 +205,8 @@
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;以 SendGrid 寄送 email 時，若無進行網域驗證，有些信箱會在寄件者後面帶上一個後綴提示使用者，這封 email 實際的寄送網域為何，因此會多一個&lt;strong&gt;透過 sendgrid.me&lt;/strong&gt;的後綴 ，如&lt;/p&gt;
-&lt;img src=&quot;/authenticate-your-domain-on-sendgrid/send-via-other-domain.png&quot;&gt;
+&lt;img src=&quot;/authenticate-your-domain-on-sendgrid/send-via-other-domain.png&quot; class=&quot;&quot;&gt;
+
 &lt;p&gt;這表示寄件者與實際寄送 email 的網域不同，見 &lt;a href=&quot;https://support.google.com/mail/answer/1311182&quot;&gt;https://support.google.com/mail/answer/1311182&lt;/a&gt;&lt;/p&gt;</summary>
     
     
@@ -358,9 +363,9 @@
     <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
-    
     <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
     
     <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
     
@@ -384,9 +389,9 @@
     <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
-    
     <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
     
     <category term="sidekiq" scheme="https://blog.yang-hong-xin.com/tags/sidekiq/"/>
     
@@ -409,9 +414,9 @@
     <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
     
-    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
-    
     <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
     
     <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
     
@@ -429,7 +434,8 @@
     
     <summary type="html">&lt;p&gt;Mac OS X 內建的 Ruby 版本並非最新版，只安裝了維持系統運行，最低需求版本的 Ruby，所以要安裝最新版本的 Ruby 就得額外安裝。&lt;/p&gt;
 &lt;h1 id=&quot;Install-Ruby&quot;&gt;&lt;a href=&quot;#Install-Ruby&quot; class=&quot;headerlink&quot; title=&quot;Install Ruby&quot;&gt;&lt;/a&gt;Install Ruby&lt;/h1&gt;&lt;h2 id=&quot;Via-Homebrew&quot;&gt;&lt;a href=&quot;#Via-Homebrew&quot; class=&quot;headerlink&quot; title=&quot;Via Homebrew&quot;&gt;&lt;/a&gt;Via Homebrew&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;brew install ruby
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;Via-Ruby-Version-Manager-RVM&quot;&gt;&lt;a href=&quot;#Via-Ruby-Version-Manager-RVM&quot; class=&quot;headerlink&quot; title=&quot;Via Ruby Version Manager (RVM)&quot;&gt;&lt;/a&gt;Via &lt;a href=&quot;https://rvm.io/&quot;&gt;Ruby Version Manager (RVM)&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;如果開發環境有安裝多個版本的 Ruby 的需求，就使用 RVM 來安裝與管理 Ruby 吧，可以透過 RVM 自由切換使用的 Ruby 版本與 Gemset，保持開發環境的乾淨。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;Via-Ruby-Version-Manager-RVM&quot;&gt;&lt;a href=&quot;#Via-Ruby-Version-Manager-RVM&quot; class=&quot;headerlink&quot; title=&quot;Via Ruby Version Manager (RVM)&quot;&gt;&lt;/a&gt;Via &lt;a href=&quot;https://rvm.io/&quot;&gt;Ruby Version Manager (RVM)&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;如果開發環境有安裝多個版本的 Ruby 的需求，就使用 RVM 來安裝與管理 Ruby 吧，可以透過 RVM 自由切換使用的 Ruby 版本與 Gemset，保持開發環境的乾淨。&lt;/p&gt;
 &lt;p&gt;詳情見 &lt;a href=&quot;https://rvm.io/&quot;&gt;https://rvm.io/&lt;/a&gt;&lt;/p&gt;
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Install GPG keys:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Install RVM:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;curl -sSL https://get.rvm.io | bash -s stable&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
     
@@ -440,9 +446,9 @@
     
     <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
     
-    <category term="osx" scheme="https://blog.yang-hong-xin.com/tags/osx/"/>
-    
     <category term="rvm" scheme="https://blog.yang-hong-xin.com/tags/rvm/"/>
+    
+    <category term="osx" scheme="https://blog.yang-hong-xin.com/tags/osx/"/>
     
   </entry>
   
@@ -500,7 +506,7 @@
     <updated>2020-06-05T09:55:17.138Z</updated>
     
     
-    <summary type="html">&lt;p&gt;執行完之前介紹的 &lt;a href=&quot;/Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS/&quot; title=&quot;為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver&quot;&gt;為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver&lt;/a&gt; 與  後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;執行完之前介紹的 &lt;a href=&quot;#&quot;&gt;Post not found: Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS&lt;/a&gt; 與 &lt;a href=&quot;#&quot;&gt;Post not found: Install-Python-3-6-on-Ubuntu-18-04-LST&lt;/a&gt; 後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。&lt;/p&gt;
 &lt;p&gt;當前的 TensorFlow 版本為 1.12，只支援 CUDA 9.0，當前 CUDA 9.0 的 cuDNN 版本為 7.4.2。&lt;/p&gt;
 &lt;h1 id=&quot;安裝-CUDA&quot;&gt;&lt;a href=&quot;#安裝-CUDA&quot; class=&quot;headerlink&quot; title=&quot;安裝 CUDA&quot;&gt;&lt;/a&gt;安裝 CUDA&lt;/h1&gt;</summary>
     
@@ -511,9 +517,9 @@
     <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
     
     
-    <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
-    
     <category term="nlp" scheme="https://blog.yang-hong-xin.com/tags/nlp/"/>
+    
+    <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
     
     <category term="python" scheme="https://blog.yang-hong-xin.com/tags/python/"/>
     
@@ -535,6 +541,7 @@
     
     <summary type="html">&lt;p&gt;原則上，Ubuntu 18.04.1 LTS 已經內建 Python 3 了，保險起見先檢查一下：&lt;/p&gt;
 &lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt upgrade&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
 &lt;p&gt;此時的 Python 的版本應有 3.6 以上，我的版本為 3.6.7。&lt;/p&gt;
 &lt;h1 id=&quot;安裝-pip-3&quot;&gt;&lt;a href=&quot;#安裝-pip-3&quot; class=&quot;headerlink&quot; title=&quot;安裝 pip 3&quot;&gt;&lt;/a&gt;安裝 pip 3&lt;/h1&gt;</summary>
     
