@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Hong Xin&#39;s Blog</title>
-  
-  
-  <link href="/atom.xml" rel="self"/>
+  <icon>https://blog.yang-hong-xin.com/images/icon.png</icon>
+  <subtitle>楊竑昕的部落格</subtitle>
+  <link href="https://blog.yang-hong-xin.com/atom.xml" rel="self"/>
   
   <link href="https://blog.yang-hong-xin.com/"/>
-  <updated>2019-03-12T14:18:13.270Z</updated>
+  <updated>2020-06-05T09:55:17.102Z</updated>
   <id>https://blog.yang-hong-xin.com/</id>
   
   <author>
@@ -14,200 +14,540 @@
     
   </author>
   
-  <generator uri="http://hexo.io/">Hexo</generator>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>代替 Illustrator 的免費繪圖軟體</title>
+    <link href="https://blog.yang-hong-xin.com/free-or-open-source-illustrator-alternatives/"/>
+    <id>https://blog.yang-hong-xin.com/free-or-open-source-illustrator-alternatives/</id>
+    <published>2020-04-15T14:13:37.000Z</published>
+    <updated>2020-06-05T09:55:17.102Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;平面設計的首選 &lt;a href=&quot;https://www.adobe.com/tw/products/illustrator/free-trial-download.html&quot;&gt;Adobe Illustrator&lt;/a&gt; 專業好用，但價格昂貴，Adobe 提供了 7 天的試用期，試用期過後每月需花費 1000 元訂閱，但有時候我們只是想簡單地處理一些圖形，並不需要使用到這麼專業且複雜的繪圖功能 😔&lt;/p&gt;
+&lt;p&gt;那或許你可以試試這些開源（或免費）的繪圖軟體，有機會替你省下每個月 1000 元的 Adobe Illustrator 喔！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="軟體分享" scheme="https://blog.yang-hong-xin.com/categories/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="free" scheme="https://blog.yang-hong-xin.com/tags/free/"/>
+    
+    <category term="illustrator" scheme="https://blog.yang-hong-xin.com/tags/illustrator/"/>
+    
+    <category term="alternative" scheme="https://blog.yang-hong-xin.com/tags/alternative/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Mac 上 安裝 Docker for Mac</title>
+    <link href="https://blog.yang-hong-xin.com/install-docker-on-mac/"/>
+    <id>https://blog.yang-hong-xin.com/install-docker-on-mac/</id>
+    <published>2020-03-29T15:58:39.000Z</published>
+    <updated>2020-06-05T09:55:17.123Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Install&quot;&gt;&lt;a href=&quot;#Install&quot; class=&quot;headerlink&quot; title=&quot;Install&quot;&gt;&lt;/a&gt;Install&lt;/h2&gt;&lt;p&gt;目前 &lt;a href=&quot;https://docs.docker.com/docker-for-mac/&quot;&gt;Docker for Mac&lt;/a&gt; 最方便的安裝方法就是使用 &lt;a href=&quot;https://github.com/Homebrew/homebrew-cask/blob/master/Casks/docker.rb&quot;&gt;Homebrew Cask&lt;/a&gt; 安裝，打開 Terminal，輸入：&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew cask install docker&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;img src=&quot;/install-docker-on-mac/brew-cask-install-docker.png&quot;&gt;
+&lt;p&gt;安裝成功後打開 &lt;code&gt;Docker.app&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app.png&quot;&gt;
+&lt;p&gt;第一次打開時會需要你的作業系統密碼，安裝額外的套件，提供完整的功能&lt;/p&gt;
+&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app-2.png&quot;&gt;
+&lt;p&gt;當安裝完成後，我們就能在右上角的工具欄看到鯨魚 🐳 icon&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="docker" scheme="https://blog.yang-hong-xin.com/tags/docker/"/>
+    
+    <category term="mac" scheme="https://blog.yang-hong-xin.com/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Expression Index in RDBMS</title>
+    <link href="https://blog.yang-hong-xin.com/expression-index-in-rdbms/"/>
+    <id>https://blog.yang-hong-xin.com/expression-index-in-rdbms/</id>
+    <published>2020-03-22T14:24:39.000Z</published>
+    <updated>2020-06-05T09:55:17.087Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;What is the expression index?&lt;/p&gt;
+&lt;p&gt;According to the description from &lt;a href=&quot;https://en.wikipedia.org/wiki/Expression_index&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An expression index, also known as a function based index, is a database index that is built on a generic expression, rather than one or more columns. This allows indexes to be defined for common query conditions that depend on data in a table, but are not actually stored in that table.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When you query on something that is &lt;strong&gt;computed from other columns frequently&lt;/strong&gt; and want to speed it up, you will need this.&lt;/p&gt;
+&lt;p&gt;I will use &lt;strong&gt;PostgreSQL&lt;/strong&gt; as an example in this article because it is my favorite database.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rdbms" scheme="https://blog.yang-hong-xin.com/tags/rdbms/"/>
+    
+    <category term="index" scheme="https://blog.yang-hong-xin.com/tags/index/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>從 Ruby 到 C# - operators</title>
+    <link href="https://blog.yang-hong-xin.com/from-ruby-to-c-sharp-operators/"/>
+    <id>https://blog.yang-hong-xin.com/from-ruby-to-c-sharp-operators/</id>
+    <published>2020-03-15T10:30:42.000Z</published>
+    <updated>2020-06-05T09:55:17.116Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Ruby 與 C# 的 operators 蠻相近的，應該說整個程式圈的 operators 都大概長那樣阿，&lt;del&gt;嗯，沒錯，本篇完&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;欸，不是，我們快速帶過相同用法的 operators ，然後聊聊有差異的地方，這樣總行了吧&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="從 Ruby 到 C#" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E5%BE%9E-Ruby-%E5%88%B0-C/"/>
+    
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="c#" scheme="https://blog.yang-hong-xin.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>從 Ruby 到 C#</title>
+    <link href="https://blog.yang-hong-xin.com/from-ruby-to-c-sharp/"/>
+    <id>https://blog.yang-hong-xin.com/from-ruby-to-c-sharp/</id>
+    <published>2020-02-23T15:29:55.000Z</published>
+    <updated>2020-06-05T09:55:17.120Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我是一名使用 Ruby 與 JavaScript 開發的程式設計師，我愛寫 Ruby，這個語言讓我體會到寫程式的樂趣&lt;/p&gt;
+&lt;p&gt;不過很可惜的目前服務的公司並沒有使用 Ruby 而是用 C# 作為後端的開發語言&lt;/p&gt;
+&lt;p&gt;欣慰的是 C# 與 JavaScript 看起來挺像的，希望我能將以前物件導向與 JavaScript 的開發經驗映射到 C# 上，快速掌握這門語言&lt;/p&gt;
+&lt;p&gt;也因此最近都在看微軟官方的 &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/&quot;&gt;C# documentation&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吐槽一下，比起 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot;&gt;MDN&lt;/a&gt; 或 &lt;a href=&quot;https://ruby-doc.org/&quot;&gt;Ruby Doc&lt;/a&gt;，微軟的文件似乎沒那麼好看，，且尚未支援 &lt;a href=&quot;https://kapeli.com/dash&quot;&gt;Dash&lt;/a&gt; 與 &lt;a href=&quot;https://devdocs.io/&quot;&gt;DevDocs&lt;/a&gt;，只能透過瀏覽器到此查閱&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="從 Ruby 到 C#" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E5%BE%9E-Ruby-%E5%88%B0-C/"/>
+    
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="c#" scheme="https://blog.yang-hong-xin.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10 WSL combo : Terminus + Ubuntu + Oh My Zsh + Powerlevel10k</title>
+    <link href="https://blog.yang-hong-xin.com/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/"/>
+    <id>https://blog.yang-hong-xin.com/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/</id>
+    <published>2020-02-16T14:45:52.000Z</published>
+    <updated>2021-06-26T15:12:30.769Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;想在 Windows 上使用潮潮的 Linux 命令列嗎？&lt;/p&gt;
+&lt;p&gt;本篇將教你如何使用 WSL Ubuntu + &lt;a href=&quot;https://github.com/Eugeny/terminus&quot;&gt;Terminus&lt;/a&gt; + &lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh&quot;&gt;Oh My Zsh&lt;/a&gt; + &lt;a href=&quot;https://github.com/romkatv/powerlevel10k&quot;&gt;Powerlevel10k&lt;/a&gt; 連續技，達到爽度十足的開發環境&lt;/p&gt;
+&lt;img src=&quot;/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/powerlevel10k.png&quot; class=&quot;&quot;&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="windows" scheme="https://blog.yang-hong-xin.com/tags/windows/"/>
+    
+    <category term="wsl" scheme="https://blog.yang-hong-xin.com/tags/wsl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Angular 中請這樣用 RxJS</title>
+    <link href="https://blog.yang-hong-xin.com/using-rxjs-this-way-in-angular/"/>
+    <id>https://blog.yang-hong-xin.com/using-rxjs-this-way-in-angular/</id>
+    <published>2020-02-10T13:25:06.000Z</published>
+    <updated>2021-06-26T15:47:23.918Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本篇只是閱讀原文後的譯文&lt;br&gt;原文出處： &lt;a href=&quot;https://blog.strongbrew.io/rxjs-best-practices-in-angular&quot;&gt;https://blog.strongbrew.io/rxjs-best-practices-in-angular&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="angular" scheme="https://blog.yang-hong-xin.com/tags/angular/"/>
+    
+    <category term="rxjs" scheme="https://blog.yang-hong-xin.com/tags/rxjs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 SendGrid 上驗證你的網域</title>
+    <link href="https://blog.yang-hong-xin.com/authenticate-your-domain-on-sendgrid/"/>
+    <id>https://blog.yang-hong-xin.com/authenticate-your-domain-on-sendgrid/</id>
+    <published>2020-02-02T14:00:18.000Z</published>
+    <updated>2020-06-05T09:55:17.065Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;以 SendGrid 寄送 email 時，若無進行網域驗證，有些信箱會在寄件者後面帶上一個後綴提示使用者，這封 email 實際的寄送網域為何，因此會多一個&lt;strong&gt;透過 sendgrid.me&lt;/strong&gt;的後綴 ，如&lt;/p&gt;
+&lt;img src=&quot;/authenticate-your-domain-on-sendgrid/send-via-other-domain.png&quot;&gt;
+&lt;p&gt;這表示寄件者與實際寄送 email 的網域不同，見 &lt;a href=&quot;https://support.google.com/mail/answer/1311182&quot;&gt;https://support.google.com/mail/answer/1311182&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="sendgrid" scheme="https://blog.yang-hong-xin.com/tags/sendgrid/"/>
+    
+    <category term="email" scheme="https://blog.yang-hong-xin.com/tags/email/"/>
+    
+    <category term="dns" scheme="https://blog.yang-hong-xin.com/tags/dns/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Developer 最常用的 Proxy 設定</title>
+    <link href="https://blog.yang-hong-xin.com/the-most-common-proxy-settings-for-developers/"/>
+    <id>https://blog.yang-hong-xin.com/the-most-common-proxy-settings-for-developers/</id>
+    <published>2020-01-25T10:30:00.000Z</published>
+    <updated>2021-06-26T15:13:18.729Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文整理了&lt;code&gt;系統環境變數&lt;/code&gt;、 &lt;code&gt;git&lt;/code&gt;、&lt;code&gt;curl&lt;/code&gt;、&lt;code&gt;wget&lt;/code&gt;、&lt;code&gt;npm&lt;/code&gt;、&lt;code&gt;bundler&lt;/code&gt;、&lt;code&gt;nuget&lt;/code&gt;、&lt;code&gt;brew&lt;/code&gt;、&lt;code&gt;apt&lt;/code&gt; 與 &lt;code&gt;chocolatey&lt;/code&gt; 等多種下載工具的 proxy 設定。&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;當公司有做網路控管時，對外的網路請求通常需要經由  proxy server  轉送，對內或  localhost  的可以不需要，要也沒關係就是要繞一圈比較慢。&lt;/p&gt;
+&lt;p&gt;接下來我們將用 &lt;strong&gt;&lt;a href=&quot;http://proxy.company.com/&quot;&gt;http://proxy.company.com:80&lt;/a&gt;&lt;/strong&gt;  這個  proxy server  為例，示範如何設置其他工具的 proxy。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="proxy" scheme="https://blog.yang-hong-xin.com/tags/proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>來為你的 Line bot 加上一個圖文選單吧！</title>
+    <link href="https://blog.yang-hong-xin.com/create-a-rich-menu-for-your-line-bot/"/>
+    <id>https://blog.yang-hong-xin.com/create-a-rich-menu-for-your-line-bot/</id>
+    <published>2019-06-11T09:58:53.000Z</published>
+    <updated>2021-06-27T02:45:53.889Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;拖了好久，終於有時間幫 &lt;a href=&quot;https://line.me/R/ti/p/%40kls1180p&quot;&gt;彈幕教室&lt;/a&gt; chatbot 裝個圖文選單啦，照著 &lt;a href=&quot;https://developers.line.biz/en/docs/messaging-api/using-rich-menus/&quot;&gt;官方教學&lt;/a&gt; 做其實就沒問題囉，但還是把實作的過程紀錄下來備忘。&lt;/p&gt;
+&lt;p&gt;順便打個廣告 &lt;a href=&quot;https://github.com/danmu-classroom/danmu-classroom-screen&quot;&gt;https://github.com/danmu-classroom/danmu-classroom-screen&lt;/a&gt;，彈幕教室客戶端，下載即用免安裝，可以透過 Line 發送彈幕到螢幕上，歡迎來玩看看喔。&lt;/p&gt;
+&lt;img src=&quot;/create-a-rich-menu-for-your-line-bot/danmu-classroom-rich-menu.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;我的 rich menu  長這樣&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="line" scheme="https://blog.yang-hong-xin.com/tags/line/"/>
+    
+    <category term="rich menu" scheme="https://blog.yang-hong-xin.com/tags/rich-menu/"/>
+    
+    <category term="chatbot" scheme="https://blog.yang-hong-xin.com/tags/chatbot/"/>
+    
+    <category term="彈幕教室" scheme="https://blog.yang-hong-xin.com/tags/%E5%BD%88%E5%B9%95%E6%95%99%E5%AE%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手帶你使用 baidu-aip 的情緒分析服務</title>
+    <link href="https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/"/>
+    <id>https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/</id>
+    <published>2019-06-11T09:19:47.000Z</published>
+    <updated>2020-06-05T09:55:17.073Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Google 的自然語言處理雖然非常的強大，但是中文的情緒分析並非他的強項，目前中文的自然語言處理研究出處非常多是出於中國大陸，所以當需要用到中文的情緒分析時， &lt;a href=&quot;https://ai.baidu.com/&quot;&gt;百度 AI 開放平台&lt;/a&gt; 就成為我們的首選啦。&lt;/p&gt;
+&lt;p&gt;平台目前的收費非常的便宜，例如本次介紹的 &lt;strong&gt;情感傾向分析接口&lt;/strong&gt;，提供了 &lt;strong&gt;5QPS&lt;/strong&gt; 免費額度，每秒免費請求 5 次超佛心的啊！根本就相當於不用錢。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意！要註冊百度帳號必須要有 +86 開頭的中國手機門號喔。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;使用百度 AI 開放平台的情緒分析服務很簡單，步驟就 4 個。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;註冊帳號&lt;/li&gt;
+&lt;li&gt;創建 &lt;strong&gt;自然語言處理&lt;/strong&gt; 應用&lt;/li&gt;
+&lt;li&gt;獲取 &lt;code&gt;access_token&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用 &lt;strong&gt;情感傾向分析接口&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
+    
+    
+    <category term="baidu" scheme="https://blog.yang-hong-xin.com/tags/baidu/"/>
+    
+    <category term="sentiment" scheme="https://blog.yang-hong-xin.com/tags/sentiment/"/>
+    
+    <category term="nlp" scheme="https://blog.yang-hong-xin.com/tags/nlp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Network graphing in JavaScript - force-graph</title>
+    <link href="https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/"/>
+    <id>https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/</id>
+    <published>2019-06-11T08:32:05.000Z</published>
+    <updated>2021-06-27T02:46:48.738Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;分析網路關係，並將資料視覺化，最常見的就是 network graph。&lt;/p&gt;
+&lt;h1 id=&quot;常見套件&quot;&gt;&lt;a href=&quot;#常見套件&quot; class=&quot;headerlink&quot; title=&quot;常見套件&quot;&gt;&lt;/a&gt;常見套件&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vasturiano/3d-force-graph&quot;&gt;https://github.com/vasturiano/3d-force-graph&lt;/a&gt;&lt;br&gt; 本文主角，支援 3D 與圖互動。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vasturiano/force-graph&quot;&gt;https://github.com/vasturiano/force-graph&lt;/a&gt;&lt;br&gt; 本文主角，支援與圖互動。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jacomyal/sigma.js&quot;&gt;https://github.com/jacomyal/sigma.js&lt;/a&gt;&lt;br&gt; 文檔寫在程式碼與範例中，需要參考它的範例原始碼。將圖展開可以使用它提供的 plugin &lt;a href=&quot;https://github.com/jacomyal/sigma.js/tree/master/plugins/sigma.layout.forceAtlas2&quot; title=&quot;sigma.layout.forceAtlas2&quot;&gt;forceAtlas2&lt;/a&gt;，與圖互動需要自己 coding 擴充。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/cytoscape/cytoscape.js&quot;&gt;https://github.com/cytoscape/cytoscape.js&lt;/a&gt;&lt;br&gt; 提供許多範例可以參考。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/almende/vis&quot;&gt;https://github.com/almende/vis&lt;/a&gt;&lt;br&gt; 不只做 network graph，可上&lt;a href=&quot;http://visjs.org/network_examples.html&quot;&gt;官網&lt;/a&gt;參考範例。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/davidpiegza/Graph-Visualization&quot;&gt;https://github.com/davidpiegza/Graph-Visualization&lt;/a&gt;&lt;br&gt; 支援 3D，文檔並不齊全，需要參考它的&lt;a href=&quot;https://github.com/davidpiegza/Graph-Visualization/tree/master/examples&quot;&gt;範例原始碼&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
+    
+    
+    <category term="javascript" scheme="https://blog.yang-hong-xin.com/tags/javascript/"/>
+    
+    <category term="graph" scheme="https://blog.yang-hong-xin.com/tags/graph/"/>
+    
+    <category term="data visualization" scheme="https://blog.yang-hong-xin.com/tags/data-visualization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Heroku 上執行 Rails app 的定時任務（Scheduled Task）</title>
+    <link href="https://blog.yang-hong-xin.com/running-rails-scheduled-task-on-heroku/"/>
+    <id>https://blog.yang-hong-xin.com/running-rails-scheduled-task-on-heroku/</id>
+    <published>2019-06-11T08:00:11.000Z</published>
+    <updated>2021-06-27T02:47:43.552Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一般 Rails app 的定時任務是把 &lt;code&gt;ActiveJob&lt;/code&gt; 包成一個 &lt;code&gt;rake task&lt;/code&gt; 並透過 &lt;code&gt;crontab&lt;/code&gt; 執行。這種架構的適合用在分鐘級別以上的定時任務。&lt;/p&gt;
+&lt;p&gt;但是</summary>
+        
+      
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rails 的 sidekiq 設置筆記</title>
+    <link href="https://blog.yang-hong-xin.com/setup-sidekiq-on-rails/"/>
+    <id>https://blog.yang-hong-xin.com/setup-sidekiq-on-rails/</id>
+    <published>2019-06-11T07:47:59.000Z</published>
+    <updated>2021-06-27T02:47:30.943Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/mperham/sidekiq&quot;&gt;Sidekiq&lt;/a&gt; 是一個能夠並發處理 Ruby 任務的套件，大致上的運作方法是：將任務 push 至 redis 的 queue 中，sidekiq 的 workers 再到 queue 一個個 pop 任務出來運算。&lt;/p&gt;
+&lt;h1 id=&quot;安裝&quot;&gt;&lt;a href=&quot;#安裝&quot; class=&quot;headerlink&quot; title=&quot;安裝&quot;&gt;&lt;/a&gt;安裝&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# Gemfile&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gem &amp;#x27;sidekiq&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bundle install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="sidekiq" scheme="https://blog.yang-hong-xin.com/tags/sidekiq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署你的 rails 應用程式至 Heroku</title>
+    <link href="https://blog.yang-hong-xin.com/deploy-your-rails-app-to-heroku/"/>
+    <id>https://blog.yang-hong-xin.com/deploy-your-rails-app-to-heroku/</id>
+    <published>2019-06-11T06:57:54.000Z</published>
+    <updated>2021-06-27T02:51:43.974Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Heroku 是一個 platform as a service 平台，可以部署專案在此，使用上非常方便的，當然方便的代價是價格，他的單位計算資源價格會高於 AWS。&lt;/p&gt;
+&lt;h1 id=&quot;安裝-heroku-cli&quot;&gt;&lt;a href=&quot;#安裝-heroku-cli&quot; class=&quot;headerlink&quot; title=&quot;安裝 heroku-cli&quot;&gt;&lt;/a&gt;安裝 heroku-cli&lt;/h1&gt;&lt;p&gt;見 &lt;a href=&quot;https://devcenter.heroku.com/articles/heroku-cli&quot;&gt;https://devcenter.heroku.com/articles/heroku-cli&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 將 heroku 加入 brew 的來源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew tap heroku/brew &amp;amp;&amp;amp; brew install heroku&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
+    
+    <category term="deploy" scheme="https://blog.yang-hong-xin.com/tags/deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Mac 上安裝 Ruby</title>
+    <link href="https://blog.yang-hong-xin.com/Install-ruby-on-mac/"/>
+    <id>https://blog.yang-hong-xin.com/Install-ruby-on-mac/</id>
+    <published>2019-06-11T03:17:22.000Z</published>
+    <updated>2020-06-05T09:55:17.135Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Mac OS X 內建的 Ruby 版本並非最新版，只安裝了維持系統運行，最低需求版本的 Ruby，所以要安裝最新版本的 Ruby 就得額外安裝。&lt;/p&gt;
+&lt;h1 id=&quot;Install-Ruby&quot;&gt;&lt;a href=&quot;#Install-Ruby&quot; class=&quot;headerlink&quot; title=&quot;Install Ruby&quot;&gt;&lt;/a&gt;Install Ruby&lt;/h1&gt;&lt;h2 id=&quot;Via-Homebrew&quot;&gt;&lt;a href=&quot;#Via-Homebrew&quot; class=&quot;headerlink&quot; title=&quot;Via Homebrew&quot;&gt;&lt;/a&gt;Via Homebrew&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;brew install ruby
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&quot;Via-Ruby-Version-Manager-RVM&quot;&gt;&lt;a href=&quot;#Via-Ruby-Version-Manager-RVM&quot; class=&quot;headerlink&quot; title=&quot;Via Ruby Version Manager (RVM)&quot;&gt;&lt;/a&gt;Via &lt;a href=&quot;https://rvm.io/&quot;&gt;Ruby Version Manager (RVM)&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;如果開發環境有安裝多個版本的 Ruby 的需求，就使用 RVM 來安裝與管理 Ruby 吧，可以透過 RVM 自由切換使用的 Ruby 版本與 Gemset，保持開發環境的乾淨。&lt;/p&gt;
+&lt;p&gt;詳情見 &lt;a href=&quot;https://rvm.io/&quot;&gt;https://rvm.io/&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Install GPG keys:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Install RVM:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;curl -sSL https://get.rvm.io | bash -s stable&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="osx" scheme="https://blog.yang-hong-xin.com/tags/osx/"/>
+    
+    <category term="rvm" scheme="https://blog.yang-hong-xin.com/tags/rvm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Homebrew — mac 必裝的套件管理</title>
+    <link href="https://blog.yang-hong-xin.com/homebrew-best-package-manager-on-mac/"/>
+    <id>https://blog.yang-hong-xin.com/homebrew-best-package-manager-on-mac/</id>
+    <published>2019-06-11T02:57:00.000Z</published>
+    <updated>2021-06-27T02:47:15.840Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;就像 Ubuntu 上的 apt，可以透過命令列安裝套件，更新套件。&lt;/p&gt;
+&lt;p&gt;官網 &lt;a href=&quot;https://brew.sh/&quot;&gt;https://brew.sh/&lt;/a&gt;，Github &lt;a href=&quot;https://github.com/Homebrew/brew/&quot;&gt;https://github.com/Homebrew/brew/&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;安裝&quot;&gt;&lt;a href=&quot;#安裝&quot; class=&quot;headerlink&quot; title=&quot;安裝&quot;&gt;&lt;/a&gt;安裝&lt;/h1&gt;&lt;p&gt;進 &lt;a href=&quot;https://brew.sh/&quot;&gt;https://brew.sh/&lt;/a&gt; 看其安裝說明，在終端機輸入：&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;/usr/bin/ruby -e &lt;span class=&quot;string&quot;&gt;&amp;quot;&lt;span class=&quot;subst&quot;&gt;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&lt;/span&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="osx" scheme="https://blog.yang-hong-xin.com/tags/osx/"/>
+    
+    <category term="brew" scheme="https://blog.yang-hong-xin.com/tags/brew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Port 被佔用了？</title>
+    <link href="https://blog.yang-hong-xin.com/port-is-already-in-used/"/>
+    <id>https://blog.yang-hong-xin.com/port-is-already-in-used/</id>
+    <published>2019-06-11T02:43:21.000Z</published>
+    <updated>2021-06-27T03:06:40.953Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;有看過即刻救援嗎？我們只需要像史上最強老爸一樣，即可解決此問題。&lt;/p&gt;
+&lt;p&gt;這邊使用 port 3000 當做例子&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="kill" scheme="https://blog.yang-hong-xin.com/tags/kill/"/>
+    
+    <category term="pid" scheme="https://blog.yang-hong-xin.com/tags/pid/"/>
+    
+  </entry>
   
   <entry>
     <title>為 Ubuntu 18.04 LST 安裝 Tensorflow 1.12 with GPU support</title>
-    <link href="https://blog.yang-hong-xin.com/Install-Tensorflow-1-12-with-GPU-support-on-Ubuntu-18-04-LST/"/>
-    <id>https://blog.yang-hong-xin.com/Install-Tensorflow-1-12-with-GPU-support-on-Ubuntu-18-04-LST/</id>
-    <published>2019-03-12T13:03:09.000Z</published>
-    <updated>2019-03-12T14:18:13.270Z</updated>
-    
-    <content type="html"><![CDATA[<p>執行完上一篇 <a href="/Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS/" title="為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver">為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver</a> 後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。</p><p>當前的 TensorFlow 版本為 1.12，只支援 CUDA 9.0，當前 CUDA 9.0 的 cuDNN 版本為 7.4.2。</p><h1 id="安裝-CUDA"><a href="#安裝-CUDA" class="headerlink" title="安裝 CUDA"></a>安裝 CUDA</h1><p>至 <a href="https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1704&amp;target_type=runfilelocal" target="_blank" rel="noopener">https://developer.nvidia.com/cuda-90-download-archive</a> 下載安裝，選擇 <code>Linux</code>+<code>x86_64</code>+<code>Ubuntu+17.04</code>+<code>runfile(local)</code>，下載至 <code>~/下載/</code>，並透過下列指令執行：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sh ~/下載/cuda_9.0.176_384.81_linux.run --override</span><br></pre></td></tr></table></figure><p>Installing with an unsupported configuration 回答 <code>yes</code></p><p>Install NVIDIA Accelerated Graphics Driver 回答 <code>no</code></p><p>安裝完畢後將 CUDA 執行檔加入系統變數 <code>PATH</code> 中，在 <code>~/.bashrc</code> 或 <code>~/.zshrc</code> 中加入這兩行：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"<span class="variable">$PATH</span>:/usr/local/cuda-9.0/bin"</span></span><br><span class="line"><span class="built_in">export</span> LD_LIBRARY_PATH=<span class="string">"<span class="variable">$LD_LIBRARY_PATH</span>:/usr/local/cuda/lib64"</span></span><br></pre></td></tr></table></figure><h1 id="安裝-cuDNN"><a href="#安裝-cuDNN" class="headerlink" title="安裝 cuDNN"></a>安裝 cuDNN</h1><p>到 <a href="https://developer.nvidia.com/rdp/cudnn-download" target="_blank" rel="noopener">https://developer.nvidia.com/rdp/cudnn-download</a>，選擇 <code>Download cuDNN v7.4.2 (Dec 14, 2018), for CUDA 9.0</code> 的 <code>cuDNN Library for Linux</code>，將檔案下載至 <code>~/下載/</code>：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 解壓縮</span></span><br><span class="line">tar -xzvf cudnn-9.0-linux-x64-v7.4.2.24.tgz</span><br><span class="line"><span class="comment"># 複製這些檔案到 CUDA 套件安裝處</span></span><br><span class="line">sudo cp cuda/include/cudnn.h /usr/<span class="built_in">local</span>/cuda-9.0/include</span><br><span class="line">sudo cp cuda/lib64/libcudnn* /usr/<span class="built_in">local</span>/cuda-9.0/lib64</span><br><span class="line"><span class="comment"># 給予所有使用者讀取的權限</span></span><br><span class="line">sudo chmod a+r /usr/<span class="built_in">local</span>/cuda-9.0/include/cudnn.h /usr/<span class="built_in">local</span>/cuda-9.0/lib64/libcudnn*</span><br></pre></td></tr></table></figure><h1 id="安裝-libcupti"><a href="#安裝-libcupti" class="headerlink" title="安裝 libcupti"></a>安裝 libcupti</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libcupti-dev</span><br></pre></td></tr></table></figure><h1 id="安裝-TensorFlow-with-GPU-Support"><a href="#安裝-TensorFlow-with-GPU-Support" class="headerlink" title="安裝 TensorFlow with GPU Support"></a>安裝 TensorFlow with GPU Support</h1><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 建議啟用 venv</span></span><br><span class="line"><span class="built_in">source</span> ~/python3_virtual_environments/dcard_crawler/bin/activate</span><br><span class="line"><span class="comment"># 安裝 tensorflow</span></span><br><span class="line">pip3 install --upgrade tensorflow-gpu</span><br></pre></td></tr></table></figure><p>進入 python3 console 測試是否能執行：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># terminal</span></span><br><span class="line">python3</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># python3 console</span><br><span class="line">from tensorflow.python.client import device_lib</span><br><span class="line">device_lib.list_local_devices()</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;執行完上一篇 &lt;a href=&quot;/Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS/&quot; title=&quot;為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver&quot;&gt;為 Ubuntu 18.04 LTS 安裝 Nv
-      
-    
-    </summary>
-    
-      <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    <link href="https://blog.yang-hong-xin.com/install-tensorflow-1-12-with-gpu-support-on-ubuntu-18-04-lts/"/>
+    <id>https://blog.yang-hong-xin.com/install-tensorflow-1-12-with-gpu-support-on-ubuntu-18-04-lts/</id>
+    <published>2019-03-13T04:43:13.000Z</published>
+    <updated>2020-06-05T09:55:17.138Z</updated>
     
     
-      <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
-    
-      <category term="tensorflow" scheme="https://blog.yang-hong-xin.com/tags/tensorflow/"/>
-    
-      <category term="gpu" scheme="https://blog.yang-hong-xin.com/tags/gpu/"/>
-    
-      <category term="cuda" scheme="https://blog.yang-hong-xin.com/tags/cuda/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver</title>
-    <link href="https://blog.yang-hong-xin.com/Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS/"/>
-    <id>https://blog.yang-hong-xin.com/Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS/</id>
-    <published>2019-03-11T12:12:50.000Z</published>
-    <updated>2019-03-12T14:18:13.265Z</updated>
-    
-    <content type="html"><![CDATA[<p>列出支援的顯示卡驅動：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ubuntu-drivers devices</span><br></pre></td></tr></table></figure><p>我這邊使用 Nvidia GTX 1060 6G，當前的驅動版本為 415，若是列出的版本太舊(390)，請執行下面這行把 Nvidia Driver 加入 apt 的來源中：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo add-apt-repository ppa:graphics-drivers/ppa</span><br><span class="line">sudo apt-get update</span><br><span class="line">ubuntu-drivers devices</span><br></pre></td></tr></table></figure><p>看看是否有更新的驅動程式版本可以使用。</p><p>接著安裝執行<code>ubuntu-drivers devices</code>所列出來 recommended 的驅動程式，安裝完畢後重新開機：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nvidia-driver-415</span><br><span class="line">sudo apt install nvidia-settings</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure><p>檢查當前的顯示卡驅動：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;列出支援的顯示卡驅動：&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;co
-      
-    
-    </summary>
-    
-      <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    <summary type="html">&lt;p&gt;執行完之前介紹的 &lt;a href=&quot;/Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS/&quot; title=&quot;為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver&quot;&gt;為 Ubuntu 18.04 LTS 安裝 Nvidia GPU driver&lt;/a&gt; 與  後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。&lt;/p&gt;
+&lt;p&gt;當前的 TensorFlow 版本為 1.12，只支援 CUDA 9.0，當前 CUDA 9.0 的 cuDNN 版本為 7.4.2。&lt;/p&gt;
+&lt;h1 id=&quot;安裝-CUDA&quot;&gt;&lt;a href=&quot;#安裝-CUDA&quot; class=&quot;headerlink&quot; title=&quot;安裝 CUDA&quot;&gt;&lt;/a&gt;安裝 CUDA&lt;/h1&gt;</summary>
     
     
-      <category term="nvidia gpu driver" scheme="https://blog.yang-hong-xin.com/tags/nvidia-gpu-driver/"/>
     
-      <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
+    
+    
+    <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
+    
+    <category term="nlp" scheme="https://blog.yang-hong-xin.com/tags/nlp/"/>
+    
+    <category term="python" scheme="https://blog.yang-hong-xin.com/tags/python/"/>
+    
+    <category term="tensorflow" scheme="https://blog.yang-hong-xin.com/tags/tensorflow/"/>
+    
+    <category term="gpu" scheme="https://blog.yang-hong-xin.com/tags/gpu/"/>
+    
+    <category term="cuda" scheme="https://blog.yang-hong-xin.com/tags/cuda/"/>
     
   </entry>
   
   <entry>
-    <title>好用的軟體 for Mac OSX （一般使用者）</title>
-    <link href="https://blog.yang-hong-xin.com/recommend-mac-softwares/"/>
-    <id>https://blog.yang-hong-xin.com/recommend-mac-softwares/</id>
-    <published>2018-04-30T08:32:02.000Z</published>
-    <updated>2019-03-12T14:18:13.268Z</updated>
-    
-    <content type="html"><![CDATA[<p>每個軟體會附上官網連結，有支援透過 <a href="https://brew.sh/" target="_blank" rel="noopener">Homebrew</a> 一行指令安裝的話會一起把指令附上。</p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>感謝家人在我升大學的那年，讓我買了這台 13” MacBook Air。年少無知，一開始買 MacBook 的原因真的是因為看起來很潮。</p><blockquote><p>輕薄，高續航，順暢的使用者體驗等等優點都是矇到的。</p></blockquote><p>網路上連文都沒爬，就下手買了個硬碟 256G，Ram 4G 的機型。</p><blockquote><p>也就沒有看到各種無用的跑分數據，或是遊戲支援度超低這些缺點啦</p></blockquote><p>好險當初只有做錯這麼一個選擇：Ram 沒升 8G。</p><p>萌新拿到電腦的第一件事居然是去圖書館翻 Mac 的使用說明書，結果誤觸 Xcode，程式生涯從此開始。</p><p>廢話完了，進入正題。</p><a id="more"></a><p>因為軟體實在是太多了，所以這裏分成 3 篇系列文章來說</p><h1 id="導覽"><a href="#導覽" class="headerlink" title="導覽"></a>導覽</h1><a href="/recommend-mac-softwares/" title="好用的軟體 for Mac OSX （一般使用者）">好用的軟體 for Mac OSX （一般使用者）</a><table><thead><tr><th><a href="#影音">影音</a></th><th><a href="#音樂">音樂</a></th><th><a href="#繪圖">繪圖</a></th><th><a href="#遊戲">遊戲</a></th></tr></thead><tbody><tr><td><a href="#Popcorn-Time">Popcorn Time</a></td><td><a href="#Spotify">Spotify</a></td><td><a href="#Paintbrush">Paintbrush</a></td><td><a href="#OpenEmu">OpenEmu</a></td></tr><tr><td><a href="#IINA">IINA</a></td><td><a href="#Vox">Vox</a></td><td></td><td><a href="#PPSSPP">PPSSPP</a></td></tr><tr><td><a href="#Shazam">Shazam</a></td><td></td><td></td><td></td></tr></tbody></table><table><thead><tr><th><a href="#通訊">通訊</a></th><th><a href="#筆記">筆記</a></th><th><a href="#團隊溝通">團隊溝通</a></th></tr></thead><tbody><tr><td><a href="#Telegram-Desktop">Telegram Desktop</a></td><td><a href="#Bear">Bear</a></td><td><a href="#Slack">Slack</a></td></tr><tr><td><a href="#Franz">Franz</a></td><td><a href="#Evernote">Evernote</a></td><td><a href="#Flowdock">Flowdock</a></td></tr><tr><td><a href="#Station">Station</a></td><td></td><td><a href="#Jandi">Jandi</a>                                  </td></tr></tbody></table><p>好用的軟體 for Mac OSX （進階使用者）撰寫中…</p><ul><li>遠端連線</li><li>輔助工具</li><li>系統管理</li></ul><p>好用的軟體 for Mac OSX （程式設計師）撰寫中…</p><ul><li>編輯器</li><li>資料庫</li><li>HTTP Client</li><li>套件管理</li><li>Git</li><li>文檔</li><li>虛擬機</li><li>終端機</li></ul><h1 id="影音"><a href="#影音" class="headerlink" title="影音"></a>影音</h1><h2 id="Popcorn-Time"><a href="#Popcorn-Time" class="headerlink" title="Popcorn Time"></a>Popcorn Time</h2><p><a href="https://popcorntime.sh/" target="_blank" rel="noopener">https://popcorntime.sh/</a></p><p>透過 P2P 看電影，無廣告或病毒，操作便利。</p><img src="/recommend-mac-softwares/popcorn-time.png"><h2 id="IINA"><a href="#IINA" class="headerlink" title="IINA"></a>IINA</h2><p><a href="https://lhc70000.github.io/iina/" target="_blank" rel="noopener">https://lhc70000.github.io/iina/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install iina</span><br></pre></td></tr></table></figure><p>現代化的影片播放器，基於 MPV，UI 簡潔。</p><img src="/recommend-mac-softwares/iina.png"><h1 id="音樂"><a href="#音樂" class="headerlink" title="音樂"></a>音樂</h1><h2 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h2><p><a href="https://www.spotify.com/" target="_blank" rel="noopener">https://www.spotify.com/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install spotify</span><br></pre></td></tr></table></figure><p>大家都知道的串流音樂，免費版聽個30分鐘左右會插個短短的廣告，還算可以接受，提供高音質的音樂，社群功能，協作播放清單這些已經非常優秀了，最令人驚豔的是其 <strong>推薦系統</strong>，除了能夠準確的推薦喜歡聽的曲風外，偶爾還會推薦些嚐鮮式的音樂，讓聽習慣這種風格的人還是能夠去嘗試發掘其他的還沒愛上的曲風。</p><img src="/recommend-mac-softwares/spotify.png"><h2 id="Vox"><a href="#Vox" class="headerlink" title="Vox"></a>Vox</h2><p><a href="https://vox.rocks/mac-music-player" target="_blank" rel="noopener">https://vox.rocks/mac-music-player</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install vox</span><br></pre></td></tr></table></figure><p>在 Mac 上放歌除了 Apple Music 使用者以外應該不會打開 itunes 吧，Vox 是個輕量音樂播放器，你看看開起來的流暢性，管理音樂存放的位置也相對的比較自由，讓音樂播放器回歸音樂播放器。</p><img src="/recommend-mac-softwares/vox.png"><h2 id="Shazam"><a href="#Shazam" class="headerlink" title="Shazam"></a>Shazam</h2><p><a href="https://www.shazam.com/" target="_blank" rel="noopener">https://www.shazam.com/</a></p><p>大名鼎鼎的歌曲辨識軟體，會在背景聆聽周遭音樂，辨識並且記錄下來是哪首曲子。建議 <strong>沒有要用的時候就把它關掉</strong> 吧，不然多增加能耗跟個人隱私的疑慮（背景收音）。</p><img src="/recommend-mac-softwares/shazam.png"><h1 id="通訊"><a href="#通訊" class="headerlink" title="通訊"></a>通訊</h1><h2 id="Telegram-Desktop"><a href="#Telegram-Desktop" class="headerlink" title="Telegram Desktop"></a>Telegram Desktop</h2><p><a href="https://desktop.telegram.org/" target="_blank" rel="noopener">https://desktop.telegram.org/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install telegram-desktop</span><br></pre></td></tr></table></figure><p>自由、技術力 Max、無敵的通訊平台，可惜的是在台灣還沒大紅大紫，缺點就是朋友還沒開始用的 Telegram，等你們都加入後就沒有缺點啦！<br>快來加我好友救我脫離邊緣人QQ <a href="https://t.me/hong_xin" target="_blank" rel="noopener">https://t.me/hong_xin</a></p><img src="/recommend-mac-softwares/telegram-desktop.png"><h2 id="Franz"><a href="#Franz" class="headerlink" title="Franz"></a>Franz</h2><p><a href="https://meetfranz.com/" target="_blank" rel="noopener">https://meetfranz.com/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install franz</span><br></pre></td></tr></table></figure><img src="/recommend-mac-softwares/franz.png"><h2 id="Station"><a href="#Station" class="headerlink" title="Station"></a>Station</h2><p><a href="https://getstation.com/" target="_blank" rel="noopener">https://getstation.com/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install station</span><br></pre></td></tr></table></figure><img src="/recommend-mac-softwares/station.png"><h1 id="繪圖"><a href="#繪圖" class="headerlink" title="繪圖"></a>繪圖</h1><h2 id="Paintbrush"><a href="#Paintbrush" class="headerlink" title="Paintbrush"></a>Paintbrush</h2><p><a href="https://paintbrush.sourceforge.io/" target="_blank" rel="noopener">https://paintbrush.sourceforge.io/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install paintbrush</span><br></pre></td></tr></table></figure><p>修圖軟體 &gt; Paintbrush &gt; 預覽程式。有時候需要一些簡單的繪圖功能，又不想請出 Photoshop 之類的 <strong>牛刀</strong>，這種小畫家類型的軟體絕對是首選！</p><img src="/recommend-mac-softwares/paintbrush.png"><h1 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h1><h2 id="Bear"><a href="#Bear" class="headerlink" title="Bear"></a>Bear</h2><p><a href="http://www.bear-writer.com/" target="_blank" rel="noopener">http://www.bear-writer.com/</a></p><img src="/recommend-mac-softwares/bear.png"><h2 id="Evernote"><a href="#Evernote" class="headerlink" title="Evernote"></a>Evernote</h2><p><a href="https://evernote.com/" target="_blank" rel="noopener">https://evernote.com/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install evernote</span><br></pre></td></tr></table></figure><img src="/recommend-mac-softwares/evernote.png"><h1 id="團隊溝通"><a href="#團隊溝通" class="headerlink" title="團隊溝通"></a>團隊溝通</h1><h2 id="Slack"><a href="#Slack" class="headerlink" title="Slack"></a>Slack</h2><p><a href="https://slack.com/" target="_blank" rel="noopener">https://slack.com/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install slack</span><br></pre></td></tr></table></figure><img src="/recommend-mac-softwares/slack.png"><h2 id="Flowdock"><a href="#Flowdock" class="headerlink" title="Flowdock"></a>Flowdock</h2><p><a href="https://www.flowdock.com/" target="_blank" rel="noopener">https://www.flowdock.com/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install flowdock</span><br></pre></td></tr></table></figure><img src="/recommend-mac-softwares/flowdock.png"><h2 id="Jandi"><a href="#Jandi" class="headerlink" title="Jandi"></a>Jandi</h2><p><a href="https://www.jandi.com/landing/zh-tw" target="_blank" rel="noopener">https://www.jandi.com/landing/zh-tw</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install jandi</span><br></pre></td></tr></table></figure><img src="/recommend-mac-softwares/jandi.png"><h1 id="遊戲"><a href="#遊戲" class="headerlink" title="遊戲"></a>遊戲</h1><h2 id="OpenEmu"><a href="#OpenEmu" class="headerlink" title="OpenEmu"></a>OpenEmu</h2><p><a href="https://openemu.org/" target="_blank" rel="noopener">https://openemu.org/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew cask install openemu</span><br></pre></td></tr></table></figure><p>管理遊戲與遊戲模擬器核心，可以透過這個軟體快速下載其他模擬器或一些開源遊戲。</p><img src="/recommend-mac-softwares/openemu.png"><h2 id="PPSSPP"><a href="#PPSSPP" class="headerlink" title="PPSSPP"></a>PPSSPP</h2><p><a href="https://www.ppsspp.org/" target="_blank" rel="noopener">https://www.ppsspp.org/</a></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install ppsspp</span><br></pre></td></tr></table></figure><p>PSP 模擬器，可以在 Mac 上順暢的玩 PSP 遊戲。</p><img src="/recommend-mac-softwares/ppsspp.png">]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;每個軟體會附上官網連結，有支援透過 &lt;a href=&quot;https://brew.sh/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Homebrew&lt;/a&gt; 一行指令安裝的話會一起把指令附上。&lt;/p&gt;
-&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;感謝家人在我升大學的那年，讓我買了這台 13” MacBook Air。年少無知，一開始買 MacBook 的原因真的是因為看起來很潮。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;輕薄，高續航，順暢的使用者體驗等等優點都是矇到的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;網路上連文都沒爬，就下手買了個硬碟 256G，Ram 4G 的機型。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;也就沒有看到各種無用的跑分數據，或是遊戲支援度超低這些缺點啦&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;好險當初只有做錯這麼一個選擇：Ram 沒升 8G。&lt;/p&gt;
-&lt;p&gt;萌新拿到電腦的第一件事居然是去圖書館翻 Mac 的使用說明書，結果誤觸 Xcode，程式生涯從此開始。&lt;/p&gt;
-&lt;p&gt;廢話完了，進入正題。&lt;/p&gt;
-    
-    </summary>
+    <title>為 Ubuntu 18.04 LST 安裝 Python 3.6</title>
+    <link href="https://blog.yang-hong-xin.com/install-python-3-6-on-ubuntu-18-04-lts/"/>
+    <id>https://blog.yang-hong-xin.com/install-python-3-6-on-ubuntu-18-04-lts/</id>
+    <published>2019-03-13T04:42:13.000Z</published>
+    <updated>2020-06-05T09:55:17.134Z</updated>
     
     
-      <category term="free" scheme="https://blog.yang-hong-xin.com/tags/free/"/>
-    
-      <category term="mac" scheme="https://blog.yang-hong-xin.com/tags/mac/"/>
-    
-      <category term="software" scheme="https://blog.yang-hong-xin.com/tags/software/"/>
-    
-      <category term="brew" scheme="https://blog.yang-hong-xin.com/tags/brew/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>幫 Github Pages 自訂網址再透過 CloudFlare 加上 https</title>
-    <link href="https://blog.yang-hong-xin.com/github-pages-custom-domain-on-https-use-cloudflare/"/>
-    <id>https://blog.yang-hong-xin.com/github-pages-custom-domain-on-https-use-cloudflare/</id>
-    <published>2018-04-25T15:28:25.000Z</published>
-    <updated>2019-03-12T14:18:13.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>上一篇 <a href="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/" title="幫 Free Dyno Heroku App 自訂網址再透過 CloudFlare 加上 https">幫 Free Dyno Heroku App 自訂網址再透過 CloudFlare 加上 https</a> 之後，這次要來幫 Github Pages 加上自訂網址與 https。本次就跳過了一些上次說過的事情（有興趣的讀者可以自行前往閱讀），直接帶大家走一遍設定流程。</p><h1 id="Github-Pages"><a href="#Github-Pages" class="headerlink" title="Github Pages"></a>Github Pages</h1><p>官方介紹：<a href="https://pages.github.com/" target="_blank" rel="noopener">https://pages.github.com/</a><br>只要會一點 <code>git</code> 即可輕鬆且免費地部署靜態資源到 Github Pages 上，通常被拿來建立 Blog，或是做成文檔和 Demo 網頁，也可以放一些簡單的 SPA 網頁應用。</p><a id="more"></a><h1 id="需要"><a href="#需要" class="headerlink" title="需要"></a>需要</h1><ul><li>Github 帳號</li><li>Domain name</li><li>CloudFlare 帳號</li></ul><h1 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h1><p>這邊以我買的網域：<a href="https://yanghongxin.com" target="_blank" rel="noopener">https://yanghongxin.com</a> 和我的 Github： <a href="https://github.com/jk195417" target="_blank" rel="noopener">https://github.com/jk195417</a> 作為例子</p><h2 id="Github-設定-CNAME"><a href="#Github-設定-CNAME" class="headerlink" title="Github 設定 CNAME"></a>Github 設定 CNAME</h2><p>到自己的 <code>帳號.github.io</code> 的 Github Repo</p><blockquote><p>沒有的話就開一個吧。參閱 <a href="https://guides.github.com/features/pages/" target="_blank" rel="noopener">https://guides.github.com/features/pages/</a></p></blockquote><p>點選 Setting 頁籤</p><img src="/github-pages-custom-domain-on-https-use-cloudflare/github-user-repo.png"><p>至 Github Pages 設定 Custom domain，它會幫你在此 repo 下建立一個 <code>CNAME</code> 檔案，當你瀏覽這個 Github Pages 時，網址顯示的就會是你自定的網址而不是 Github Pages 提供的網址。</p><img src="/github-pages-custom-domain-on-https-use-cloudflare/github-pages-custom-domain.png"><h2 id="CloudFlare-設定-DNS"><a href="#CloudFlare-設定-DNS" class="headerlink" title="CloudFlare 設定 DNS"></a>CloudFlare 設定 DNS</h2><p>CloudFlare &gt; Add site &gt; 填入你的網域</p><img src="/github-pages-custom-domain-on-https-use-cloudflare/cloudflare-add-site.png"><p>接者 CloudFlare 會去調出你的網域的 Nameserver 供應商的 DNS 設定</p><p>新增 <code>CNANE</code>，Name 填入子網域如 <code>www</code> 或根網域 <code>@</code>，Value 填入 GitHub Pages 預設的網址 <code>&lt;username&gt;.github.io</code>。記得要讓要用的 Record 們的橘燈都亮起來喔。</p><h2 id="CloudFlare-選擇方案-Free"><a href="#CloudFlare-選擇方案-Free" class="headerlink" title="CloudFlare 選擇方案 Free"></a>CloudFlare 選擇方案 Free</h2><img src="/github-pages-custom-domain-on-https-use-cloudflare/cloudflare-free-plan.png"><p>一樣不解釋</p><h2 id="更改網域-Nameservers"><a href="#更改網域-Nameservers" class="headerlink" title="更改網域 Nameservers"></a>更改網域 Nameservers</h2><p>把網域的 Nameservers 改成 CloudFlare 提供的 Nameservers（DNS 頁籤往下翻），這樣一來，剛剛在 CloudFlare 設定的 DNS 才會生效。</p><blockquote><p>NS 設成 CloudFlare：流量 -&gt; CloudFlare -&gt; Github</p></blockquote><img src="/github-pages-custom-domain-on-https-use-cloudflare/cloudflare-nameservers.png"><p>到當初買網址的網域供應商平台上做設定，EX: Godaddy, Gandi.net, Namecheap, Hover …</p><img src="/github-pages-custom-domain-on-https-use-cloudflare/godaddy-edit-nameservers.png"><p>以 Godaddy 為例</p><p>設定成功後會在 Overview 看到 <code>Status: Active</code> 如：</p><img src="/github-pages-custom-domain-on-https-use-cloudflare/cloudflare-status.png"><h2 id="CloudFlare-開啟-SSL"><a href="#CloudFlare-開啟-SSL" class="headerlink" title="CloudFlare 開啟 SSL"></a>CloudFlare 開啟 SSL</h2><p>CloudFlare &gt; Crypto &gt; SSL 選 <code>Full</code>，等上個15分鐘至一天，若是超過一天都還沒好的話在做下面的步驟。</p><img src="/github-pages-custom-domain-on-https-use-cloudflare/cloudflare-ssl-setting.png"><h3 id="SSL-憑證等待過久"><a href="#SSL-憑證等待過久" class="headerlink" title="SSL 憑證等待過久"></a>SSL 憑證等待過久</h3><p>請看<a href="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/" title="上一篇">上一篇</a>的 <strong>等 SSL 憑證發行太久</strong> 章節</p><h2 id="把-http-請求全部導向-https（選擇性）"><a href="#把-http-請求全部導向-https（選擇性）" class="headerlink" title="把 http 請求全部導向 https（選擇性）"></a>把 http 請求全部導向 https（選擇性）</h2><p><strong>等憑證發下來在用</strong></p><p>CloudFlare &gt; Select Website &gt; Crypto &gt; Always use HTTPS &gt; On</p><img src="/github-pages-custom-domain-on-https-use-cloudflare/cloudflare-always-use-https.png"><h1 id="參考連結"><a href="#參考連結" class="headerlink" title="參考連結"></a>參考連結</h1><ul><li><a href="https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/" target="_blank" rel="noopener">https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;上一篇 &lt;a href=&quot;/free-heroku-app-custom-domain-name-on-https-use-clouldflare/&quot; title=&quot;幫 Free Dyno Heroku App 自訂網址再透過 CloudFlare 加上 https&quot;&gt;幫 Free Dyno Heroku App 自訂網址再透過 CloudFlare 加上 https&lt;/a&gt; 之後，這次要來幫 Github Pages 加上自訂網址與 https。本次就跳過了一些上次說過的事情（有興趣的讀者可以自行前往閱讀），直接帶大家走一遍設定流程。&lt;/p&gt;
-&lt;h1 id=&quot;Github-Pages&quot;&gt;&lt;a href=&quot;#Github-Pages&quot; class=&quot;headerlink&quot; title=&quot;Github Pages&quot;&gt;&lt;/a&gt;Github Pages&lt;/h1&gt;&lt;p&gt;官方介紹：&lt;a href=&quot;https://pages.github.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://pages.github.com/&lt;/a&gt;&lt;br&gt;只要會一點 &lt;code&gt;git&lt;/code&gt; 即可輕鬆且免費地部署靜態資源到 Github Pages 上，通常被拿來建立 Blog，或是做成文檔和 Demo 網頁，也可以放一些簡單的 SPA 網頁應用。&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    <summary type="html">&lt;p&gt;原則上，Ubuntu 18.04.1 LTS 已經內建 Python 3 了，保險起見先檢查一下：&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo apt update&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo apt upgrade&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;python3 -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;此時的 Python 的版本應有 3.6 以上，我的版本為 3.6.7。&lt;/p&gt;
+&lt;h1 id=&quot;安裝-pip-3&quot;&gt;&lt;a href=&quot;#安裝-pip-3&quot; class=&quot;headerlink&quot; title=&quot;安裝 pip 3&quot;&gt;&lt;/a&gt;安裝 pip 3&lt;/h1&gt;</summary>
     
     
-      <category term="github" scheme="https://blog.yang-hong-xin.com/tags/github/"/>
     
-      <category term="cloudflare" scheme="https://blog.yang-hong-xin.com/tags/cloudflare/"/>
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
     
-      <category term="ssl" scheme="https://blog.yang-hong-xin.com/tags/ssl/"/>
-    
-      <category term="dns" scheme="https://blog.yang-hong-xin.com/tags/dns/"/>
-    
-      <category term="https" scheme="https://blog.yang-hong-xin.com/tags/https/"/>
-    
-      <category term="free" scheme="https://blog.yang-hong-xin.com/tags/free/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>幫 Free Dyno Heroku App 自訂網址再透過 CloudFlare 加上 https</title>
-    <link href="https://blog.yang-hong-xin.com/free-heroku-app-custom-domain-name-on-https-use-clouldflare/"/>
-    <id>https://blog.yang-hong-xin.com/free-heroku-app-custom-domain-name-on-https-use-clouldflare/</id>
-    <published>2018-04-22T08:06:39.000Z</published>
-    <updated>2019-03-12T14:18:13.238Z</updated>
-    
-    <content type="html"><![CDATA[<p>近年來資安漏洞頻傳，透過 http 明文傳送機敏資訊造成的傷害也早已不是什麼新聞了，替網站加上 https 是勢在必行。</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/https-green-lock.png"><p>瀏覽器網址列旁的綠色鎖頭有沒有帶來一種安全的感覺。</p><h1 id="如何免費得到-https-保護呢？"><a href="#如何免費得到-https-保護呢？" class="headerlink" title="如何免費得到 https 保護呢？"></a>如何免費得到 https 保護呢？</h1><ul><li><a href="https://letsencrypt.org/" target="_blank" rel="noopener">Let’s Encrypt</a> - 自行申請免費的 SSL</li><li><a href="https://www.cloudflare.com/" target="_blank" rel="noopener">CloudFlare</a> - 與他人共用 CloudFlare 免費提供的 SSL</li></ul><p>本次的目標網站是架設在 <a href="https://www.heroku.com/" target="_blank" rel="noopener">Heroku</a> 上的 Free Dyno 型應用程式，Free Dyno 其實已經有提供免費的 https 給預設的 <code>&lt;app-name&gt;.herokuapp.com</code></p><a id="more"></a><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/default-herokuapp-ssl.png"><p>但是如果想幫 Free dyno 類型的網站加上 SSL 支援，沒有辦法使用方法 1 的 Let’s Encrypt 簽發憑證這個方式，只好透過方法 2 CloudFlare 來處理：</p><blockquote><p>對於架在 Heroku 上的網站來說，把 free dyno 升級成 hobby dyno，就會附贈免費的 Heroku SSL，其實是最省時省力的 <a href="https://blog.heroku.com/announcing-automated-certificate-management" target="_blank" rel="noopener">https://blog.heroku.com/announcing-automated-certificate-management</a></p></blockquote><h1 id="需要"><a href="#需要" class="headerlink" title="需要"></a>需要</h1><ul><li>一個 Free Dyno Heroku App</li><li>一個 Domain Name</li><li>註冊 CloudFlare</li></ul><h1 id="步驟"><a href="#步驟" class="headerlink" title="步驟"></a>步驟</h1><h2 id="Heroku-設定-Custom-Domain"><a href="#Heroku-設定-Custom-Domain" class="headerlink" title="Heroku 設定 Custom Domain"></a>Heroku 設定 Custom Domain</h2><p>到 <a href="https://dashboard.heroku.com" target="_blank" rel="noopener">Heroku Dashboard</a> 選擇目標網站應用程式的 Setting 頁籤</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/heroku-app-setting.png"><p>Domains and certificates 設定的地方點選 Add domain，填入你的網域</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/heroku-app-domain-setting.png"><h2 id="CloudFlare-設定-DNS"><a href="#CloudFlare-設定-DNS" class="headerlink" title="CloudFlare 設定 DNS"></a>CloudFlare 設定 DNS</h2><p>到 <a href="https://www.cloudflare.com/a/add-site" target="_blank" rel="noopener">CloudFlare</a> 輸入你的網域</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/cloudflare-add-site.png"><p>接者 CloudFlare 會去調出你的網域的 Nameserver 供應商的 DNS 設定</p><p>新增 <code>CNANE</code>，<code>Name</code> 填入子網域如 <code>www</code> 或根網域 <code>@</code>，<code>Value</code> 填入 Heroku 預設的網址 <code>&lt;app-name&gt;.herokuapp.com</code>。記得要讓要用的 Record 們的橘燈都亮起來喔。</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/cloudflare-dns-setting.png"><blockquote><p> 根網域通常需要 A Record 填入 IP Address，Heroku App 提供的網址為浮動 IP，只能透過 Heroku 提供的網址用 CNAME flattening 動態指向過去，才能指定根網域。<br> CloudFlare 剛好有提供 <a href="https://support.cloudflare.com/hc/en-us/articles/200169056-CNAME-Flattening-RFC-compliant-support-for-CNAME-at-the-root" target="_blank" rel="noopener">CNAME flattening</a>，想要讓根網域直接對應到 Heroku app，新增 <code>CNANE</code>，<code>Name</code> 填入 <code>@</code>，<code>Value</code> 一樣填入 Heroku 預設的網址 <code>&lt;app-name&gt;.herokuapp.com</code>。</p></blockquote><h2 id="CloudFlare-選擇方案-Free"><a href="#CloudFlare-選擇方案-Free" class="headerlink" title="CloudFlare 選擇方案 Free"></a>CloudFlare 選擇方案 Free</h2><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/cloudflare-free-plan.png"><p>不解釋</p><h2 id="更改網域-Nameservers"><a href="#更改網域-Nameservers" class="headerlink" title="更改網域 Nameservers"></a>更改網域 Nameservers</h2><p>把網域的 Nameservers 改成 CloudFlare 提供的 Nameservers（DNS 頁籤往下翻），這樣一來，剛剛在 CloudFlare 設定的 DNS 才會生效。</p><blockquote><p>NS 設成 CloudFlare：流量 -&gt; CloudFlare -&gt; Heroku</p></blockquote><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/cloudflare-nameservers.png"><p>到當初買網址的網域供應商平台上做設定，EX: Godaddy, Gandi.net, Namecheap, Hover …</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/hover-edit-nameservers.png"><p>以 Hover 為例</p><p>設定成功後會在 Overview 看到 <code>Status: Active</code> 如：</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/cloudflare-status.png"><h2 id="啟用-SSL"><a href="#啟用-SSL" class="headerlink" title="啟用 SSL"></a>啟用 SSL</h2><p>點 CloudFlare Crypto 頁籤，SSL 的部分 <code>Off</code> 設定為 <code>Full</code> 或 <code>Flexible</code></p><p><strong>先說結論：選 <code>Full</code></strong></p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/cloudflare-ssl-setting.png"><p>憑證通過需要一點時間，當看到 <code>Status Active Certificate</code> 恭喜你，已經能透過 https 訪問網址了!（通過的時間約15分至1天不等）</p><blockquote><p>官方表示免費方案憑證發行等24小時都是正常情況，不想等就花錢啊，15分讓你上線。 <a href="https://support.cloudflare.com/hc/en-us/articles/203267234-Can-I-speed-up-the-activation-of-the-free-SSL-option" target="_blank" rel="noopener">https://support.cloudflare.com/hc/en-us/articles/203267234-Can-I-speed-up-the-activation-of-the-free-SSL-option</a></p></blockquote><p>在本頁 Status 的地方可以看到目前憑證發行的進度。</p><blockquote><p>進度順序：Initializing Certificate -&gt; Authorizing Certificate -&gt; Issuing Certificate -&gt; Active Certificate</p></blockquote><h3 id="等-SSL-憑證發行太久"><a href="#等-SSL-憑證發行太久" class="headerlink" title="等 SSL 憑證發行太久"></a>等 SSL 憑證發行太久</h3><p>用 Chrome 瀏覽會噴錯誤訊息：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">這個網站無法提供安全連線</span><br><span class="line">&lt;domain&gt; 使用了不支援的通訊協定。</span><br><span class="line">ERR_SSL_VERSION_OR_CIPHER_MISMATCH`</span><br></pre></td></tr></table></figure></p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/chrome-err.png"><p>如果超過一天了憑證還是沒有發下來，你可以：</p><ol><li>檢查設定有沒有出錯 <a href="https://support.cloudflare.com/hc/en-us/articles/200170566-Why-isn-t-SSL-working-for-my-site" target="_blank" rel="noopener">https://support.cloudflare.com/hc/en-us/articles/200170566-Why-isn-t-SSL-working-for-my-site</a></li><li>CloudFlare &gt; Select Website &gt; Overview &gt; Advanced &gt; Delete，然後把 Nameservers 改回預設值，再重新跑一次 <a href="## CloudFlare 設定 DNS">CloudFlare 設定 DNS</a>，等了三天 <strong>親測有效!</strong></li><li>到 Support 發票，然後到官方論壇 <a href="https://community.cloudflare.com/t/ssl-delays-authorizing-certificate/3682" target="_blank" rel="noopener">https://community.cloudflare.com/t/ssl-delays-authorizing-certificate/3682</a> 求救，許多前輩的過關案例在此。</li></ol><h2 id="把-http-請求全部導向-https（選擇性）"><a href="#把-http-請求全部導向-https（選擇性）" class="headerlink" title="把 http 請求全部導向 https（選擇性）"></a>把 http 請求全部導向 https（選擇性）</h2><p><strong>等憑證發下來在用</strong></p><p>CloudFlare &gt; Select Website &gt; Crypto &gt; Always use HTTPS &gt; On</p><img src="/free-heroku-app-custom-domain-name-on-https-use-clouldflare/cloudflare-always-use-https.png"><h1 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h1><ul><li><a href="https://devcenter.heroku.com/articles/custom-domains#configuring-dns-for-root-domains" target="_blank" rel="noopener">https://devcenter.heroku.com/articles/custom-domains#configuring-dns-for-root-domains</a></li><li><a href="https://support.cloudflare.com/hc/en-us/articles/205893698" target="_blank" rel="noopener">https://support.cloudflare.com/hc/en-us/articles/205893698</a></li><li><a href="https://robots.thoughtbot.com/set-up-cloudflare-free-ssl-on-heroku" target="_blank" rel="noopener">https://robots.thoughtbot.com/set-up-cloudflare-free-ssl-on-heroku</a></li><li><a href="https://support.cloudflare.com/hc/en-us/articles/203445970-What-does-SSL-Authorizing-mean-after-activating-free-Universal-SSL" target="_blank" rel="noopener">https://support.cloudflare.com/hc/en-us/articles/203445970-What-does-SSL-Authorizing-mean-after-activating-free-Universal-SSL</a></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;近年來資安漏洞頻傳，透過 http 明文傳送機敏資訊造成的傷害也早已不是什麼新聞了，替網站加上 https 是勢在必行。&lt;/p&gt;
-&lt;img src=&quot;/free-heroku-app-custom-domain-name-on-https-use-clouldflare/https-green-lock.png&quot;&gt;
-&lt;p&gt;瀏覽器網址列旁的綠色鎖頭有沒有帶來一種安全的感覺。&lt;/p&gt;
-&lt;h1 id=&quot;如何免費得到-https-保護呢？&quot;&gt;&lt;a href=&quot;#如何免費得到-https-保護呢？&quot; class=&quot;headerlink&quot; title=&quot;如何免費得到 https 保護呢？&quot;&gt;&lt;/a&gt;如何免費得到 https 保護呢？&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://letsencrypt.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Let’s Encrypt&lt;/a&gt; - 自行申請免費的 SSL&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.cloudflare.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CloudFlare&lt;/a&gt; - 與他人共用 CloudFlare 免費提供的 SSL&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;本次的目標網站是架設在 &lt;a href=&quot;https://www.heroku.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Heroku&lt;/a&gt; 上的 Free Dyno 型應用程式，Free Dyno 其實已經有提供免費的 https 給預設的 &lt;code&gt;&amp;lt;app-name&amp;gt;.herokuapp.com&lt;/code&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
     
     
-      <category term="cloudflare" scheme="https://blog.yang-hong-xin.com/tags/cloudflare/"/>
+    <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
     
-      <category term="ssl" scheme="https://blog.yang-hong-xin.com/tags/ssl/"/>
-    
-      <category term="dns" scheme="https://blog.yang-hong-xin.com/tags/dns/"/>
-    
-      <category term="https" scheme="https://blog.yang-hong-xin.com/tags/https/"/>
-    
-      <category term="free" scheme="https://blog.yang-hong-xin.com/tags/free/"/>
-    
-      <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>用 Hexo 建立 Blog</title>
-    <link href="https://blog.yang-hong-xin.com/use-hexo-to-create-blog/"/>
-    <id>https://blog.yang-hong-xin.com/use-hexo-to-create-blog/</id>
-    <published>2018-04-18T12:44:32.000Z</published>
-    <updated>2019-03-12T14:18:13.291Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="安裝-Hexo"><a href="#安裝-Hexo" class="headerlink" title="安裝 Hexo"></a>安裝 Hexo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn global add hexo-cli</span><br></pre></td></tr></table></figure><p>建立 blog 專案</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure><h1 id="主題設定"><a href="#主題設定" class="headerlink" title="主題設定"></a>主題設定</h1><p>用 git submodule 管理主題，這裡使用 <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">yilia</a></p><a id="more"></a><p>先 Fork <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia</a> 到 <a href="https://github.com/jk195417/hexo-theme-yilia" target="_blank" rel="noopener">https://github.com/jk195417/hexo-theme-yilia</a></p><p>添加成 git submodule 到專案的 <code>themes/yilia</code></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git submodule add https://github.com/jk195417/hexo-theme-yilia.git themes/yilia</span><br></pre></td></tr></table></figure><p>修改<code>_config.yml</code></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">theme:</span> <span class="string">yilia</span></span><br></pre></td></tr></table></figure><h1 id="安裝外掛"><a href="#安裝外掛" class="headerlink" title="安裝外掛"></a>安裝外掛</h1><h2 id="hexo-generator-json-content"><a href="#hexo-generator-json-content" class="headerlink" title="hexo-generator-json-content"></a>hexo-generator-json-content</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-json-content</span><br></pre></td></tr></table></figure><p><code>_config.yml</code> 加上</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo-generator-json-content</span></span><br><span class="line"><span class="attr">jsonContent:</span></span><br><span class="line"><span class="attr">    meta:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    pages:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    posts:</span></span><br><span class="line"><span class="attr">      title:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">      date:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">      path:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">      text:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      raw:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      content:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      slug:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      updated:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      comments:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      link:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      permalink:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      excerpt:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      categories:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">      tags:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><h2 id="hexo-generator-sitemap"><a href="#hexo-generator-sitemap" class="headerlink" title="hexo-generator-sitemap"></a>hexo-generator-sitemap</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-sitemap</span><br></pre></td></tr></table></figure><p><code>_config.yml</code> 加上</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sitemap:</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">sitemap.xml</span></span><br></pre></td></tr></table></figure><h2 id="hexo-generator-feed"><a href="#hexo-generator-feed" class="headerlink" title="hexo-generator-feed"></a>hexo-generator-feed</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-generator-feed</span><br></pre></td></tr></table></figure><p><code>_config.yml</code> 加上</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">feed:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">atom</span></span><br><span class="line"><span class="attr">  path:</span> <span class="string">atom.xml</span></span><br><span class="line"><span class="attr">  limit:</span> <span class="number">20</span></span><br></pre></td></tr></table></figure><p>再到 <code>themes/yilia/_config.yml</code> 修改<br><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">subnav:</span></span><br><span class="line"><span class="attr">  rss:</span> <span class="string">'/atom.xml'</span></span><br></pre></td></tr></table></figure></p><h1 id="部署至-Github-Page"><a href="#部署至-Github-Page" class="headerlink" title="部署至 Github Page"></a>部署至 Github Page</h1><p>至 <code>_config.yml</code> 填寫部署配置</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="string">'https://github.com/jk195417/blog.git'</span></span><br></pre></td></tr></table></figure><p>指令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成靜態文件</span></span><br><span class="line">$ hexo g</span><br><span class="line"><span class="comment"># 部屬</span></span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;安裝-Hexo&quot;&gt;&lt;a href=&quot;#安裝-Hexo&quot; class=&quot;headerlink&quot; title=&quot;安裝 Hexo&quot;&gt;&lt;/a&gt;安裝 Hexo&lt;/h1&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ yarn global add hexo-cli&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;建立 blog 專案&lt;/p&gt;
-&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo init blog&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;h1 id=&quot;主題設定&quot;&gt;&lt;a href=&quot;#主題設定&quot; class=&quot;headerlink&quot; title=&quot;主題設定&quot;&gt;&lt;/a&gt;主題設定&lt;/h1&gt;&lt;p&gt;用 git submodule 管理主題，這裡使用 &lt;a href=&quot;https://github.com/litten/hexo-theme-yilia&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;yilia&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
-    
-    
-      <category term="hexo" scheme="https://blog.yang-hong-xin.com/tags/hexo/"/>
-    
-      <category term="yilia" scheme="https://blog.yang-hong-xin.com/tags/yilia/"/>
+    <category term="python" scheme="https://blog.yang-hong-xin.com/tags/python/"/>
     
   </entry>
   
