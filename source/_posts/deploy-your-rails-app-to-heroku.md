@@ -19,7 +19,7 @@ Heroku 是一個 platform as a service 平台，可以部署專案在此，使�
 見 <https://devcenter.heroku.com/articles/heroku-cli>
 
 ```sh
-# 將 heroku 加入 brew 的來源  
+# 將 heroku 加入 brew 的來源
 brew tap heroku/brew && brew install heroku
 ```
 
@@ -101,13 +101,13 @@ sidekid: bundle exec sidekiq -C config/sidekiq.yml
 在部署前 `git commit` 把要部署的專案放置在 master 分支下，然後：
 
 ```sh
-# push master 分支到 heroku remote  
+# push master 分支到 heroku remote
 git push heroku master
 ```
 
 有新的 database migrations 時執行：
 
 ```sh
-# heroku run + 要運行的指令，這次要做 database migrate  
+# heroku run + 要運行的指令，這次要做 database migrate
 heroku run rails db:migrate
 ```
