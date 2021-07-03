@@ -6,7 +6,7 @@
   <link href="https://blog.yang-hong-xin.com/atom.xml" rel="self"/>
   
   <link href="https://blog.yang-hong-xin.com/"/>
-  <updated>2021-06-27T08:09:07.596Z</updated>
+  <updated>2021-07-03T03:13:38.006Z</updated>
   <id>https://blog.yang-hong-xin.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Use Finite-state Machine to manage state</title>
+    <link href="https://blog.yang-hong-xin.com/use-finite-state-machine-to-manage-state/"/>
+    <id>https://blog.yang-hong-xin.com/use-finite-state-machine-to-manage-state/</id>
+    <published>2021-07-03T03:00:05.000Z</published>
+    <updated>2021-07-03T03:13:38.006Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;Main Elements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;States: must be limited&lt;/li&gt;
+&lt;li&gt;Events&lt;/li&gt;
+&lt;li&gt;Transitions: when &lt;code&gt;event 1&lt;/code&gt; from &lt;code&gt;state A&lt;/code&gt; to &lt;code&gt;state B&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Actions: when &lt;code&gt;state|event|transition&lt;/code&gt; changed then act &lt;code&gt;action&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="state management" scheme="https://blog.yang-hong-xin.com/tags/state-management/"/>
+    
+  </entry>
   
   <entry>
     <title>Make your PowerShell fancy by Windows Terminal and Oh My Posh</title>
@@ -459,10 +484,10 @@
   
   <entry>
     <title>在 Mac 上安裝 Ruby</title>
-    <link href="https://blog.yang-hong-xin.com/Install-ruby-on-mac/"/>
-    <id>https://blog.yang-hong-xin.com/Install-ruby-on-mac/</id>
+    <link href="https://blog.yang-hong-xin.com/install-ruby-on-mac/"/>
+    <id>https://blog.yang-hong-xin.com/install-ruby-on-mac/</id>
     <published>2019-06-11T03:17:22.000Z</published>
-    <updated>2020-06-05T09:55:17.135Z</updated>
+    <updated>2021-06-28T10:00:08.005Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mac OS X 內建的 Ruby 版本並非最新版，只安裝了維持系統運行，最低需求版本的 Ruby，所以要安裝最新版本的 Ruby 就得額外安裝。&lt;/p&gt;
@@ -479,9 +504,9 @@
     
     <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
     
-    <category term="rvm" scheme="https://blog.yang-hong-xin.com/tags/rvm/"/>
-    
     <category term="osx" scheme="https://blog.yang-hong-xin.com/tags/osx/"/>
+    
+    <category term="rvm" scheme="https://blog.yang-hong-xin.com/tags/rvm/"/>
     
   </entry>
   
@@ -528,39 +553,6 @@
     <category term="kill" scheme="https://blog.yang-hong-xin.com/tags/kill/"/>
     
     <category term="pid" scheme="https://blog.yang-hong-xin.com/tags/pid/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>為 Ubuntu 18.04 LST 安裝 Tensorflow 1.12 with GPU support</title>
-    <link href="https://blog.yang-hong-xin.com/install-tensorflow-1-12-with-gpu-support-on-ubuntu-18-04-lts/"/>
-    <id>https://blog.yang-hong-xin.com/install-tensorflow-1-12-with-gpu-support-on-ubuntu-18-04-lts/</id>
-    <published>2019-03-13T04:43:13.000Z</published>
-    <updated>2020-06-05T09:55:17.138Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;執行完之前介紹的 &lt;a href=&quot;#&quot;&gt;Post not found: Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS&lt;/a&gt; 與 &lt;a href=&quot;#&quot;&gt;Post not found: Install-Python-3-6-on-Ubuntu-18-04-LST&lt;/a&gt; 後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。&lt;/p&gt;
-&lt;p&gt;當前的 TensorFlow 版本為 1.12，只支援 CUDA 9.0，當前 CUDA 9.0 的 cuDNN 版本為 7.4.2。&lt;/p&gt;
-&lt;h1 id=&quot;安裝-CUDA&quot;&gt;&lt;a href=&quot;#安裝-CUDA&quot; class=&quot;headerlink&quot; title=&quot;安裝 CUDA&quot;&gt;&lt;/a&gt;安裝 CUDA&lt;/h1&gt;</summary>
-    
-    
-    
-    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
-    
-    
-    <category term="nlp" scheme="https://blog.yang-hong-xin.com/tags/nlp/"/>
-    
-    <category term="ubuntu" scheme="https://blog.yang-hong-xin.com/tags/ubuntu/"/>
-    
-    <category term="python" scheme="https://blog.yang-hong-xin.com/tags/python/"/>
-    
-    <category term="tensorflow" scheme="https://blog.yang-hong-xin.com/tags/tensorflow/"/>
-    
-    <category term="gpu" scheme="https://blog.yang-hong-xin.com/tags/gpu/"/>
-    
-    <category term="cuda" scheme="https://blog.yang-hong-xin.com/tags/cuda/"/>
     
   </entry>
   
