@@ -28,6 +28,8 @@ tags:
 
 其實啊，專案剛起步時，我們可以先從基礎的做起，例如這些被 check in 在各個知名 Git Repositories 中的文件
 
+<!-- more -->
+
 - `README.md`
 - `CHANGELOG.md`
 - `CODE_OF_CONDUCT.md`
@@ -35,8 +37,6 @@ tags:
 - `LICENSE.md`
 
 這些隨著程式碼擺放在 Repository 中的文件可以說是最基礎但又是最重要的文件，如果你的專案還沒有這些東西的話趕快來把它們加上去，可以讓你的專案瞬間變得很專業喔 XD
-
-<!-- more -->
 
 那我們要怎麼寫出好的文件呢? 從模仿開始吧
 
@@ -48,4 +48,4 @@ tags:
 
 就醬，簡單吧😁
 
-> 補充一個，Git Repository 的 commits 其實也是一種另類的文，所以，好的 Git Commits 可以看 https://www.conventionalcommits.org/en/v1.0.0/
+> 補充一個，Git Repository 的 commits 其實也是一種另類的文，所以，好的 Git Commits 可以看 <https://www.conventionalcommits.org/en/v1.0.0/>
