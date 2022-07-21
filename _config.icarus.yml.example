@@ -1,5 +1,5 @@
 # Version of the configuration file
-version: 4.0.0
+version: 5.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
@@ -114,20 +114,20 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: https://github.com/ppoffice/hexo-theme-icarus
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
             icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
+            url: https://creativecommons.org/
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
+            url: https://creativecommons.org/licenses/by/4.0/
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/ppoffice/hexo-theme-icarus'
+            url: https://github.com/ppoffice/hexo-theme-icarus
 # Article related configurations
 article:
     # Code highlight settings
@@ -141,17 +141,19 @@ article:
         fold: unfolded
     # Whether to show estimated article reading time
     readtime: true
+    # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
+    update_time: true
     # Article licensing block
     licenses:
         Creative Commons:
             icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
+            url: https://creativecommons.org/
         Attribution:
             icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
+            url: https://creativecommons.org/licenses/by/4.0/
         Noncommercial:
             icon: fab fa-creative-commons-nc
-            url: 'https://creativecommons.org/licenses/by-nc/4.0/'
+            url: https://creativecommons.org/licenses/by-nc/4.0/
 # Search plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
 search:
@@ -235,21 +237,21 @@ widgets:
         # Email address for the Gravatar
         gravatar:
         # URL or path for the follow button
-        follow_link: 'https://github.com/ppoffice'
+        follow_link: https://github.com/ppoffice
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: 'https://github.com/ppoffice'
+                url: https://github.com/ppoffice
             Facebook:
                 icon: fab fa-facebook
-                url: 'https://facebook.com'
+                url: https://facebook.com
             Twitter:
                 icon: fab fa-twitter
-                url: 'https://twitter.com'
+                url: https://twitter.com
             Dribbble:
                 icon: fab fa-dribbble
-                url: 'https://dribbble.com'
+                url: https://dribbble.com
             RSS:
                 icon: fas fa-rss
                 url: /
@@ -271,8 +273,8 @@ widgets:
         type: links
         # Names and URLs of the sites
         links:
-            Hexo: 'https://hexo.io'
-            Bulma: 'https://bulma.io'
+            Hexo: https://hexo.io
+            Bulma: https://bulma.io
     # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -293,6 +295,12 @@ widgets:
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
         type: tags
+        # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
+        order_by: name
+        # Amount of tags to show. Will show all if not set.
+        amount:
+        # Whether to show tags count, i.e. number of posts in the tag.
+        show_count: true
     # Google FeedBurner email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -311,6 +319,17 @@ widgets:
         client_id: ''
         # AdSense AD unit ID
         slot_id: ''
+    # Follow.it email subscription widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: followit
+        # Hint text under the email input
+        description:
+        # Subscription form action URL
+        action_url: ''
+        # Feed claiming verification code
+        verification_code: ''
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
@@ -350,7 +369,7 @@ plugins:
         # Where on the screen the consent popup should display
         position: bottom-left
         # URL to your site's cookie policy
-        policyLink: 'https://www.cookiesandyou.com/'
+        policyLink: https://www.cookiesandyou.com/
     # Enable the lightGallery and Justified Gallery plugins
     gallery: true
     # Google Analytics plugin settings
