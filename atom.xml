@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hong Xin&#39;s Blog</title>
+  <icon>https://blog.yang-hong-xin.com/images/icon.png</icon>
+  <subtitle>楊竑昕的部落格</subtitle>
+  <link href="https://blog.yang-hong-xin.com/atom.xml" rel="self"/>
+  
+  <link href="https://blog.yang-hong-xin.com/"/>
+  <updated>2022-07-23T06:22:22.176Z</updated>
+  <id>https://blog.yang-hong-xin.com/</id>
+  
+  <author>
+    <name>楊竑昕</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>為你的開源專案加些文件 讓它看起來很專業吧</title>
+    <link href="https://blog.yang-hong-xin.com/make-your-open-source-projects-professional-with-good-documentation/"/>
+    <id>https://blog.yang-hong-xin.com/make-your-open-source-projects-professional-with-good-documentation/</id>
+    <published>2021-07-22T12:39:19.000Z</published>
+    <updated>2022-07-23T06:22:22.176Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/make-your-open-source-projects-professional-with-good-documentation/markdown.png&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;在 Github 上逛知名專案時，有沒有發現他們都有一個共同點: &lt;strong&gt;文件豐富&lt;/strong&gt;，有許多專案甚至會專門建立一個網站做&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;簡介&lt;/li&gt;
+&lt;li&gt;Demo&lt;/li&gt;
+&lt;li&gt;API Documentation&lt;/li&gt;
+&lt;li&gt;Wiki&lt;/li&gt;
+&lt;li&gt;論壇&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;看到這裡，你可能會說在小專案要求這些實在是太強人所難了吧。&lt;/p&gt;
+&lt;p&gt;其實啊，專案剛起步時，我們可以先從基礎的做起，例如這些被 check in 在各個知名 Git Repositories 中的文件&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="readme" scheme="https://blog.yang-hong-xin.com/tags/readme/"/>
+    
+    <category term="changelog" scheme="https://blog.yang-hong-xin.com/tags/changelog/"/>
+    
+    <category term="code of conduct" scheme="https://blog.yang-hong-xin.com/tags/code-of-conduct/"/>
+    
+    <category term="contributing" scheme="https://blog.yang-hong-xin.com/tags/contributing/"/>
+    
+    <category term="license" scheme="https://blog.yang-hong-xin.com/tags/license/"/>
+    
+    <category term="repository" scheme="https://blog.yang-hong-xin.com/tags/repository/"/>
+    
+    <category term="documentation" scheme="https://blog.yang-hong-xin.com/tags/documentation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unite Your Angular Coding Style With Teammates By Visual Studio Code &amp; ESLint &amp; Prettier</title>
+    <link href="https://blog.yang-hong-xin.com/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/"/>
+    <id>https://blog.yang-hong-xin.com/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/</id>
+    <published>2021-07-21T14:39:19.000Z</published>
+    <updated>2021-07-21T15:16:26.028Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/logo.png&quot; class=&quot;&quot;&gt;
+
+&lt;h2 id=&quot;Brief&quot;&gt;&lt;a href=&quot;#Brief&quot; class=&quot;headerlink&quot; title=&quot;Brief&quot;&gt;&lt;/a&gt;Brief&lt;/h2&gt;&lt;p&gt;Hello Visitor ~&lt;/p&gt;
+&lt;p&gt;Todays I will guide you to setup Visual Studio Code and ESLint and Prettier, let editor auto-format and auto-fix your code for you and your coworker or contributor, it will becomes your lifesaver, free your hands on fixing errors and align coding style with teammates.&lt;/p&gt;
+&lt;p&gt;Let me read those documents, and organize things for you.&lt;/p&gt;
+&lt;h2 id=&quot;Steps&quot;&gt;&lt;a href=&quot;#Steps&quot; class=&quot;headerlink&quot; title=&quot;Steps&quot;&gt;&lt;/a&gt;Steps&lt;/h2&gt;&lt;p&gt;There are only 3 steps for you, it is very easy to follow my steps to set everything up&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Setup Angular and ESLint&lt;/li&gt;
+&lt;li&gt;Integrate Prettier and ESLint&lt;/li&gt;
+&lt;li&gt;Setup Visual Studio Code&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="angular" scheme="https://blog.yang-hong-xin.com/tags/angular/"/>
+    
+    <category term="vscode" scheme="https://blog.yang-hong-xin.com/tags/vscode/"/>
+    
+    <category term="eslint" scheme="https://blog.yang-hong-xin.com/tags/eslint/"/>
+    
+    <category term="prettier" scheme="https://blog.yang-hong-xin.com/tags/prettier/"/>
+    
+    <category term="linter" scheme="https://blog.yang-hong-xin.com/tags/linter/"/>
+    
+    <category term="formatter" scheme="https://blog.yang-hong-xin.com/tags/formatter/"/>
+    
+    <category term="coding style" scheme="https://blog.yang-hong-xin.com/tags/coding-style/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Use Finite-state Machine to manage state</title>
+    <link href="https://blog.yang-hong-xin.com/use-finite-state-machine-to-manage-state/"/>
+    <id>https://blog.yang-hong-xin.com/use-finite-state-machine-to-manage-state/</id>
+    <published>2021-07-03T03:00:05.000Z</published>
+    <updated>2021-07-21T15:16:26.028Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;Main Elements:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;States: must be limited&lt;/li&gt;
+&lt;li&gt;Events&lt;/li&gt;
+&lt;li&gt;Transitions: when &lt;code&gt;event 1&lt;/code&gt; from &lt;code&gt;state A&lt;/code&gt; to &lt;code&gt;state B&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Actions: when &lt;code&gt;state|event|transition&lt;/code&gt; changed then act &lt;code&gt;action&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="state management" scheme="https://blog.yang-hong-xin.com/tags/state-management/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Make your PowerShell fancy by Windows Terminal and Oh My Posh</title>
+    <link href="https://blog.yang-hong-xin.com/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/"/>
+    <id>https://blog.yang-hong-xin.com/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/</id>
+    <published>2021-06-27T07:56:42.000Z</published>
+    <updated>2021-07-21T15:16:26.027Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Goals&quot;&gt;&lt;a href=&quot;#Goals&quot; class=&quot;headerlink&quot; title=&quot;Goals&quot;&gt;&lt;/a&gt;Goals&lt;/h2&gt;&lt;p&gt;Follow steps in this article, and the result will look like this&lt;/p&gt;
+&lt;img src=&quot;/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/goals.png&quot; class=&quot;&quot;&gt;
+
+&lt;h2 id=&quot;Steps&quot;&gt;&lt;a href=&quot;#Steps&quot; class=&quot;headerlink&quot; title=&quot;Steps&quot;&gt;&lt;/a&gt;Steps&lt;/h2&gt;&lt;p&gt;There are only 6 steps to do&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install Windows Terminal&lt;/li&gt;
+&lt;li&gt;Install posh-git and oh-my-posh&lt;/li&gt;
+&lt;li&gt;Install powerline font&lt;/li&gt;
+&lt;li&gt;Config powershell profile&lt;/li&gt;
+&lt;li&gt;Config Windows Terminal Settings&lt;/li&gt;
+&lt;li&gt;Config VSCode Settings&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Maybe only need to takes 15 mins to set everything right.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="terminal" scheme="https://blog.yang-hong-xin.com/tags/terminal/"/>
+    
+    <category term="powershell" scheme="https://blog.yang-hong-xin.com/tags/powershell/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>代替 Illustrator 的免費繪圖軟體</title>
+    <link href="https://blog.yang-hong-xin.com/free-or-open-source-illustrator-alternatives/"/>
+    <id>https://blog.yang-hong-xin.com/free-or-open-source-illustrator-alternatives/</id>
+    <published>2020-04-15T14:13:37.000Z</published>
+    <updated>2021-07-21T15:16:26.013Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;平面設計的首選 &lt;a href=&quot;https://www.adobe.com/tw/products/illustrator/free-trial-download.html&quot;&gt;Adobe Illustrator&lt;/a&gt; 專業好用，但價格昂貴，Adobe 提供了 7 天的試用期，試用期過後每月需花費 1000 元訂閱，但有時候我們只是想簡單地處理一些圖形，並不需要使用到這麼專業且複雜的繪圖功能 😔&lt;/p&gt;
+&lt;p&gt;那或許你可以試試這些開源（或免費）的繪圖軟體，有機會替你省下每個月 1000 元的 Adobe Illustrator 喔！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="軟體分享" scheme="https://blog.yang-hong-xin.com/categories/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/"/>
+    
+    
+    <category term="free" scheme="https://blog.yang-hong-xin.com/tags/free/"/>
+    
+    <category term="illustrator" scheme="https://blog.yang-hong-xin.com/tags/illustrator/"/>
+    
+    <category term="alternative" scheme="https://blog.yang-hong-xin.com/tags/alternative/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Mac 上 安裝 Docker for Mac</title>
+    <link href="https://blog.yang-hong-xin.com/install-docker-on-mac/"/>
+    <id>https://blog.yang-hong-xin.com/install-docker-on-mac/</id>
+    <published>2020-03-29T15:58:39.000Z</published>
+    <updated>2021-07-21T15:16:25.992Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;Install&quot;&gt;&lt;a href=&quot;#Install&quot; class=&quot;headerlink&quot; title=&quot;Install&quot;&gt;&lt;/a&gt;Install&lt;/h2&gt;&lt;p&gt;目前 &lt;a href=&quot;https://docs.docker.com/docker-for-mac/&quot;&gt;Docker for Mac&lt;/a&gt; 最方便的安裝方法就是使用 &lt;a href=&quot;https://github.com/Homebrew/homebrew-cask/blob/master/Casks/docker.rb&quot;&gt;Homebrew Cask&lt;/a&gt; 安裝，打開 Terminal，輸入：&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;brew cask install docker&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;img src=&quot;/install-docker-on-mac/brew-cask-install-docker.png&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;安裝成功後打開 &lt;code&gt;Docker.app&lt;/code&gt;&lt;/p&gt;
+&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app.png&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;第一次打開時會需要你的作業系統密碼，安裝額外的套件，提供完整的功能&lt;/p&gt;
+&lt;img src=&quot;/install-docker-on-mac/first-open-docker-app-2.png&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;當安裝完成後，我們就能在右上角的工具欄看到鯨魚 🐳 icon&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="docker" scheme="https://blog.yang-hong-xin.com/tags/docker/"/>
+    
+    <category term="mac" scheme="https://blog.yang-hong-xin.com/tags/mac/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Expression Index in RDBMS</title>
+    <link href="https://blog.yang-hong-xin.com/expression-index-in-rdbms/"/>
+    <id>https://blog.yang-hong-xin.com/expression-index-in-rdbms/</id>
+    <published>2020-03-22T14:24:39.000Z</published>
+    <updated>2021-07-21T15:16:25.978Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;What is the expression index?&lt;/p&gt;
+&lt;p&gt;According to the description from &lt;a href=&quot;https://en.wikipedia.org/wiki/Expression_index&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An expression index, also known as a function based index, is a database index that is built on a generic expression, rather than one or more columns. This allows indexes to be defined for common query conditions that depend on data in a table, but are not actually stored in that table.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When you query on something that is &lt;strong&gt;computed from other columns frequently&lt;/strong&gt; and want to speed it up, you will need this.&lt;/p&gt;
+&lt;p&gt;I will use &lt;strong&gt;PostgreSQL&lt;/strong&gt; as an example in this article because it is my favorite database.&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rdbms" scheme="https://blog.yang-hong-xin.com/tags/rdbms/"/>
+    
+    <category term="index" scheme="https://blog.yang-hong-xin.com/tags/index/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>從 Ruby 到 C# - operators</title>
+    <link href="https://blog.yang-hong-xin.com/from-ruby-to-c-sharp-operators/"/>
+    <id>https://blog.yang-hong-xin.com/from-ruby-to-c-sharp-operators/</id>
+    <published>2020-03-15T10:30:42.000Z</published>
+    <updated>2021-07-21T15:16:25.982Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Ruby 與 C# 的 operators 蠻相近的，應該說整個程式圈的 operators 都大概長那樣阿，&lt;del&gt;嗯，沒錯，本篇完&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;欸，不是，我們快速帶過相同用法的 operators ，然後聊聊有差異的地方，這樣總行了吧&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="從 Ruby 到 C#" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E5%BE%9E-Ruby-%E5%88%B0-C/"/>
+    
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="c#" scheme="https://blog.yang-hong-xin.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>從 Ruby 到 C#</title>
+    <link href="https://blog.yang-hong-xin.com/from-ruby-to-c-sharp/"/>
+    <id>https://blog.yang-hong-xin.com/from-ruby-to-c-sharp/</id>
+    <published>2020-02-23T15:29:55.000Z</published>
+    <updated>2021-07-21T15:16:25.991Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我是一名使用 Ruby 與 JavaScript 開發的程式設計師，我愛寫 Ruby，這個語言讓我體會到寫程式的樂趣&lt;/p&gt;
+&lt;p&gt;不過很可惜的目前服務的公司並沒有使用 Ruby 而是用 C# 作為後端的開發語言&lt;/p&gt;
+&lt;p&gt;欣慰的是 C# 與 JavaScript 看起來挺像的，希望我能將以前物件導向與 JavaScript 的開發經驗映射到 C# 上，快速掌握這門語言&lt;/p&gt;
+&lt;p&gt;也因此最近都在看微軟官方的 &lt;a href=&quot;https://docs.microsoft.com/en-us/dotnet/csharp/&quot;&gt;C# documentation&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吐槽一下，比起 &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/JavaScript&quot;&gt;MDN&lt;/a&gt; 或 &lt;a href=&quot;https://ruby-doc.org/&quot;&gt;Ruby Doc&lt;/a&gt;，微軟的文件似乎沒那麼好看，，且尚未支援 &lt;a href=&quot;https://kapeli.com/dash&quot;&gt;Dash&lt;/a&gt; 與 &lt;a href=&quot;https://devdocs.io/&quot;&gt;DevDocs&lt;/a&gt;，只能透過瀏覽器到此查閱&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="從 Ruby 到 C#" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E5%BE%9E-Ruby-%E5%88%B0-C/"/>
+    
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="c#" scheme="https://blog.yang-hong-xin.com/tags/c/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Win10 WSL combo : Terminus + Ubuntu + Oh My Zsh + Powerlevel10k</title>
+    <link href="https://blog.yang-hong-xin.com/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/"/>
+    <id>https://blog.yang-hong-xin.com/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/</id>
+    <published>2020-02-16T14:45:52.000Z</published>
+    <updated>2021-07-21T15:16:25.954Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;想在 Windows 上使用潮潮的 Linux 命令列嗎？&lt;/p&gt;
+&lt;p&gt;本篇將教你如何使用 WSL Ubuntu + &lt;a href=&quot;https://github.com/Eugeny/terminus&quot;&gt;Terminus&lt;/a&gt; + &lt;a href=&quot;https://github.com/ohmyzsh/ohmyzsh&quot;&gt;Oh My Zsh&lt;/a&gt; + &lt;a href=&quot;https://github.com/romkatv/powerlevel10k&quot;&gt;Powerlevel10k&lt;/a&gt; 連續技，達到爽度十足的開發環境&lt;/p&gt;
+&lt;img src=&quot;/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/powerlevel10k.png&quot; class=&quot;&quot;&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="windows" scheme="https://blog.yang-hong-xin.com/tags/windows/"/>
+    
+    <category term="wsl" scheme="https://blog.yang-hong-xin.com/tags/wsl/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Angular 中請這樣用 RxJS</title>
+    <link href="https://blog.yang-hong-xin.com/using-rxjs-this-way-in-angular/"/>
+    <id>https://blog.yang-hong-xin.com/using-rxjs-this-way-in-angular/</id>
+    <published>2020-02-10T13:25:06.000Z</published>
+    <updated>2021-07-21T15:16:25.954Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本篇只是閱讀原文後的譯文&lt;br&gt;原文出處： &lt;a href=&quot;https://blog.strongbrew.io/rxjs-best-practices-in-angular&quot;&gt;https://blog.strongbrew.io/rxjs-best-practices-in-angular&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="angular" scheme="https://blog.yang-hong-xin.com/tags/angular/"/>
+    
+    <category term="rxjs" scheme="https://blog.yang-hong-xin.com/tags/rxjs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 SendGrid 上驗證你的網域</title>
+    <link href="https://blog.yang-hong-xin.com/authenticate-your-domain-on-sendgrid/"/>
+    <id>https://blog.yang-hong-xin.com/authenticate-your-domain-on-sendgrid/</id>
+    <published>2020-02-02T14:00:18.000Z</published>
+    <updated>2021-07-21T15:16:25.935Z</updated>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;以 SendGrid 寄送 email 時，若無進行網域驗證，有些信箱會在寄件者後面帶上一個後綴提示使用者，這封 email 實際的寄送網域為何，因此會多一個&lt;strong&gt;透過 sendgrid.me&lt;/strong&gt;的後綴 ，如&lt;/p&gt;
+&lt;img src=&quot;/authenticate-your-domain-on-sendgrid/send-via-other-domain.png&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;這表示寄件者與實際寄送 email 的網域不同，見 &lt;a href=&quot;https://support.google.com/mail/answer/1311182&quot;&gt;https://support.google.com/mail/answer/1311182&lt;/a&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="sendgrid" scheme="https://blog.yang-hong-xin.com/tags/sendgrid/"/>
+    
+    <category term="email" scheme="https://blog.yang-hong-xin.com/tags/email/"/>
+    
+    <category term="dns" scheme="https://blog.yang-hong-xin.com/tags/dns/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Developer 最常用的 Proxy 設定</title>
+    <link href="https://blog.yang-hong-xin.com/the-most-common-proxy-settings-for-developers/"/>
+    <id>https://blog.yang-hong-xin.com/the-most-common-proxy-settings-for-developers/</id>
+    <published>2020-01-25T10:30:00.000Z</published>
+    <updated>2021-07-21T15:16:25.934Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文整理了&lt;code&gt;系統環境變數&lt;/code&gt;、 &lt;code&gt;git&lt;/code&gt;、&lt;code&gt;curl&lt;/code&gt;、&lt;code&gt;wget&lt;/code&gt;、&lt;code&gt;npm&lt;/code&gt;、&lt;code&gt;bundler&lt;/code&gt;、&lt;code&gt;nuget&lt;/code&gt;、&lt;code&gt;brew&lt;/code&gt;、&lt;code&gt;apt&lt;/code&gt; 與 &lt;code&gt;chocolatey&lt;/code&gt; 等多種下載工具的 proxy 設定。&lt;/p&gt;
+&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;當公司有做網路控管時，對外的網路請求通常需要經由  proxy server  轉送，對內或  localhost  的可以不需要，要也沒關係就是要繞一圈比較慢。&lt;/p&gt;
+&lt;p&gt;接下來我們將用 &lt;strong&gt;&lt;a href=&quot;http://proxy.company.com/&quot;&gt;http://proxy.company.com:80&lt;/a&gt;&lt;/strong&gt;  這個  proxy server  為例，示範如何設置其他工具的 proxy。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="proxy" scheme="https://blog.yang-hong-xin.com/tags/proxy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>來為你的 Line bot 加上一個圖文選單吧！</title>
+    <link href="https://blog.yang-hong-xin.com/create-a-rich-menu-for-your-line-bot/"/>
+    <id>https://blog.yang-hong-xin.com/create-a-rich-menu-for-your-line-bot/</id>
+    <published>2019-06-11T09:58:53.000Z</published>
+    <updated>2021-07-21T15:16:25.917Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;拖了好久，終於有時間幫 &lt;a href=&quot;https://line.me/R/ti/p/%40kls1180p&quot;&gt;彈幕教室&lt;/a&gt; chatbot 裝個圖文選單啦，照著 &lt;a href=&quot;https://developers.line.biz/en/docs/messaging-api/using-rich-menus/&quot;&gt;官方教學&lt;/a&gt; 做其實就沒問題囉，但還是把實作的過程紀錄下來備忘。&lt;/p&gt;
+&lt;p&gt;順便打個廣告 &lt;a href=&quot;https://github.com/danmu-classroom/danmu-classroom-screen&quot;&gt;https://github.com/danmu-classroom/danmu-classroom-screen&lt;/a&gt;，彈幕教室客戶端，下載即用免安裝，可以透過 Line 發送彈幕到螢幕上，歡迎來玩看看喔。&lt;/p&gt;
+&lt;img src=&quot;/create-a-rich-menu-for-your-line-bot/danmu-classroom-rich-menu.jpg&quot; class=&quot;&quot;&gt;
+
+&lt;p&gt;我的 rich menu  長這樣&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="line" scheme="https://blog.yang-hong-xin.com/tags/line/"/>
+    
+    <category term="rich menu" scheme="https://blog.yang-hong-xin.com/tags/rich-menu/"/>
+    
+    <category term="chatbot" scheme="https://blog.yang-hong-xin.com/tags/chatbot/"/>
+    
+    <category term="彈幕教室" scheme="https://blog.yang-hong-xin.com/tags/%E5%BD%88%E5%B9%95%E6%95%99%E5%AE%A4/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>手把手帶你使用 baidu-aip 的情緒分析服務</title>
+    <link href="https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/"/>
+    <id>https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/</id>
+    <published>2019-06-11T09:19:47.000Z</published>
+    <updated>2021-07-21T15:16:25.913Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Google 的自然語言處理雖然非常的強大，但是中文的情緒分析並非他的強項，目前中文的自然語言處理研究出處非常多是出於中國大陸，所以當需要用到中文的情緒分析時， &lt;a href=&quot;https://ai.baidu.com/&quot;&gt;百度 AI 開放平台&lt;/a&gt; 就成為我們的首選啦。&lt;/p&gt;
+&lt;p&gt;平台目前的收費非常的便宜，例如本次介紹的 &lt;strong&gt;情感傾向分析接口&lt;/strong&gt;，提供了 &lt;strong&gt;5QPS&lt;/strong&gt; 免費額度，每秒免費請求 5 次超佛心的啊！根本就相當於不用錢。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;注意！要註冊百度帳號必須要有 +86 開頭的中國手機門號喔。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;使用百度 AI 開放平台的情緒分析服務很簡單，步驟就 4 個。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;註冊帳號&lt;/li&gt;
+&lt;li&gt;創建 &lt;strong&gt;自然語言處理&lt;/strong&gt; 應用&lt;/li&gt;
+&lt;li&gt;獲取 &lt;code&gt;access_token&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;使用 &lt;strong&gt;情感傾向分析接口&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
+    
+    
+    <category term="nlp" scheme="https://blog.yang-hong-xin.com/tags/nlp/"/>
+    
+    <category term="baidu" scheme="https://blog.yang-hong-xin.com/tags/baidu/"/>
+    
+    <category term="sentiment" scheme="https://blog.yang-hong-xin.com/tags/sentiment/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Network graphing in JavaScript - force-graph</title>
+    <link href="https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/"/>
+    <id>https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/</id>
+    <published>2019-06-11T08:32:05.000Z</published>
+    <updated>2021-07-21T15:16:25.928Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;分析網路關係，並將資料視覺化，最常見的就是 network graph。&lt;/p&gt;
+&lt;h1 id=&quot;常見套件&quot;&gt;&lt;a href=&quot;#常見套件&quot; class=&quot;headerlink&quot; title=&quot;常見套件&quot;&gt;&lt;/a&gt;常見套件&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vasturiano/3d-force-graph&quot;&gt;https://github.com/vasturiano/3d-force-graph&lt;/a&gt;&lt;br&gt; 本文主角，支援 3D 與圖互動。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vasturiano/force-graph&quot;&gt;https://github.com/vasturiano/force-graph&lt;/a&gt;&lt;br&gt; 本文主角，支援與圖互動。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/jacomyal/sigma.js&quot;&gt;https://github.com/jacomyal/sigma.js&lt;/a&gt;&lt;br&gt; 文檔寫在程式碼與範例中，需要參考它的範例原始碼。將圖展開可以使用它提供的 plugin &lt;a href=&quot;https://github.com/jacomyal/sigma.js/tree/master/plugins/sigma.layout.forceAtlas2&quot; title=&quot;sigma.layout.forceAtlas2&quot;&gt;forceAtlas2&lt;/a&gt;，與圖互動需要自己 coding 擴充。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/cytoscape/cytoscape.js&quot;&gt;https://github.com/cytoscape/cytoscape.js&lt;/a&gt;&lt;br&gt; 提供許多範例可以參考。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/almende/vis&quot;&gt;https://github.com/almende/vis&lt;/a&gt;&lt;br&gt; 不只做 network graph，可上&lt;a href=&quot;http://visjs.org/network_examples.html&quot;&gt;官網&lt;/a&gt;參考範例。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/davidpiegza/Graph-Visualization&quot;&gt;https://github.com/davidpiegza/Graph-Visualization&lt;/a&gt;&lt;br&gt; 支援 3D，文檔並不齊全，需要參考它的&lt;a href=&quot;https://github.com/davidpiegza/Graph-Visualization/tree/master/examples&quot;&gt;範例原始碼&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
+    
+    
+    <category term="javascript" scheme="https://blog.yang-hong-xin.com/tags/javascript/"/>
+    
+    <category term="graph" scheme="https://blog.yang-hong-xin.com/tags/graph/"/>
+    
+    <category term="data visualization" scheme="https://blog.yang-hong-xin.com/tags/data-visualization/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Heroku 上執行 Rails app 的定時任務（Scheduled Task）</title>
+    <link href="https://blog.yang-hong-xin.com/running-rails-scheduled-task-on-heroku/"/>
+    <id>https://blog.yang-hong-xin.com/running-rails-scheduled-task-on-heroku/</id>
+    <published>2019-06-11T08:00:11.000Z</published>
+    <updated>2021-07-21T15:16:25.933Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;一般 Rails app 的定時任務是把 &lt;code&gt;ActiveJob&lt;/code&gt; 包成一個 &lt;code&gt;rake task&lt;/code&gt; 並透過 &lt;code&gt;crontab&lt;/code&gt; 執行。這種架構的適合用在分鐘級別以上的定時任務。&lt;/p&gt;
+&lt;p&gt;但是</summary>
+        
+      
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rails 的 sidekiq 設置筆記</title>
+    <link href="https://blog.yang-hong-xin.com/setup-sidekiq-on-rails/"/>
+    <id>https://blog.yang-hong-xin.com/setup-sidekiq-on-rails/</id>
+    <published>2019-06-11T07:47:59.000Z</published>
+    <updated>2021-07-21T15:16:25.933Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/mperham/sidekiq&quot;&gt;Sidekiq&lt;/a&gt; 是一個能夠並發處理 Ruby 任務的套件，大致上的運作方法是：將任務 push 至 redis 的 queue 中，sidekiq 的 workers 再到 queue 一個個 pop 任務出來運算。&lt;/p&gt;
+&lt;h1 id=&quot;安裝&quot;&gt;&lt;a href=&quot;#安裝&quot; class=&quot;headerlink&quot; title=&quot;安裝&quot;&gt;&lt;/a&gt;安裝&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# Gemfile&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gem &amp;#x27;sidekiq&amp;#x27;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;bundle install&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="sidekiq" scheme="https://blog.yang-hong-xin.com/tags/sidekiq/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>部署你的 rails 應用程式至 Heroku</title>
+    <link href="https://blog.yang-hong-xin.com/deploy-your-rails-app-to-heroku/"/>
+    <id>https://blog.yang-hong-xin.com/deploy-your-rails-app-to-heroku/</id>
+    <published>2019-06-11T06:57:54.000Z</published>
+    <updated>2021-07-21T15:16:25.923Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Heroku 是一個 platform as a service 平台，可以部署專案在此，使用上非常方便的，當然方便的代價是價格，他的單位計算資源價格會高於 AWS。&lt;/p&gt;
+&lt;h1 id=&quot;安裝-heroku-cli&quot;&gt;&lt;a href=&quot;#安裝-heroku-cli&quot; class=&quot;headerlink&quot; title=&quot;安裝 heroku-cli&quot;&gt;&lt;/a&gt;安裝 heroku-cli&lt;/h1&gt;&lt;p&gt;見 &lt;a href=&quot;https://devcenter.heroku.com/articles/heroku-cli&quot;&gt;https://devcenter.heroku.com/articles/heroku-cli&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# 將 heroku 加入 brew 的來源&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;brew tap heroku/brew &amp;amp;&amp;amp; brew install heroku&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="rails" scheme="https://blog.yang-hong-xin.com/tags/rails/"/>
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="heroku" scheme="https://blog.yang-hong-xin.com/tags/heroku/"/>
+    
+    <category term="deploy" scheme="https://blog.yang-hong-xin.com/tags/deploy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Mac 上安裝 Ruby</title>
+    <link href="https://blog.yang-hong-xin.com/install-ruby-on-mac/"/>
+    <id>https://blog.yang-hong-xin.com/install-ruby-on-mac/</id>
+    <published>2019-06-11T03:17:22.000Z</published>
+    <updated>2021-07-21T15:16:25.925Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;Mac OS X 內建的 Ruby 版本並非最新版，只安裝了維持系統運行，最低需求版本的 Ruby，所以要安裝最新版本的 Ruby 就得額外安裝。&lt;/p&gt;
+&lt;h1 id=&quot;Install-Ruby&quot;&gt;&lt;a href=&quot;#Install-Ruby&quot; class=&quot;headerlink&quot; title=&quot;Install Ruby&quot;&gt;&lt;/a&gt;Install Ruby&lt;/h1&gt;&lt;h2 id=&quot;Via-Homebrew&quot;&gt;&lt;a href=&quot;#Via-Homebrew&quot; class=&quot;headerlink&quot; title=&quot;Via Homebrew&quot;&gt;&lt;/a&gt;Via Homebrew&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;brew install ruby
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;Via-Ruby-Version-Manager-RVM&quot;&gt;&lt;a href=&quot;#Via-Ruby-Version-Manager-RVM&quot; class=&quot;headerlink&quot; title=&quot;Via Ruby Version Manager (RVM)&quot;&gt;&lt;/a&gt;Via &lt;a href=&quot;https://rvm.io/&quot;&gt;Ruby Version Manager (RVM)&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;如果開發環境有安裝多個版本的 Ruby 的需求，就使用 RVM 來安裝與管理 Ruby 吧，可以透過 RVM 自由切換使用的 Ruby 版本與 Gemset，保持開發環境的乾淨。&lt;/p&gt;
+&lt;p&gt;詳情見 &lt;a href=&quot;https://rvm.io/&quot;&gt;https://rvm.io/&lt;/a&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight sh&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Install GPG keys:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;# Install RVM:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;curl -sSL https://get.rvm.io | bash -s stable&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="ruby" scheme="https://blog.yang-hong-xin.com/tags/ruby/"/>
+    
+    <category term="osx" scheme="https://blog.yang-hong-xin.com/tags/osx/"/>
+    
+    <category term="rvm" scheme="https://blog.yang-hong-xin.com/tags/rvm/"/>
+    
+  </entry>
+  
+</feed>
