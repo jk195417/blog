@@ -6,7 +6,7 @@
   <link href="https://blog.yang-hong-xin.com/atom.xml" rel="self"/>
   
   <link href="https://blog.yang-hong-xin.com/"/>
-  <updated>2022-07-23T06:22:22.176Z</updated>
+  <updated>2023-04-02T16:21:41.077Z</updated>
   <id>https://blog.yang-hong-xin.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://blog.yang-hong-xin.com/make-your-open-source-projects-professional-with-good-documentation/"/>
     <id>https://blog.yang-hong-xin.com/make-your-open-source-projects-professional-with-good-documentation/</id>
     <published>2021-07-22T12:39:19.000Z</published>
-    <updated>2022-07-23T06:22:22.176Z</updated>
+    <updated>2023-04-02T16:21:41.077Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/make-your-open-source-projects-professional-with-good-documentation/markdown.png&quot; class=&quot;&quot;&gt;
@@ -63,7 +63,7 @@
     <link href="https://blog.yang-hong-xin.com/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/"/>
     <id>https://blog.yang-hong-xin.com/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/</id>
     <published>2021-07-21T14:39:19.000Z</published>
-    <updated>2021-07-21T15:16:26.028Z</updated>
+    <updated>2023-04-02T16:21:41.077Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/logo.png&quot; class=&quot;&quot;&gt;
@@ -104,7 +104,7 @@
     <link href="https://blog.yang-hong-xin.com/use-finite-state-machine-to-manage-state/"/>
     <id>https://blog.yang-hong-xin.com/use-finite-state-machine-to-manage-state/</id>
     <published>2021-07-03T03:00:05.000Z</published>
-    <updated>2021-07-21T15:16:26.028Z</updated>
+    <updated>2023-04-02T16:21:41.077Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Introduction&quot;&gt;&lt;a href=&quot;#Introduction&quot; class=&quot;headerlink&quot; title=&quot;Introduction&quot;&gt;&lt;/a&gt;Introduction&lt;/h2&gt;&lt;p&gt;Main Elements:&lt;/p&gt;
@@ -129,7 +129,7 @@
     <link href="https://blog.yang-hong-xin.com/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/"/>
     <id>https://blog.yang-hong-xin.com/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/</id>
     <published>2021-06-27T07:56:42.000Z</published>
-    <updated>2021-07-21T15:16:26.027Z</updated>
+    <updated>2023-04-02T16:21:41.077Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Goals&quot;&gt;&lt;a href=&quot;#Goals&quot; class=&quot;headerlink&quot; title=&quot;Goals&quot;&gt;&lt;/a&gt;Goals&lt;/h2&gt;&lt;p&gt;Follow steps in this article, and the result will look like this&lt;/p&gt;
@@ -162,7 +162,7 @@
     <link href="https://blog.yang-hong-xin.com/free-or-open-source-illustrator-alternatives/"/>
     <id>https://blog.yang-hong-xin.com/free-or-open-source-illustrator-alternatives/</id>
     <published>2020-04-15T14:13:37.000Z</published>
-    <updated>2021-07-21T15:16:26.013Z</updated>
+    <updated>2023-04-02T16:21:41.065Z</updated>
     
     
     <summary type="html">&lt;p&gt;平面設計的首選 &lt;a href=&quot;https://www.adobe.com/tw/products/illustrator/free-trial-download.html&quot;&gt;Adobe Illustrator&lt;/a&gt; 專業好用，但價格昂貴，Adobe 提供了 7 天的試用期，試用期過後每月需花費 1000 元訂閱，但有時候我們只是想簡單地處理一些圖形，並不需要使用到這麼專業且複雜的繪圖功能 😔&lt;/p&gt;
@@ -186,7 +186,7 @@
     <link href="https://blog.yang-hong-xin.com/install-docker-on-mac/"/>
     <id>https://blog.yang-hong-xin.com/install-docker-on-mac/</id>
     <published>2020-03-29T15:58:39.000Z</published>
-    <updated>2021-07-21T15:16:25.992Z</updated>
+    <updated>2023-04-02T16:21:41.053Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;Install&quot;&gt;&lt;a href=&quot;#Install&quot; class=&quot;headerlink&quot; title=&quot;Install&quot;&gt;&lt;/a&gt;Install&lt;/h2&gt;&lt;p&gt;目前 &lt;a href=&quot;https://docs.docker.com/docker-for-mac/&quot;&gt;Docker for Mac&lt;/a&gt; 最方便的安裝方法就是使用 &lt;a href=&quot;https://github.com/Homebrew/homebrew-cask/blob/master/Casks/docker.rb&quot;&gt;Homebrew Cask&lt;/a&gt; 安裝，打開 Terminal，輸入：&lt;/p&gt;
@@ -218,7 +218,7 @@
     <link href="https://blog.yang-hong-xin.com/expression-index-in-rdbms/"/>
     <id>https://blog.yang-hong-xin.com/expression-index-in-rdbms/</id>
     <published>2020-03-22T14:24:39.000Z</published>
-    <updated>2021-07-21T15:16:25.978Z</updated>
+    <updated>2023-04-02T16:21:41.041Z</updated>
     
     
     <summary type="html">&lt;p&gt;What is the expression index?&lt;/p&gt;
@@ -245,7 +245,7 @@
     <link href="https://blog.yang-hong-xin.com/from-ruby-to-c-sharp-operators/"/>
     <id>https://blog.yang-hong-xin.com/from-ruby-to-c-sharp-operators/</id>
     <published>2020-03-15T10:30:42.000Z</published>
-    <updated>2021-07-21T15:16:25.982Z</updated>
+    <updated>2023-04-02T16:21:41.049Z</updated>
     
     
     <summary type="html">&lt;p&gt;Ruby 與 C# 的 operators 蠻相近的，應該說整個程式圈的 operators 都大概長那樣阿，&lt;del&gt;嗯，沒錯，本篇完&lt;/del&gt;&lt;/p&gt;
@@ -269,7 +269,7 @@
     <link href="https://blog.yang-hong-xin.com/from-ruby-to-c-sharp/"/>
     <id>https://blog.yang-hong-xin.com/from-ruby-to-c-sharp/</id>
     <published>2020-02-23T15:29:55.000Z</published>
-    <updated>2021-07-21T15:16:25.991Z</updated>
+    <updated>2023-04-02T16:21:41.049Z</updated>
     
     
     <summary type="html">&lt;p&gt;我是一名使用 Ruby 與 JavaScript 開發的程式設計師，我愛寫 Ruby，這個語言讓我體會到寫程式的樂趣&lt;/p&gt;
@@ -298,7 +298,7 @@
     <link href="https://blog.yang-hong-xin.com/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/"/>
     <id>https://blog.yang-hong-xin.com/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/</id>
     <published>2020-02-16T14:45:52.000Z</published>
-    <updated>2021-07-21T15:16:25.954Z</updated>
+    <updated>2023-04-02T16:21:41.029Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;簡介&quot;&gt;&lt;a href=&quot;#簡介&quot; class=&quot;headerlink&quot; title=&quot;簡介&quot;&gt;&lt;/a&gt;簡介&lt;/h2&gt;&lt;p&gt;想在 Windows 上使用潮潮的 Linux 命令列嗎？&lt;/p&gt;
@@ -321,7 +321,7 @@
     <link href="https://blog.yang-hong-xin.com/using-rxjs-this-way-in-angular/"/>
     <id>https://blog.yang-hong-xin.com/using-rxjs-this-way-in-angular/</id>
     <published>2020-02-10T13:25:06.000Z</published>
-    <updated>2021-07-21T15:16:25.954Z</updated>
+    <updated>2023-04-02T16:21:41.029Z</updated>
     
     
     <summary type="html">&lt;p&gt;本篇只是閱讀原文後的譯文&lt;br&gt;原文出處： &lt;a href=&quot;https://blog.strongbrew.io/rxjs-best-practices-in-angular&quot;&gt;https://blog.strongbrew.io/rxjs-best-practices-in-angular&lt;/a&gt;&lt;/p&gt;</summary>
@@ -342,7 +342,7 @@
     <link href="https://blog.yang-hong-xin.com/authenticate-your-domain-on-sendgrid/"/>
     <id>https://blog.yang-hong-xin.com/authenticate-your-domain-on-sendgrid/</id>
     <published>2020-02-02T14:00:18.000Z</published>
-    <updated>2021-07-21T15:16:25.935Z</updated>
+    <updated>2023-04-02T16:21:41.025Z</updated>
     
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;以 SendGrid 寄送 email 時，若無進行網域驗證，有些信箱會在寄件者後面帶上一個後綴提示使用者，這封 email 實際的寄送網域為何，因此會多一個&lt;strong&gt;透過 sendgrid.me&lt;/strong&gt;的後綴 ，如&lt;/p&gt;
@@ -368,7 +368,7 @@
     <link href="https://blog.yang-hong-xin.com/the-most-common-proxy-settings-for-developers/"/>
     <id>https://blog.yang-hong-xin.com/the-most-common-proxy-settings-for-developers/</id>
     <published>2020-01-25T10:30:00.000Z</published>
-    <updated>2021-07-21T15:16:25.934Z</updated>
+    <updated>2023-04-02T16:21:41.025Z</updated>
     
     
     <summary type="html">&lt;p&gt;本文整理了&lt;code&gt;系統環境變數&lt;/code&gt;、 &lt;code&gt;git&lt;/code&gt;、&lt;code&gt;curl&lt;/code&gt;、&lt;code&gt;wget&lt;/code&gt;、&lt;code&gt;npm&lt;/code&gt;、&lt;code&gt;bundler&lt;/code&gt;、&lt;code&gt;nuget&lt;/code&gt;、&lt;code&gt;brew&lt;/code&gt;、&lt;code&gt;apt&lt;/code&gt; 與 &lt;code&gt;chocolatey&lt;/code&gt; 等多種下載工具的 proxy 設定。&lt;/p&gt;
@@ -389,7 +389,7 @@
     <link href="https://blog.yang-hong-xin.com/create-a-rich-menu-for-your-line-bot/"/>
     <id>https://blog.yang-hong-xin.com/create-a-rich-menu-for-your-line-bot/</id>
     <published>2019-06-11T09:58:53.000Z</published>
-    <updated>2021-07-21T15:16:25.917Z</updated>
+    <updated>2023-04-02T16:21:41.017Z</updated>
     
     
     <summary type="html">&lt;p&gt;拖了好久，終於有時間幫 &lt;a href=&quot;https://line.me/R/ti/p/%40kls1180p&quot;&gt;彈幕教室&lt;/a&gt; chatbot 裝個圖文選單啦，照著 &lt;a href=&quot;https://developers.line.biz/en/docs/messaging-api/using-rich-menus/&quot;&gt;官方教學&lt;/a&gt; 做其實就沒問題囉，但還是把實作的過程紀錄下來備忘。&lt;/p&gt;
@@ -418,7 +418,7 @@
     <link href="https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/"/>
     <id>https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/</id>
     <published>2019-06-11T09:19:47.000Z</published>
-    <updated>2021-07-21T15:16:25.913Z</updated>
+    <updated>2023-04-02T16:21:41.013Z</updated>
     
     
     <summary type="html">&lt;p&gt;Google 的自然語言處理雖然非常的強大，但是中文的情緒分析並非他的強項，目前中文的自然語言處理研究出處非常多是出於中國大陸，所以當需要用到中文的情緒分析時， &lt;a href=&quot;https://ai.baidu.com/&quot;&gt;百度 AI 開放平台&lt;/a&gt; 就成為我們的首選啦。&lt;/p&gt;
@@ -454,7 +454,7 @@
     <link href="https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/"/>
     <id>https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/</id>
     <published>2019-06-11T08:32:05.000Z</published>
-    <updated>2021-07-21T15:16:25.928Z</updated>
+    <updated>2023-04-02T16:21:41.021Z</updated>
     
     
     <summary type="html">&lt;p&gt;分析網路關係，並將資料視覺化，最常見的就是 network graph。&lt;/p&gt;
@@ -487,7 +487,7 @@
     <link href="https://blog.yang-hong-xin.com/running-rails-scheduled-task-on-heroku/"/>
     <id>https://blog.yang-hong-xin.com/running-rails-scheduled-task-on-heroku/</id>
     <published>2019-06-11T08:00:11.000Z</published>
-    <updated>2021-07-21T15:16:25.933Z</updated>
+    <updated>2023-04-02T16:21:41.021Z</updated>
     
     
       
@@ -517,7 +517,7 @@
     <link href="https://blog.yang-hong-xin.com/setup-sidekiq-on-rails/"/>
     <id>https://blog.yang-hong-xin.com/setup-sidekiq-on-rails/</id>
     <published>2019-06-11T07:47:59.000Z</published>
-    <updated>2021-07-21T15:16:25.933Z</updated>
+    <updated>2023-04-02T16:21:41.021Z</updated>
     
     
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://github.com/mperham/sidekiq&quot;&gt;Sidekiq&lt;/a&gt; 是一個能夠並發處理 Ruby 任務的套件，大致上的運作方法是：將任務 push 至 redis 的 queue 中，sidekiq 的 workers 再到 queue 一個個 pop 任務出來運算。&lt;/p&gt;
@@ -543,7 +543,7 @@
     <link href="https://blog.yang-hong-xin.com/deploy-your-rails-app-to-heroku/"/>
     <id>https://blog.yang-hong-xin.com/deploy-your-rails-app-to-heroku/</id>
     <published>2019-06-11T06:57:54.000Z</published>
-    <updated>2021-07-21T15:16:25.923Z</updated>
+    <updated>2023-04-02T16:21:41.021Z</updated>
     
     
     <summary type="html">&lt;p&gt;Heroku 是一個 platform as a service 平台，可以部署專案在此，使用上非常方便的，當然方便的代價是價格，他的單位計算資源價格會高於 AWS。&lt;/p&gt;
@@ -570,7 +570,7 @@
     <link href="https://blog.yang-hong-xin.com/install-ruby-on-mac/"/>
     <id>https://blog.yang-hong-xin.com/install-ruby-on-mac/</id>
     <published>2019-06-11T03:17:22.000Z</published>
-    <updated>2021-07-21T15:16:25.925Z</updated>
+    <updated>2023-04-02T16:21:41.021Z</updated>
     
     
     <summary type="html">&lt;p&gt;Mac OS X 內建的 Ruby 版本並非最新版，只安裝了維持系統運行，最低需求版本的 Ruby，所以要安裝最新版本的 Ruby 就得額外安裝。&lt;/p&gt;
