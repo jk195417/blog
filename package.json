@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "hexo": "^6.2.0",
-    "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "1.0.0",
     "hexo-generator-feed": "^3.0.0",
@@ -27,9 +26,13 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-icarus": "^5.2.1"
   },
+  "devDependencies": {
+    "hexo-deployer-git": "^3.0.0"
+  },
   "scripts": {
     "start": "hexo server",
     "start:draft": "hexo server --draft",
+    "build": "hexo generate",
     "predeploy": "hexo clean",
     "deploy": "hexo deploy --generate"
   },
