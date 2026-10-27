@@ -1,33 +1,33 @@
 {
   "name": "blog",
-  "version": "2022.07.23",
+  "version": "2026.10.27",
   "author": "Aaron Yang <jk195417@gmail.com> (https://blog.yang-hong-xin.com)",
   "homepage": "https://blog.yang-hong-xin.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npm/cli.git"
+    "url": "https://github.com/jk195417/blog.git"
   },
   "private": true,
   "license": "UNLICENSED",
   "hexo": {
-    "version": "6.2.0"
+    "version": "8.1.2"
   },
   "dependencies": {
-    "hexo": "^6.2.0",
-    "hexo-generator-archive": "^1.0.0",
-    "hexo-generator-category": "1.0.0",
-    "hexo-generator-feed": "^3.0.0",
-    "hexo-generator-index": "^2.0.0",
+    "hexo": "^8.1.2",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-feed": "^4.0.0",
+    "hexo-generator-index": "^4.0.0",
     "hexo-generator-json-content": "^4.2.3",
     "hexo-generator-sitemap": "^3.0.1",
-    "hexo-generator-tag": "^1.0.0",
+    "hexo-generator-tag": "^2.0.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^5.0.0",
+    "hexo-renderer-marked": "^7.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-icarus": "^5.2.1"
+    "hexo-theme-icarus": "^7.0.1"
   },
   "devDependencies": {
-    "hexo-deployer-git": "^3.0.0"
+    "hexo-deployer-git": "^4.0.0"
   },
   "scripts": {
     "start": "hexo server",
@@ -37,7 +37,6 @@
     "deploy": "hexo deploy --generate"
   },
   "engines": {
-    "node": "^16.0.0",
-    "npm": "^8.0.0"
+    "node": ">=22"
   }
 }

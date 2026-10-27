@@ -1,5 +1,5 @@
 ---
-title: 為 Ubuntu 18.04 LST 安裝 Tensorflow 1.12 with GPU support
+title: 為 Ubuntu 18.04 LTS 安裝 Tensorflow 1.12 with GPU support
 date: 2019-03-13 12:43:13
 toc: true
 categories:
@@ -14,7 +14,7 @@ tags:
   - python
 ---
 
-執行完之前介紹的 {% post_link Install-Nvidia-GPU-driver-on-Ubuntu-18-04-LTS %} 與 {% post_link Install-Python-3-6-on-Ubuntu-18-04-LST %} 後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。
+執行完之前介紹的 {% post_link install-nvidia-gpu-driver-on-ubuntu-18-04-lts %} 與 {% post_link install-python-3-6-on-ubuntu-18-04-lts %} 後，就可以為我們的作業系統安裝能透過 GPU 運算的 TensorFlow 啦。
 
 當前的 TensorFlow 版本為 1.12，只支援 CUDA 9.0，當前 CUDA 9.0 的 cuDNN 版本為 7.4.2。
 

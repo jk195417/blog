@@ -14,7 +14,7 @@ tags:
   - free
 ---
 
-上一篇 {% post_link free-heroku-app-custom-domain-name-on-https-use-clouldflare %} 之後，這次要來幫 Github Pages 加上自訂網址與 https。本次就跳過了一些上次說過的事情（有興趣的讀者可以自行前往閱讀），直接帶大家走一遍設定流程。
+上一篇 {% post_link free-heroku-app-custom-domain-name-on-https-use-cloudflare %} 之後，這次要來幫 Github Pages 加上自訂網址與 https。本次就跳過了一些上次說過的事情（有興趣的讀者可以自行前往閱讀），直接帶大家走一遍設定流程。
 
 # Github Pages
 
@@ -89,7 +89,7 @@ CloudFlare > Crypto > SSL 選 `Full`，等上個15分鐘至一天，若是超過
 
 ### SSL 憑證等待過久
 
-請看{% post_link free-heroku-app-custom-domain-name-on-https-use-clouldflare 上一篇 %}的 **等 SSL 憑證發行太久** 章節
+請看{% post_link free-heroku-app-custom-domain-name-on-https-use-cloudflare 上一篇 %}的 **等 SSL 憑證發行太久** 章節
 
 ## 把 http 請求全部導向 https（選擇性）
 
