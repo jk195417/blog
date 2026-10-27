@@ -102,3 +102,7 @@ deploy:
   type: git
   repo: git@github.com:jk195417/blog.git
   branch: gh-pages
+
+# Google Tag Manager, injected by scripts/google-tag-manager.js
+google_tag_manager:
+  id: GTM-MJH8GKCK
