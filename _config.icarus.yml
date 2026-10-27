@@ -121,9 +121,9 @@ widgets:
             Linkedin:
                 icon: fab fa-linkedin
                 url: https://linkedin.com/in/hongxin-yang/
-            Medium:
-                icon: fab fa-medium
-                url: https://medium.com/@yang.hong.xin
+            Home:
+                icon: fas fa-house
+                url: https://yang-hong-xin.com
             RSS:
                 icon: fas fa-rss
                 url: /atom.xml
@@ -140,6 +140,8 @@ widgets:
             Resume: https://yang-hong-xin.notion.site/Resume-b8b910439158413a81868e1a39c27310
             履歷: https://yang-hong-xin.notion.site/926f9aff8ffd4166a8e1ed5d37f6cd89
             Master Thesis: https://hdl.handle.net/11296/gazcm2
+            Me: https://yang-hong-xin.com/me
+            Resume PDF: https://resume.yang-hong-xin.com
     -
         position: left
         type: categories
