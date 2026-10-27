@@ -1,5 +1,5 @@
 ---
-title: 為 Ubuntu 18.04 LST 安裝 Python 3.6
+title: 為 Ubuntu 18.04 LTS 安裝 Python 3.6
 date: 2019-03-13 12:42:13
 toc: true
 categories:
