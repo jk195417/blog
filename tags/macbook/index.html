@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="zh-TW" data-appearance-mode="light"><head><!-- hexo injector head_begin start --><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJH8GKCK');</script>
+<!-- End Google Tag Manager --><!-- hexo injector head_begin end --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="/js/appearance.js"></script><meta name="robots" content="noindex"><meta><title>標籤: macbook - Hong Xin&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="Hong Xin&#039;s Blog"><meta name="msapplication-TileImage" content="/images/favicon.png"><meta name="msapplication-TileColor" content="#3273dc"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hong Xin&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="楊竑昕的部落格"><meta property="og:type" content="website"><meta property="og:title" content="Hong Xin&#039;s Blog"><meta property="og:url" content="https://blog.yang-hong-xin.com/"><meta property="og:site_name" content="Hong Xin&#039;s Blog"><meta property="og:description" content="楊竑昕的部落格"><meta property="og:locale" content="zh_TW"><meta property="og:image" content="https://blog.yang-hong-xin.com/img/og_image.png"><meta property="article:author" content="楊竑昕"><meta property="article:tag" content="楊竑昕"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://blog.yang-hong-xin.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yang-hong-xin.com"},"headline":"Hong Xin's Blog","image":["https://blog.yang-hong-xin.com/img/og_image.png"],"author":{"@type":"Person","name":"楊竑昕"},"publisher":{"@type":"Organization","name":"Hong Xin's Blog","logo":{"@type":"ImageObject","url":"https://blog.yang-hong-xin.com/images/logo.png"}},"description":"楊竑昕的部落格"}</script><link rel="alternate" href="/atom.xml" title="Hong Xin&#039;s Blog" type="application/atom+xml"><link rel="icon" href="/images/favicon.png"><link rel="preconnect" href="https://use.fontawesome.com" crossorigin="anonymous"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="/css/github-calendar.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/styles/atom-one-dark.css"><script>window.IcarusAppearance.sync();</script><link data-variant rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro&amp;display=swap"><link data-variant rel="stylesheet" href="/css/default.css"><script>if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+    document.documentElement.classList.add('is-animating');
+}</script><style>html.is-animating body>.footer,html.is-animating body>.navbar,html.is-animating body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/css/lightgallery-bundle.min.css" data-pjax><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justified-gallery@4.0.2/dist/assets/justified-gallery.css" data-pjax><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:3px}</style><script>window.paceOptions = Object.assign({}, window.paceOptions, {
+      restartOnPushState: false,
+      restartOnRequestAfter: false
+    });
+    document.addEventListener('pjax:send', function () {
+      if (window.Pace) window.Pace.restart();
+    });</script><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="ca-pub-6329280350982888" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          let hash = location.hash.substring(1);
+          try {
+            // Non-ASCII IDs are percent-encoded in the URL
+            hash = decodeURIComponent(hash);
+          } catch (e) {}
+          const id = '#' + CSS.escape(hash);
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      // The script is in <head>, so wait for the tabs to switch to the tab in the URL
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', switchTab);
+      } else {
+          switchTab();
+      }
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-2-column"><!-- hexo injector body_begin start --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJH8GKCK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!-- hexo injector body_begin end --><div id="browser-notice" data-pjax></div><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo.png" alt="Hong Xin&#039;s Blog" height="28"></a></div><div class="navbar-menu"><button class="navbar-item navbar-toggle" type="button" title="選單" aria-label="選單" aria-expanded="false" aria-controls="navbar-main-menu"><i class="fas fa-bars" aria-hidden="true"></i></button><div class="navbar-start" id="navbar-main-menu"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" target="_blank" rel="noopener" href="https://yang-hong-xin.com/me">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="GitHub" href="https://github.com/jk195417/blog" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a><button class="navbar-item search" type="button" title="搜尋" aria-label="搜尋"><i class="fas fa-search" aria-hidden="true"></i></button></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags/">標籤</a></li><li class="is-active"><a href="#" aria-current="page">macbook</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2019-09-17T15:16:12.000Z" title="2019-09-17 23:16:12">2019-09-17</time>發表</span><span class="level-item"><time dateTime="2026-10-27T16:02:39.098Z" title="2026-10-28 00:02:39">2026-10-28</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%94%9F%E6%B4%BB/">生活</a></span><span class="level-item">2 分鐘讀完 (大約339個字)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/my-macbook-pro-13-2019/">My Macbook Pro 13&quot; 2019</a></p><div class="content"><blockquote>
+<p>本文原發表於 <a target="_blank" rel="noopener" href="https://medium.com/%E4%BA%BA%E7%94%9F%E6%AF%94%E5%AF%AB-code-%E9%9B%A3%E4%B8%80%E9%BB%9E%E9%BB%9E/my-macbook-pro-13-2019-248b4faf1f28">Medium</a>，2026-10-27 搬移至此。</p>
+</blockquote>
+<h4 id="Thank-you-my-old-pal"><a href="#Thank-you-my-old-pal" class="headerlink" title="Thank you my old pal!"></a>Thank you my old pal!</h4><img src="/my-macbook-pro-13-2019/image-1.png" class=""><img src="/my-macbook-pro-13-2019/image-2.png" class=""><img src="/my-macbook-pro-13-2019/image-3.png" class="">
+
+<p>MacBook Air 13” 2013 -&gt; MacBook Pro 13” 2019</p>
+<p>完成交接儀式後，起手式先安裝套件管理工具 <a target="_blank" rel="noopener" href="https://brew.sh/index_zh-tw">brew</a>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用軟體"><a href="#常用軟體" class="headerlink" title="常用軟體"></a>常用軟體</h3><p>可透過 brew 安裝的有：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install google-chrome iina spotify telegram-desktop</span><br></pre></td></tr></table></figure>
+
+<p>剩下的得自行安裝：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://apps.apple.com/tw/app/the-unarchiver/id425424353">The Unarchiver</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.spectacleapp.com/">Spectacle</a></li>
+<li><a target="_blank" rel="noopener" href="https://shauninman.com/archive/2016/10/20/day_o_2_mac_menu_bar_clock">Day-O</a></li>
+<li><a target="_blank" rel="noopener" href="https://line.me/">Line</a></li>
+<li><a target="_blank" rel="noopener" href="http://popcorntime.sh/">Popcorn Time</a></li>
+</ul>
+<h3 id="終端機"><a href="#終端機" class="headerlink" title="終端機"></a>終端機</h3><p>iTerm2 + oh-my-zsh</p>
+<h4 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a><a target="_blank" rel="noopener" href="https://www.iterm2.com/">iTerm2</a></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install iterm2</span><br></pre></td></tr></table></figure>
+
+<p>下載<a target="_blank" rel="noopener" href="https://github.com/mbadolato/iTerm2-Color-Schemes">配色</a>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/mbadolato/iTerm2-Color-Schemes.git</span><br></pre></td></tr></table></figure>
+
+<p>至 Preferences &gt; Profiles &gt; Colors &gt; Color Presets… &gt; Import<br>選擇剛 clone 下來的 iTerm2-Color-Schemes&#x2F;schemas&#x2F;OneHalfDark.itermcolors 當作配色方案。</p>
+<img src="/my-macbook-pro-13-2019/image-4.png" class="">
+
+<p>下載<a target="_blank" rel="noopener" href="https://github.com/Homebrew/homebrew-cask-fonts">字型</a> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 新增來源  </span><br><span class="line">brew tap caskroom/fonts</span><br><span class="line"># 安裝字型 robotomono-nerd-font  </span><br><span class="line">brew cask install font-robotomono-nerd-font</span><br></pre></td></tr></table></figure>
+
+<p>至 Preferences &gt; Profiles &gt; Text<br>將 Font 與 Non-ASCII Font 設為RobotoMono Nerd Font</p>
+<img src="/my-macbook-pro-13-2019/image-5.png" class="">
+
+<h4 id="oh-my-zsh"><a href="#oh-my-zsh" class="headerlink" title="oh-my-zsh"></a><a target="_blank" rel="noopener" href="https://github.com/robbyrussell/oh-my-zsh">oh-my-zsh</a></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;</span><br></pre></td></tr></table></figure>
+
+<h4 id="powerlevel9k"><a href="#powerlevel9k" class="headerlink" title="powerlevel9k"></a><a target="_blank" rel="noopener" href="https://github.com/Powerlevel9k/powerlevel9k"><strong>powerlevel9k</strong></a></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k</span><br></pre></td></tr></table></figure>
+
+<p>開啟.zshrc文件設定 theme 為 powerlevel9k&#x2F;powerlevel9k ：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ZSH_THEME=&quot;powerlevel9k/powerlevel9k&quot;</span><br><span class="line">POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user dir vcs)</span><br><span class="line">POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)</span><br></pre></td></tr></table></figure>
+
+<h3 id="編輯器"><a href="#編輯器" class="headerlink" title="編輯器"></a>編輯器</h3><h4 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a><a target="_blank" rel="noopener" href="https://atom.io/">Atom</a></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew cask install atom</span><br></pre></td></tr></table></figure>
+
+<h3 id="函式庫"><a href="#函式庫" class="headerlink" title="函式庫"></a>函式庫</h3><h4 id="系統函式庫"><a href="#系統函式庫" class="headerlink" title="系統函式庫"></a>系統函式庫</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install git pkg-config gnupg node yarn python3 mkcert postgres redis</span><br></pre></td></tr></table></figure>
+
+<h4 id="Ruby"><a href="#Ruby" class="headerlink" title="Ruby"></a>Ruby</h4><p>使用 <a target="_blank" rel="noopener" href="https://rvm.io/">RVM</a> 管理多版本 Ruby</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 確認憑證  </span><br><span class="line">gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB</span><br><span class="line"># 安裝 rvm  </span><br><span class="line">curl -sSL https://get.rvm.io | bash -s stable</span><br></pre></td></tr></table></figure>
+
+<p>安裝 Ruby</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 列出所有 ruby 版本  </span><br><span class="line">rvm list known</span><br><span class="line"># 安裝當前最新的 ruby 2.6.3  </span><br><span class="line">rvm install 2.6</span><br></pre></td></tr></table></figure>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://www.gravatar.com/avatar/1d547423d2d1a87397303069bd302db4?s=128" alt="楊竑昕"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">楊竑昕</p><p class="is-size-6 is-block">Staff AI Engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>台中，台灣</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives/"><p class="title">33</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分類</p><a href="/categories/"><p class="title">5</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">標籤</p><a href="/tags/"><p class="title">74</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/jk195417" target="_blank" rel="me noopener">追蹤</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/jk195417" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://facebook.com/yang.hong.xin" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Linkedin" href="https://linkedin.com/in/hongxin-yang/" aria-label="Linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Home" href="https://yang-hong-xin.com" aria-label="Home"><i class="fas fa-house" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/atom.xml" aria-label="RSS"><i class="fas fa-rss" aria-hidden="true"></i></a></div></div></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">連結</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://yang-hong-xin.notion.site/Resume-b8b910439158413a81868e1a39c27310" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Resume</span></span><span class="level-right"><span class="level-item tag">yang-hong-xin.notion.site</span></span></a></li><li><a class="level is-mobile" href="https://yang-hong-xin.notion.site/926f9aff8ffd4166a8e1ed5d37f6cd89" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">履歷</span></span><span class="level-right"><span class="level-item tag">yang-hong-xin.notion.site</span></span></a></li><li><a class="level is-mobile" href="https://hdl.handle.net/11296/gazcm2" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Master Thesis</span></span><span class="level-right"><span class="level-item tag">hdl.handle.net</span></span></a></li><li><a class="level is-mobile" href="https://yang-hong-xin.com/me" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Me</span></span><span class="level-right"><span class="level-item tag">yang-hong-xin.com</span></span></a></li><li><a class="level is-mobile" href="https://resume.yang-hong-xin.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Resume PDF</span></span><span class="level-right"><span class="level-item tag">resume.yang-hong-xin.com</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分類</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"><span class="level-start"><span class="level-item">技術文章</span></span><span class="level-end"><span class="level-item tag">30</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E5%BE%9E-Ruby-%E5%88%B0-C/"><span class="level-start"><span class="level-item">從 Ruby 到 C#</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"><span class="level-start"><span class="level-item">碩論</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%94%9F%E6%B4%BB/"><span class="level-start"><span class="level-item">生活</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/"><span class="level-start"><span class="level-item">軟體分享</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><figure class="media-left"><a class="image" href="/make-your-open-source-projects-professional-with-good-documentation/"><img src="/make-your-open-source-projects-professional-with-good-documentation/markdown.png" alt="為你的開源專案加些文件 讓它看起來很專業吧" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2021-07-22T12:39:19.000Z">2021-07-22</time></p><p class="title"><a href="/make-your-open-source-projects-professional-with-good-documentation/">為你的開源專案加些文件 讓它看起來很專業吧</a></p><p class="categories"><a href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/">技術文章</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/"><img src="/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/logo.png" alt="Unite Your Angular Coding Style With Teammates By Visual Studio Code &amp; ESLint &amp; Prettier" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2021-07-21T14:39:19.000Z">2021-07-21</time></p><p class="title"><a href="/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/">Unite Your Angular Coding Style With Teammates By Visual Studio Code &amp; ESLint &amp; Prettier</a></p><p class="categories"><a href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/">技術文章</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/use-finite-state-machine-to-manage-state/"><img src="/use-finite-state-machine-to-manage-state/redux-lifecycle.png" alt="Use Finite-state Machine to manage state" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2021-07-03T03:00:05.000Z">2021-07-03</time></p><p class="title"><a href="/use-finite-state-machine-to-manage-state/">Use Finite-state Machine to manage state</a></p><p class="categories"><a href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/">技術文章</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/"><img src="/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/goals.png" alt="Make your PowerShell fancy by Windows Terminal and Oh My Posh" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2021-06-27T07:56:42.000Z">2021-06-27</time></p><p class="title"><a href="/make-your-powershell-fancy-by-windows-terminal-and-oh-my-posh/">Make your PowerShell fancy by Windows Terminal and Oh My Posh</a></p><p class="categories"><a href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/">技術文章</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/free-or-open-source-illustrator-alternatives/"><img src="/free-or-open-source-illustrator-alternatives/green-svg-banner.svg" alt="代替 Illustrator 的免費繪圖軟體" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2020-04-15T14:13:37.000Z">2020-04-15</time></p><p class="title"><a href="/free-or-open-source-illustrator-alternatives/">代替 Illustrator 的免費繪圖軟體</a></p><p class="categories"><a href="/categories/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/">軟體分享</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">彙整</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2021/07/"><span class="level-start"><span class="level-item">七月 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">六月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/03/"><span class="level-start"><span class="level-item">三月 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/02/"><span class="level-start"><span class="level-item">二月 2020</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/10/"><span class="level-start"><span class="level-item">十月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">九月 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/06/"><span class="level-start"><span class="level-item">六月 2019</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/03/"><span class="level-start"><span class="level-item">三月 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/04/"><span class="level-start"><span class="level-item">四月 2018</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">標籤</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/alternative/"><span class="tag">alternative</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/angular/"><span class="tag">angular</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/baidu/"><span class="tag">baidu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/boot-configuration-data/"><span class="tag">boot-configuration-data</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/brew/"><span class="tag">brew</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/c/"><span class="tag">c#</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/changelog/"><span class="tag">changelog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/chatbot/"><span class="tag">chatbot</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cloudflare/"><span class="tag">cloudflare</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/code-of-conduct/"><span class="tag">code of conduct</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/coding-style/"><span class="tag">coding style</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/contributing/"><span class="tag">contributing</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cuda/"><span class="tag">cuda</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/data-visualization/"><span class="tag">data visualization</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/deploy/"><span class="tag">deploy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/development/"><span class="tag">development</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/dns/"><span class="tag">dns</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/docker/"><span class="tag">docker</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/documentation/"><span class="tag">documentation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/email/"><span class="tag">email</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/eslint/"><span class="tag">eslint</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/formatter/"><span class="tag">formatter</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/free/"><span class="tag">free</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/github/"><span class="tag">github</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/gpu/"><span class="tag">gpu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/graph/"><span class="tag">graph</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/heroku/"><span class="tag">heroku</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo-theme/"><span class="tag">hexo-theme</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/https/"><span class="tag">https</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/illustrator/"><span class="tag">illustrator</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/index/"><span class="tag">index</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/kill/"><span class="tag">kill</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/license/"><span class="tag">license</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/line/"><span class="tag">line</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/linter/"><span class="tag">linter</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/localhost/"><span class="tag">localhost</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mac/"><span class="tag">mac</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/macbook/"><span class="tag">macbook</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mkcert/"><span class="tag">mkcert</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nlp/"><span class="tag">nlp</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nvidia-gpu-driver/"><span class="tag">nvidia gpu driver</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/os-x/"><span class="tag">os-x</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/osx/"><span class="tag">osx</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/pid/"><span class="tag">pid</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/powershell/"><span class="tag">powershell</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/prettier/"><span class="tag">prettier</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/proxy/"><span class="tag">proxy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/python/"><span class="tag">python</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rails/"><span class="tag">rails</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rdbms/"><span class="tag">rdbms</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/readme/"><span class="tag">readme</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/repository/"><span class="tag">repository</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rich-menu/"><span class="tag">rich menu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ruby/"><span class="tag">ruby</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rvm/"><span class="tag">rvm</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rxjs/"><span class="tag">rxjs</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sendgrid/"><span class="tag">sendgrid</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sentiment/"><span class="tag">sentiment</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sidekiq/"><span class="tag">sidekiq</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ssl/"><span class="tag">ssl</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/state-management/"><span class="tag">state management</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/tensorflow/"><span class="tag">tensorflow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/terminal/"><span class="tag">terminal</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ubuntu/"><span class="tag">ubuntu</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/vscode/"><span class="tag">vscode</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/webpack-dev-server/"><span class="tag">webpack-dev-server</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/webpacker/"><span class="tag">webpacker</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/windows/"><span class="tag">windows</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/windows-boot-error/"><span class="tag">windows-boot-error</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/wsl/"><span class="tag">wsl</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/yilia/"><span class="tag">yilia</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%88%E5%B9%95%E6%95%99%E5%AE%A4/"><span class="tag">彈幕教室</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="adsense"><div class="card-content"><div class="menu"><h3 class="menu-label">廣告</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6329280350982888" data-ad-slot="9953995920" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/logo.png" alt="Hong Xin&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 楊竑昕</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/" aria-label="Creative Commons"><i class="fab fa-creative-commons" aria-hidden="true"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/" aria-label="Attribution 4.0 International"><i class="fab fa-creative-commons-by" aria-hidden="true"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/jk195417/blog" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script><script>(function installGallery(window) {
+  if (window.HexoGallery) return;
+  const document = window.document;
+  const requests = new Map();
+  const layouts = new Map();
+  const lightboxes = new Map();
+  function destroyLightbox(container) {
+    const state = lightboxes.get(container);
+    if (!state) return;
+    container.removeEventListener('click', state.click);
+    // The SDK removes its container through parentNode, even after a host replaced the body.
+    const dialog = state.instance.$container && state.instance.$container.get();
+    if (dialog && !dialog.parentNode) {
+      dialog.style.display = 'none';
+      document.body.appendChild(dialog);
+    }
+    if (state.instance.lgOpened) {
+      state.instance.settings.startAnimationDuration = 0;
+      state.instance.settings.backdropDuration = 0;
+    }
+    state.instance.destroy();
+    lightboxes.delete(container);
+  }
+  function lightbox(container, enabled) {
+    if (!enabled) {
+      destroyLightbox(container);
+      return;
+    }
+    if (typeof window.lightGallery !== 'function') return;
+    const plugins = (window.HexoGallery.lightGalleryPlugins || []).map(name => window[name]);
+    if (plugins.some(plugin => typeof plugin !== 'function')) return;
+    const items = Array.from(container.querySelectorAll('a.gallery-item[href]'));
+    if (!items.length) {
+      destroyLightbox(container);
+      return;
+    }
+    const elements = items.map(link => {
+      const image = link.querySelector('img');
+      const caption = document.createElement('span');
+      caption.textContent = image ? image.alt : '';
+      return {
+        src: link.href,
+        thumb: image ? image.currentSrc || image.src : link.href,
+        subHtml: caption.innerHTML,
+        alt: caption.innerHTML.replace(/"/g, '&quot;')
+      };
+    });
+    const signature = JSON.stringify(elements);
+    let state = lightboxes.get(container);
+    if (state) {
+      if (!sameItems(state.items, items) || state.signature !== signature) {
+        if (state.instance.lgOpened) {
+          state.instance.updateSlides(elements, Math.min(state.instance.index, elements.length - 1));
+        } else {
+          state.instance.refresh(elements);
+        }
+        state.items = items;
+        state.signature = signature;
+      }
+      return;
+    }
+    const instance = window.lightGallery(container, {
+      dynamic: true,
+      dynamicEl: elements,
+      plugins
+    });
+    state = {
+      instance,
+      items,
+      signature,
+      click: null
+    };
+    state.click = event => {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const link = event.target.closest('a.gallery-item');
+      const index = state.items.indexOf(link);
+      if (index < 0) return;
+      event.preventDefault();
+      instance.openGallery(index, link);
+    };
+    container.addEventListener('click', state.click);
+    lightboxes.set(container, state);
+  }
+  function sameItems(items, current) {
+    return items.length === current.length && Array.from(items).every((item, i) => item === current[i]);
+  }
+  function enhance(container) {
+    container.querySelectorAll('img:not(.not-gallery-item)').forEach(image => {
+      // Third-party SDK icons are controls, not article images. Script-load retries also
+      // scan icons inserted after the article's initial enhancement.
+      if (image.closest('a, .sharethis-inline-share-buttons, .a2a_kit, [data-share-provider]')) return;
+      const link = document.createElement('a');
+      link.className = 'gallery-item';
+      const src = image.getAttribute('src');
+      if (src !== null) link.setAttribute('href', src);
+      image.parentNode.insertBefore(link, image);
+      link.appendChild(image);
+      if (image.alt) {
+        const caption = document.createElement('p');
+        caption.className = 'has-text-centered is-size-6 caption';
+        caption.textContent = image.alt;
+        link.appendChild(caption);
+      }
+    });
+  }
+  function apply(root, options) {
+    const containers = root === document ? root.querySelectorAll('.article') : [root];
+    containers.forEach(enhance);
+    // Do not capture an incomplete article while HTML is still being parsed.
+    if (document.readyState === 'loading') return;
+    containers.forEach(container => lightbox(container, options.lightGallery));
+    if (options.justifiedGallery && typeof window.JustifiedGallery === 'function') {
+      const galleries = Array.from(root.querySelectorAll('.justified-gallery'));
+      if (root !== document && root.matches('.justified-gallery')) galleries.unshift(root);
+      galleries.forEach(gallery => {
+        const paragraphs = new Set(Array.from(gallery.querySelectorAll(':scope > p > .gallery-item'), link => link.parentNode));
+        paragraphs.forEach(paragraph => {
+          paragraph.replaceWith(...paragraph.childNodes);
+        });
+        gallery.querySelectorAll(':scope > .gallery-item > .caption').forEach(caption => {
+          caption.classList.add('jg-caption');
+        });
+        let state = layouts.get(gallery);
+        const items = () => Array.from(gallery.children).filter(item => !item.classList.contains('jg-spinner') && (item.matches(state.instance.settings.selector) || item.matches('div')));
+        if (state) {
+          if (sameItems(state.items, items())) return;
+          // init refreshes entries but starts another width watcher; stop and rewind first.
+          state.instance.widthWatcher.stop();
+          state.instance.stopImgAnalyzerStarter();
+          state.instance.rewind();
+        } else {
+          // The SDK reuses .jg-caption and safely creates captions for pre-existing links.
+          state = {
+            instance: new window.JustifiedGallery(gallery)
+          };
+          layouts.set(gallery, state);
+        }
+        state.instance.init();
+        state.items = items();
+      });
+    }
+  }
+  function prune() {
+    layouts.forEach((state, gallery) => {
+      if (!gallery.isConnected) destroyLayout(gallery);
+    });
+    lightboxes.forEach((state, container) => {
+      if (!container.isConnected) destroyLightbox(container);
+    });
+    requests.forEach((options, root) => {
+      if (root !== document && !root.isConnected) requests.delete(root);
+    });
+  }
+  function destroyLayout(gallery) {
+    const {
+      instance
+    } = layouts.get(gallery);
+    // The SDK's destroy does not stop an active loading spinner.
+    instance.stopLoadingSpinnerAnimation();
+    instance.destroy();
+    layouts.delete(gallery);
+  }
+  function retry() {
+    prune();
+    requests.forEach((options, root) => apply(root, options));
+  }
+  window.HexoGallery = {
+    /**
+     * Enhance images in a content container, optionally initializing the two Gallery SDKs.
+     * Repeated calls reuse existing wrappers, captions and plugin instances. Missing SDKs can be
+     * retried by calling init again; DOM ready, window load and subsequent script loads also retry
+     * connected containers with their latest options. SDK initialization waits for DOM readiness.
+     * Changed item collections refresh their existing SDK instance. Disabling the lightbox destroys
+     * it; the independently managed layout plugin is unchanged.
+     * @param {Document|Element} [root=document] Content container; document targets .article images
+     *     and lightboxes, and all .justified-gallery elements.
+     * @param {Object} [options={}] SDK opt-ins; omitted flags disable plugin initialization.
+     * @param {boolean} [options.lightGallery=false] Initialize lightGallery when available.
+     * @param {boolean} [options.justifiedGallery=false] Initialize justifiedGallery when available.
+     */
+    init: function (root, options) {
+      root = root || document;
+      options = options || {};
+      const enabled = {
+        lightGallery: options.lightGallery === true,
+        justifiedGallery: options.justifiedGallery === true
+      };
+      prune();
+      requests.set(root, enabled);
+      apply(root, enabled);
+    },
+    /** Destroy lightboxes, layouts and pending retries before content is replaced (e.g. PJAX). */
+    destroy: function (root) {
+      root = root || document;
+      lightboxes.forEach((state, container) => {
+        if (root === document || root === container || root.contains(container)) destroyLightbox(container);
+      });
+      layouts.forEach((state, gallery) => {
+        if (root === document || root === gallery || root.contains(gallery)) destroyLayout(gallery);
+      });
+      requests.forEach((options, target) => {
+        if (root === document || root === target || root.contains(target)) requests.delete(target);
+      });
+    }
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', retry, {
+      once: true
+    });
+  }
+  if (document.readyState !== 'complete') window.addEventListener('load', retry, {
+    once: true
+  });
+  document.addEventListener('hexo:gallery:ready', retry);
+  // Deferred scripts may arrive after init, including on the first enabled page reached by PJAX.
+  // Retry the latest requests, rather than capturing a previous page's enabled configuration.
+  document.addEventListener('load', event => {
+    if (event.target.tagName === 'SCRIPT') retry();
+  }, true);
+})(window);</script><script data-pjax>var IcarusThemeSettings = {"gallery":true,"article":{"highlight":{"clipboard":false,"fold":"unfolded","fold_preview":0}},"i18n":{"copy":"複製","copied":"已複製！"}};
+if (document.readyState !== 'loading') {
+    window.HexoGallery.init(document, {
+        lightGallery: IcarusThemeSettings.gallery,
+        justifiedGallery: IcarusThemeSettings.gallery
+    });
+}</script><script data-pjax src="/js/column.js"></script><script src="/js/navbar.js" defer></script><script src="/js/github-calendar.js" defer></script><script src="/js/animation.js" onerror="document.documentElement.classList.remove(&#039;is-animating&#039;)"></script><button type="button" id="back-to-top" title="回到頁首" aria-label="回到頁首"><i class="fas fa-chevron-up" aria-hidden="true"></i></button><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script>(function () {
+    var urls = ["https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js"];
+    var attrs = {};
+    function run() {
+      
+      if (!window.hexoComponentCookieConsentPopup) {
+      window.hexoComponentCookieConsentPopup = true;
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        
+        content: {
+          message: "此網站使用Cookie來改善您的體驗。",
+          dismiss: "知道了！",
+          allow: "允許使用Cookie",
+          deny: "拒絕",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      }, function (popup) {
+        window.hexoComponentCookieConsentPopup = popup;
+        
+      });
+      }
+    }
+    function load(i) {
+      if (i >= urls.length) {
+        run();
+        return;
+      }
+      var script = null;
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].getAttribute('src') === urls[i]) {
+          script = document.scripts[j];
+          break;
+        }
+      }
+      if (script && script.getAttribute('data-loaded') !== 'false') {
+        load(i + 1);
+        return;
+      }
+      if (!script) {
+        script = document.createElement('script');
+        script.src = urls[i];
+        script.async = true;
+        script.setAttribute('data-loaded', 'false');
+        for (var name in attrs) {
+          script.setAttribute(name, attrs[name]);
+        }
+        script.addEventListener('load', function () {
+          this.setAttribute('data-loaded', 'true');
+        });
+        // Remove a script that fails to load, so that the next run, e.g., after a PJAX page switch,
+        // adds it again instead of waiting for it
+        script.addEventListener('error', function () {
+          this.remove();
+        });
+        document.head.appendChild(script);
+      }
+      script.addEventListener('load', function () {
+        load(i + 1);
+      });
+    }
+    load(0);
+  })();</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/zoom/lg-zoom.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/fullscreen/lg-fullscreen.min.js" defer></script><script>(function installGallery(window) {
+  if (window.HexoGallery) return;
+  const document = window.document;
+  const requests = new Map();
+  const layouts = new Map();
+  const lightboxes = new Map();
+  function destroyLightbox(container) {
+    const state = lightboxes.get(container);
+    if (!state) return;
+    container.removeEventListener('click', state.click);
+    // The SDK removes its container through parentNode, even after a host replaced the body.
+    const dialog = state.instance.$container && state.instance.$container.get();
+    if (dialog && !dialog.parentNode) {
+      dialog.style.display = 'none';
+      document.body.appendChild(dialog);
+    }
+    if (state.instance.lgOpened) {
+      state.instance.settings.startAnimationDuration = 0;
+      state.instance.settings.backdropDuration = 0;
+    }
+    state.instance.destroy();
+    lightboxes.delete(container);
+  }
+  function lightbox(container, enabled) {
+    if (!enabled) {
+      destroyLightbox(container);
+      return;
+    }
+    if (typeof window.lightGallery !== 'function') return;
+    const plugins = (window.HexoGallery.lightGalleryPlugins || []).map(name => window[name]);
+    if (plugins.some(plugin => typeof plugin !== 'function')) return;
+    const items = Array.from(container.querySelectorAll('a.gallery-item[href]'));
+    if (!items.length) {
+      destroyLightbox(container);
+      return;
+    }
+    const elements = items.map(link => {
+      const image = link.querySelector('img');
+      const caption = document.createElement('span');
+      caption.textContent = image ? image.alt : '';
+      return {
+        src: link.href,
+        thumb: image ? image.currentSrc || image.src : link.href,
+        subHtml: caption.innerHTML,
+        alt: caption.innerHTML.replace(/"/g, '&quot;')
+      };
+    });
+    const signature = JSON.stringify(elements);
+    let state = lightboxes.get(container);
+    if (state) {
+      if (!sameItems(state.items, items) || state.signature !== signature) {
+        if (state.instance.lgOpened) {
+          state.instance.updateSlides(elements, Math.min(state.instance.index, elements.length - 1));
+        } else {
+          state.instance.refresh(elements);
+        }
+        state.items = items;
+        state.signature = signature;
+      }
+      return;
+    }
+    const instance = window.lightGallery(container, {
+      dynamic: true,
+      dynamicEl: elements,
+      plugins
+    });
+    state = {
+      instance,
+      items,
+      signature,
+      click: null
+    };
+    state.click = event => {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const link = event.target.closest('a.gallery-item');
+      const index = state.items.indexOf(link);
+      if (index < 0) return;
+      event.preventDefault();
+      instance.openGallery(index, link);
+    };
+    container.addEventListener('click', state.click);
+    lightboxes.set(container, state);
+  }
+  function sameItems(items, current) {
+    return items.length === current.length && Array.from(items).every((item, i) => item === current[i]);
+  }
+  function enhance(container) {
+    container.querySelectorAll('img:not(.not-gallery-item)').forEach(image => {
+      // Third-party SDK icons are controls, not article images. Script-load retries also
+      // scan icons inserted after the article's initial enhancement.
+      if (image.closest('a, .sharethis-inline-share-buttons, .a2a_kit, [data-share-provider]')) return;
+      const link = document.createElement('a');
+      link.className = 'gallery-item';
+      const src = image.getAttribute('src');
+      if (src !== null) link.setAttribute('href', src);
+      image.parentNode.insertBefore(link, image);
+      link.appendChild(image);
+      if (image.alt) {
+        const caption = document.createElement('p');
+        caption.className = 'has-text-centered is-size-6 caption';
+        caption.textContent = image.alt;
+        link.appendChild(caption);
+      }
+    });
+  }
+  function apply(root, options) {
+    const containers = root === document ? root.querySelectorAll('.article') : [root];
+    containers.forEach(enhance);
+    // Do not capture an incomplete article while HTML is still being parsed.
+    if (document.readyState === 'loading') return;
+    containers.forEach(container => lightbox(container, options.lightGallery));
+    if (options.justifiedGallery && typeof window.JustifiedGallery === 'function') {
+      const galleries = Array.from(root.querySelectorAll('.justified-gallery'));
+      if (root !== document && root.matches('.justified-gallery')) galleries.unshift(root);
+      galleries.forEach(gallery => {
+        const paragraphs = new Set(Array.from(gallery.querySelectorAll(':scope > p > .gallery-item'), link => link.parentNode));
+        paragraphs.forEach(paragraph => {
+          paragraph.replaceWith(...paragraph.childNodes);
+        });
+        gallery.querySelectorAll(':scope > .gallery-item > .caption').forEach(caption => {
+          caption.classList.add('jg-caption');
+        });
+        let state = layouts.get(gallery);
+        const items = () => Array.from(gallery.children).filter(item => !item.classList.contains('jg-spinner') && (item.matches(state.instance.settings.selector) || item.matches('div')));
+        if (state) {
+          if (sameItems(state.items, items())) return;
+          // init refreshes entries but starts another width watcher; stop and rewind first.
+          state.instance.widthWatcher.stop();
+          state.instance.stopImgAnalyzerStarter();
+          state.instance.rewind();
+        } else {
+          // The SDK reuses .jg-caption and safely creates captions for pre-existing links.
+          state = {
+            instance: new window.JustifiedGallery(gallery)
+          };
+          layouts.set(gallery, state);
+        }
+        state.instance.init();
+        state.items = items();
+      });
+    }
+  }
+  function prune() {
+    layouts.forEach((state, gallery) => {
+      if (!gallery.isConnected) destroyLayout(gallery);
+    });
+    lightboxes.forEach((state, container) => {
+      if (!container.isConnected) destroyLightbox(container);
+    });
+    requests.forEach((options, root) => {
+      if (root !== document && !root.isConnected) requests.delete(root);
+    });
+  }
+  function destroyLayout(gallery) {
+    const {
+      instance
+    } = layouts.get(gallery);
+    // The SDK's destroy does not stop an active loading spinner.
+    instance.stopLoadingSpinnerAnimation();
+    instance.destroy();
+    layouts.delete(gallery);
+  }
+  function retry() {
+    prune();
+    requests.forEach((options, root) => apply(root, options));
+  }
+  window.HexoGallery = {
+    /**
+     * Enhance images in a content container, optionally initializing the two Gallery SDKs.
+     * Repeated calls reuse existing wrappers, captions and plugin instances. Missing SDKs can be
+     * retried by calling init again; DOM ready, window load and subsequent script loads also retry
+     * connected containers with their latest options. SDK initialization waits for DOM readiness.
+     * Changed item collections refresh their existing SDK instance. Disabling the lightbox destroys
+     * it; the independently managed layout plugin is unchanged.
+     * @param {Document|Element} [root=document] Content container; document targets .article images
+     *     and lightboxes, and all .justified-gallery elements.
+     * @param {Object} [options={}] SDK opt-ins; omitted flags disable plugin initialization.
+     * @param {boolean} [options.lightGallery=false] Initialize lightGallery when available.
+     * @param {boolean} [options.justifiedGallery=false] Initialize justifiedGallery when available.
+     */
+    init: function (root, options) {
+      root = root || document;
+      options = options || {};
+      const enabled = {
+        lightGallery: options.lightGallery === true,
+        justifiedGallery: options.justifiedGallery === true
+      };
+      prune();
+      requests.set(root, enabled);
+      apply(root, enabled);
+    },
+    /** Destroy lightboxes, layouts and pending retries before content is replaced (e.g. PJAX). */
+    destroy: function (root) {
+      root = root || document;
+      lightboxes.forEach((state, container) => {
+        if (root === document || root === container || root.contains(container)) destroyLightbox(container);
+      });
+      layouts.forEach((state, gallery) => {
+        if (root === document || root === gallery || root.contains(gallery)) destroyLayout(gallery);
+      });
+      requests.forEach((options, target) => {
+        if (root === document || root === target || root.contains(target)) requests.delete(target);
+      });
+    }
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', retry, {
+      once: true
+    });
+  }
+  if (document.readyState !== 'complete') window.addEventListener('load', retry, {
+    once: true
+  });
+  document.addEventListener('hexo:gallery:ready', retry);
+  // Deferred scripts may arrive after init, including on the first enabled page reached by PJAX.
+  // Retry the latest requests, rather than capturing a previous page's enabled configuration.
+  document.addEventListener('load', event => {
+    if (event.target.tagName === 'SCRIPT') retry();
+  }, true);
+})(window);
+window.HexoGallery.lightGalleryPlugins = ["lgZoom","lgThumbnail","lgFullscreen"];
+window.HexoGallery.init(document, {
+        lightGallery: true,
+        justifiedGallery: true
+    });</script><script type="module">import { JustifiedGallery } from "https://cdn.jsdelivr.net/npm/justified-gallery@4.0.2/dist/justified-gallery.js";
+window.JustifiedGallery = JustifiedGallery;
+document.dispatchEvent(new Event('hexo:gallery:ready'));</script><!--!--><!--!--><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="請輸入關鍵字..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax>(function installSearchbox(window) {
+  if (window.loadSearchbox) return;
+  const document = window.document;
+  let current;
+  window.loadSearchbox = function ($main, options) {
+    const $ = window.jQuery;
+    options = options || {};
+    // Preserve focus state only when replacing the controller for the same open DOM element.
+    let opener = current ? current.destroy($main[0]) : null;
+    let touch = false;
+    const $document = $(document);
+    const namespace = '.hexoSearchbox';
+    const controller = {
+      isCurrent: function () {
+        return current === controller && document.contains($main[0]);
+      },
+      destroy: function (nextMain) {
+        if (current !== controller) return null;
+        const nextOpener = nextMain === $main[0] && $main.hasClass('show') ? opener : null;
+        $document.off(namespace);
+        opener = null;
+        current = null;
+        if (options.onDestroy) options.onDestroy();
+        return nextOpener;
+      }
+    };
+    current = controller;
+    function open() {
+      if (!controller.isCurrent()) return;
+      if (!$main.hasClass('show')) {
+        opener = document.activeElement;
+        $main.addClass('show');
+      }
+      $main.find('.searchbox-input').focus();
+    }
+    function close(restoreFocus) {
+      $main.removeClass('show');
+      if (restoreFocus !== false && opener && document.contains(opener)) opener.focus();
+      opener = null;
+    }
+    function isSearchShortcut(e) {
+      if (e.altKey) return false;
+      if (e.ctrlKey || e.metaKey) {
+        return !e.shiftKey && typeof e.key === 'string' && e.key.toLowerCase() === 'k';
+      }
+      // e.key already accounts for the keyboard layout (including Shift).
+      const target = e.target;
+      const typing = target.isContentEditable || /^(input|textarea|select)$/i.test(target.tagName);
+      return e.key === '/' && !typing;
+    }
+    $document.on('click' + namespace, '.navbar-main .search', open).on('click' + namespace + (options.touch ? ' touchend' + namespace : ''), '.searchbox-close, .searchbox .searchbox-mask', e => {
+      if (!controller.isCurrent()) return;
+      if (e.type !== 'click' && !touch) return;
+      if (options.touch) {
+        $('.navbar-main').css('pointer-events', 'none');
+        setTimeout(() => {
+          $('.navbar-main').css('pointer-events', 'auto');
+        }, 400);
+      }
+      close();
+      touch = false;
+    }).on('focusin' + namespace, e => {
+      if (controller.isCurrent() && $main.hasClass('show') && !$main[0].contains(e.target)) {
+        close(false);
+      }
+    }).on('keydown' + namespace, e => {
+      if (!controller.isCurrent()) return;
+      if (isSearchShortcut(e)) {
+        e.preventDefault();
+        open();
+        return;
+      }
+      if (!$main.hasClass('show')) return;
+      if (e.keyCode === 27) close();else if (options.onKeyDown) options.onKeyDown(e);
+    }).on('touchstart' + namespace, () => {
+      touch = true;
+    }).on('touchmove' + namespace, () => {
+      touch = false;
+    });
+    return controller;
+  };
+})(window);
+window.searchInsight = (function createInsightSearch() {
+  const content = {
+    fields: ['title', 'text'],
+    weights: [3, 1]
+  };
+  const taxonomy = {
+    fields: ['name', 'slug'],
+    weights: [1, 1]
+  };
+  const sections = {
+    posts: content,
+    pages: content,
+    categories: taxonomy,
+    tags: taxonomy
+  };
+  function parseKeywords(query) {
+    return query.split(' ').filter(keyword => {
+      return !!keyword;
+    }).map(keyword => {
+      return keyword.toLowerCase();
+    });
+  }
+
+  // Every keyword must occur in at least one own field; keywords may span different fields.
+  function filter(keywords, obj, fields) {
+    const containKeywords = keywords.filter(keyword => {
+      const containFields = fields.filter(field => {
+        if (!Object.prototype.hasOwnProperty.call(obj, field)) {
+          return false;
+        }
+        if (obj[field].toLowerCase().indexOf(keyword) > -1) {
+          return true;
+        }
+        return false;
+      });
+      if (containFields.length > 0) {
+        return true;
+      }
+      return false;
+    });
+    return containKeywords.length === keywords.length;
+  }
+
+  // Count non-overlapping occurrences of a literal lowercase keyword, not a regular expression.
+  function countMatches(text, keyword) {
+    let count = 0;
+    for (let i = text.indexOf(keyword); i !== -1; i = text.indexOf(keyword, i + keyword.length)) {
+      count++;
+    }
+    return count;
+  }
+  function weight(keywords, obj, fields, weights) {
+    let value = 0;
+    keywords.forEach(keyword => {
+      fields.forEach((field, index) => {
+        if (Object.prototype.hasOwnProperty.call(obj, field)) {
+          value += countMatches(obj[field].toLowerCase(), keyword) * weights[index];
+        }
+      });
+    });
+    return value;
+  }
+
+  // Weigh each matching item once. Equal weights retain the input order, including an empty query.
+  function topItems(items, keywords, config) {
+    return items.filter(item => {
+      return filter(keywords, item, config.fields);
+    }).map(item => {
+      return {
+        item,
+        weight: weight(keywords, item, config.fields, config.weights)
+      };
+    }).sort((a, b) => {
+      return b.weight - a.weight;
+    }).slice(0, 5).map(result => {
+      return result.item;
+    });
+  }
+  return function search(json, query) {
+    const keywords = parseKeywords(query);
+    const results = {};
+    Object.keys(sections).forEach(section => {
+      results[section] = topItems(json[section], keywords, sections[section]);
+    });
+    return {
+      keywords,
+      results
+    };
+  };
+})();</script><script data-pjax src="/js/insight.js" defer></script><script data-pjax>function initInsight() {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"請輸入關鍵字...","untitled":"(無標題)","posts":"文章","pages":"頁面","categories":"分類","tags":"標籤"});
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initInsight, { once: true });
+        } else {
+            initInsight();
+        }</script></body></html>
