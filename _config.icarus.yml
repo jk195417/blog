@@ -181,7 +181,7 @@ plugins:
         policyLink: https://www.cookiesandyou.com/
     gallery: true
     google_analytics:
-        tracking_id: 
+        tracking_id: G-VB9H2926V4
     hotjar:
         site_id: 
     katex: false
