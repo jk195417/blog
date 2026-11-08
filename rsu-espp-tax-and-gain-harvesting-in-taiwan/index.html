@@ -1,0 +1,1184 @@
+<!doctype html>
+<html lang="zh-TW" data-appearance-mode="light"><head><!-- hexo injector head_begin start --><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MJH8GKCK');</script>
+<!-- End Google Tag Manager --><!-- hexo injector head_begin end --><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="/js/appearance.js"></script><meta><title>外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割 - Hong Xin&#039;s Blog</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="Hong Xin&#039;s Blog"><meta name="msapplication-TileImage" content="/images/favicon.png"><meta name="msapplication-TileColor" content="#3273dc"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Hong Xin&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="在外商工作，公司常會給 RSU（限制型股票）和 ESPP（員工認股計畫）。這些股票在台灣要課兩次稅：拿到的時候算綜合所得，賣出的時候價差算海外所得。前者常常讓人一口氣跳到很高的級距；後者如果懂得利用最低稅負制的空間，每年 12 月可以合法地把成本墊高，以後少繳很多稅。 這篇整理我自己的算法和每年的固定動作。所有範例數字都是虛構的，稅率與扣除額用 115 年度（2027 年 5 月申報）的公告金額。"><meta property="og:type" content="article"><meta property="og:title" content="外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割"><meta property="og:url" content="https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/"><meta property="og:site_name" content="Hong Xin&#039;s Blog"><meta property="og:description" content="在外商工作，公司常會給 RSU（限制型股票）和 ESPP（員工認股計畫）。這些股票在台灣要課兩次稅：拿到的時候算綜合所得，賣出的時候價差算海外所得。前者常常讓人一口氣跳到很高的級距；後者如果懂得利用最低稅負制的空間，每年 12 月可以合法地把成本墊高，以後少繳很多稅。 這篇整理我自己的算法和每年的固定動作。所有範例數字都是虛構的，稅率與扣除額用 115 年度（2027 年 5 月申報）的公告金額。"><meta property="og:locale" content="zh_TW"><meta property="og:image" content="https://blog.yang-hong-xin.com/img/og_image.png"><meta property="article:published_time" content="2026-11-08T13:00:00.000Z"><meta property="article:modified_time" content="2026-11-08T10:17:58.456Z"><meta property="article:author" content="楊竑昕"><meta property="article:tag" content="報稅"><meta property="article:tag" content="RSU"><meta property="article:tag" content="ESPP"><meta property="article:tag" content="最低稅負制"><meta property="article:tag" content="美股"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://blog.yang-hong-xin.com/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/"},"headline":"外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割","image":["https://blog.yang-hong-xin.com/img/og_image.png"],"datePublished":"2026-11-08T13:00:00.000Z","dateModified":"2026-11-08T10:17:58.456Z","author":{"@type":"Person","name":"楊竑昕"},"publisher":{"@type":"Organization","name":"Hong Xin's Blog","logo":{"@type":"ImageObject","url":"https://blog.yang-hong-xin.com/images/logo.png"}},"description":"在外商工作，公司常會給 RSU（限制型股票）和 ESPP（員工認股計畫）。這些股票在台灣要課兩次稅：拿到的時候算綜合所得，賣出的時候價差算海外所得。前者常常讓人一口氣跳到很高的級距；後者如果懂得利用最低稅負制的空間，每年 12 月可以合法地把成本墊高，以後少繳很多稅。 這篇整理我自己的算法和每年的固定動作。所有範例數字都是虛構的，稅率與扣除額用 115 年度（2027 年 5 月申報）的公告金額。"}</script><link rel="canonical" href="https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/"><link rel="alternate" href="/atom.xml" title="Hong Xin&#039;s Blog" type="application/atom+xml"><link rel="icon" href="/images/favicon.png"><link rel="preconnect" href="https://use.fontawesome.com" crossorigin="anonymous"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="/css/github-calendar.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.11.1/styles/atom-one-dark.css"><script>window.IcarusAppearance.sync();</script><link data-variant rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro&amp;display=swap"><link data-variant rel="stylesheet" href="/css/default.css"><script>if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches)) {
+    document.documentElement.classList.add('is-animating');
+}</script><style>html.is-animating body>.footer,html.is-animating body>.navbar,html.is-animating body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/css/lightgallery-bundle.min.css" data-pjax><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justified-gallery@4.0.2/dist/assets/justified-gallery.css" data-pjax><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:3px}</style><script>window.paceOptions = Object.assign({}, window.paceOptions, {
+      restartOnPushState: false,
+      restartOnRequestAfter: false
+    });
+    document.addEventListener('pjax:send', function () {
+      if (window.Pace) window.Pace.restart();
+    });</script><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="ca-pub-6329280350982888" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          let hash = location.hash.substring(1);
+          try {
+            // Non-ASCII IDs are percent-encoded in the URL
+            hash = decodeURIComponent(hash);
+          } catch (e) {}
+          const id = '#' + CSS.escape(hash);
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      // The script is in <head>, so wait for the tabs to switch to the tab in the URL
+      if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', switchTab);
+      } else {
+          switchTab();
+      }
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.2"></head><body class="is-2-column"><!-- hexo injector body_begin start --><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJH8GKCK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><!-- hexo injector body_begin end --><div id="browser-notice" data-pjax></div><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/images/logo.png" alt="Hong Xin&#039;s Blog" height="28"></a></div><div class="navbar-menu"><button class="navbar-item navbar-toggle" type="button" title="選單" aria-label="選單" aria-expanded="false" aria-controls="navbar-main-menu"><i class="fas fa-bars" aria-hidden="true"></i></button><div class="navbar-start" id="navbar-main-menu"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" target="_blank" rel="noopener" href="https://yang-hong-xin.com/me">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="GitHub" href="https://github.com/jk195417/blog" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a><button class="navbar-item is-hidden-tablet catalogue" type="button" title="文章目錄" aria-label="文章目錄"><i class="fas fa-list-ul" aria-hidden="true"></i></button><button class="navbar-item search" type="button" title="搜尋" aria-label="搜尋"><i class="fas fa-search" aria-hidden="true"></i></button></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2026-11-08T13:00:00.000Z" title="2026-11-08 21:00:00">2026-11-08</time>發表</span><span class="level-item"><time dateTime="2026-11-08T10:17:58.456Z" title="2026-11-08 18:17:58">2026-11-08</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/%E7%90%86%E8%B2%A1/">理財</a></span><span class="level-item">24 分鐘讀完 (大約3648個字)</span></div></div><h1 class="title is-3 is-size-4-mobile">外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割</h1><div class="content"><p>在外商工作，公司常會給 RSU（限制型股票）和 ESPP（員工認股計畫）。這些股票在台灣要課兩次稅：<strong>拿到的時候</strong>算綜合所得，<strong>賣出的時候</strong>價差算海外所得。前者常常讓人一口氣跳到很高的級距；後者如果懂得利用最低稅負制的空間，每年 12 月可以合法地把成本墊高，以後少繳很多稅。</p>
+<p>這篇整理我自己的算法和每年的固定動作。所有範例數字都是<strong>虛構</strong>的，稅率與扣除額用 115 年度（2027 年 5 月申報）的公告金額。</p>
+<span id="more"></span>
+
+<blockquote>
+<p>本文是個人整理，不是稅務建議。各家公司開立憑單的方式可能不同，申報前請以公司憑單、財政部當年度公告或會計師意見為準。</p>
+</blockquote>
+<h2 id="兩個課稅時點"><a href="#兩個課稅時點" class="headerlink" title="兩個課稅時點"></a>兩個課稅時點</h2><table>
+<thead>
+<tr>
+<th>時點</th>
+<th>在台灣算什麼</th>
+<th>進哪裡</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>RSU 歸屬、ESPP 購買</td>
+<td>員工認股所得（其他所得）</td>
+<td>綜合所得稅，累進稅率 5%～40%</td>
+</tr>
+<tr>
+<td>之後賣出股票</td>
+<td>海外財產交易所得</td>
+<td>最低稅負制（基本所得額）</td>
+</tr>
+</tbody></table>
+<p>第一段是<strong>沒有選擇的</strong>：股票歸屬了就是所得，就算一股都沒賣也要繳。第二段才有規劃空間。</p>
+<h2 id="一、員工認股所得怎麼算"><a href="#一、員工認股所得怎麼算" class="headerlink" title="一、員工認股所得怎麼算"></a>一、員工認股所得怎麼算</h2><h3 id="RSU"><a href="#RSU" class="headerlink" title="RSU"></a>RSU</h3><blockquote>
+<p>員工認股所得 ＝ 歸屬股數 × 歸屬日市價（USD）× 歸屬日匯率</p>
+</blockquote>
+<p>例：歸屬 10 股，當天市價 $100，匯率 32 → 10 × 100 × 32 ＝ <strong>32,000 元</strong>。</p>
+<h3 id="ESPP"><a href="#ESPP" class="headerlink" title="ESPP"></a>ESPP</h3><p>ESPP 通常是每半年一期，用「期初價、期末價取較低者」的 85% 買進（lookback）。</p>
+<blockquote>
+<p>員工認股所得 ＝（購買日市價 − 實際購買價）× 股數 × 購買日匯率</p>
+</blockquote>
+<p>例：期初 $80、期末（購買日）$100，購買價 ＝ min(80, 100) × 85% ＝ $68。買 10 股、匯率 32 → (100 − 68) × 10 × 32 ＝ <strong>10,240 元</strong>。</p>
+<h3 id="幾個細節"><a href="#幾個細節" class="headerlink" title="幾個細節"></a>幾個細節</h3><ul>
+<li><strong>匯率用交易當天的</strong>，遇到週末或假日用前一個營業日。股票平台報表上的台幣金額常常是用「報表產生日」的匯率換算的，不能直接拿來報稅。</li>
+<li><strong>歸屬時台灣沒有預扣稅</strong>。有些平台預設「扣股繳稅」（sell-to-cover），但台灣部分扣 0 股，稅要隔年 5 月自己繳，所以要預留現金。</li>
+<li>公司通常會在隔年 1 月開立憑單。自己先算一遍，拿到憑單時可以對帳。我用這個算法回頭驗證過去幾年的申報書，誤差在 0.2% 內。</li>
+</ul>
+<h3 id="成本"><a href="#成本" class="headerlink" title="成本"></a>成本</h3><p>以後賣出時，<strong>成本就是上面用來課稅的市價</strong>：</p>
+<ul>
+<li>RSU 的成本 ＝ 歸屬日市價 × 歸屬日匯率</li>
+<li>ESPP 的成本 ＝ 購買日市價 × 購買日匯率（不是你實際付的折扣價，因為折扣那段已經課過稅了）</li>
+</ul>
+<p>這點很重要：如果用折扣價當成本，同一段利得會被課兩次。</p>
+<h2 id="二、最低稅負制與「海外利得空間」"><a href="#二、最低稅負制與「海外利得空間」" class="headerlink" title="二、最低稅負制與「海外利得空間」"></a>二、最低稅負制與「海外利得空間」</h2><p>賣美股的利得屬於海外所得，<strong>不進綜合所得稅</strong>，只進最低稅負制：</p>
+<ul>
+<li>全戶海外所得一年<strong>未滿 100 萬</strong>：不計入。</li>
+<li><strong>滿 100 萬</strong>：全數計入基本所得額。</li>
+<li>基本所得額 ＝ 綜合所得淨額 ＋ 海外所得 ＋ 其他項目</li>
+<li>基本稅額 ＝（基本所得額 − 750 萬）× 20%</li>
+<li><strong>基本稅額大於一般所得稅額時，才補差額。</strong></li>
+</ul>
+<p>換句話說，海外所得在某個金額以內，基本稅額不會超過一般所得稅額，一毛都不用多繳。我把這個金額叫做「海外利得空間」：</p>
+<blockquote>
+<p><strong>海外利得空間 ＝ 一般所得稅額 ÷ 20% ＋ 750 萬 − 綜合所得淨額</strong></p>
+</blockquote>
+<p>空間內的海外利得邊際稅率是 <strong>0%</strong>，超過的部分是 <strong>20%</strong>。</p>
+<h3 id="範例（虛構，簡化成單一計稅方式）"><a href="#範例（虛構，簡化成單一計稅方式）" class="headerlink" title="範例（虛構，簡化成單一計稅方式）"></a>範例（虛構，簡化成單一計稅方式）</h3><table>
+<thead>
+<tr>
+<th>綜合所得淨額</th>
+<th>一般所得稅額</th>
+<th>海外利得空間</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>150 萬</td>
+<td>146,900</td>
+<td>約 673 萬</td>
+</tr>
+<tr>
+<td>300 萬</td>
+<td>469,900</td>
+<td>約 685 萬</td>
+</tr>
+<tr>
+<td>600 萬</td>
+<td>1,450,900</td>
+<td>約 875 萬</td>
+</tr>
+</tbody></table>
+<p>即使所得不算特別高，每年也有六七百萬的空間。對大部分人來說，海外利得根本用不完這個空間。</p>
+<h3 id="空間怎麼變"><a href="#空間怎麼變" class="headerlink" title="空間怎麼變"></a>空間怎麼變</h3><p>假設你的邊際稅率是 t，多一筆所得 X：</p>
+<blockquote>
+<p>Δ空間 ＝（t ÷ 20% − 1）× X</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>邊際稅率</th>
+<th>多 X 所得，空間</th>
+<th>多 X 扣除額，空間</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>40%</td>
+<td>＋X</td>
+<td>−X</td>
+</tr>
+<tr>
+<td>30%</td>
+<td>＋0.5X</td>
+<td>−0.5X</td>
+</tr>
+<tr>
+<td>20%</td>
+<td>不變</td>
+<td>不變</td>
+</tr>
+<tr>
+<td>12%</td>
+<td>−0.4X</td>
+<td>＋0.4X</td>
+</tr>
+</tbody></table>
+<p>所以在高級距的人，年終、配偶的所得、員工認股所得都會讓空間變大；捐贈、房貸利息會讓空間變小。<strong>空間要等這些數字都確定後再算</strong>，通常就是 12 月初。</p>
+<h3 id="要注意的地方"><a href="#要注意的地方" class="headerlink" title="要注意的地方"></a>要注意的地方</h3><ul>
+<li>夫妻合併申報時，<strong>全戶共用一個空間</strong>，兩個人賣的股票要一起算。</li>
+<li>美股股利也算海外所得，會吃掉一點空間。</li>
+<li>同一年的海外財產交易損益可以互抵：<strong>虧損的批次一起賣，空間就會延伸</strong>。</li>
+<li>空間<strong>每年歸零，用不完不能留到明年</strong>。</li>
+</ul>
+<h2 id="三、獲利收割（tax-gain-harvesting）"><a href="#三、獲利收割（tax-gain-harvesting）" class="headerlink" title="三、獲利收割（tax-gain harvesting）"></a>三、獲利收割（tax-gain harvesting）</h2><p>既然空間內的利得不用繳稅，又每年歸零，那就應該每年用掉：<strong>在空間內賣出有利得的股票，再立刻買回</strong>。持股沒變，但成本被墊高到現在的市價，以後真的要賣的時候，要課稅的利得就變少了。</p>
+<h3 id="做法"><a href="#做法" class="headerlink" title="做法"></a>做法</h3><ol>
+<li><strong>12 月初</strong>：年終、捐贈、配偶的數字都確定後，重算當年的空間，留一點緩衝。</li>
+<li><strong>排出賣出清單</strong>：從<strong>成本最低</strong>的批次開始，累計利得控制在空間內。</li>
+<li><strong>同一個帳戶內賣出、立刻買回</strong>（或換成指數 ETF 分散風險），減少不在市場上的時間。</li>
+<li><strong>12 月中前完成</strong>，確保成交日算在當年度。</li>
+<li><strong>保留交易確認單</strong>當作新的成本證明。</li>
+</ol>
+<h3 id="為什麼從成本最低的開始"><a href="#為什麼從成本最低的開始" class="headerlink" title="為什麼從成本最低的開始"></a>為什麼從成本最低的開始</h3><p>空間是用「利得金額」計算的，賣哪一批都會用掉同樣的空間。但低成本批次每股利得最大，<strong>同樣的空間賣出的股數最少</strong>；留下來的都是高成本批次，以後真的要賣時，課稅的利得本來就小。</p>
+<h3 id="範例（虛構）"><a href="#範例（虛構）" class="headerlink" title="範例（虛構）"></a>範例（虛構）</h3><p>目前股價換算每股 20,000 元，空間 300 萬：</p>
+<table>
+<thead>
+<tr>
+<th>批次</th>
+<th>股數</th>
+<th>每股成本</th>
+<th>每股利得</th>
+<th>賣出</th>
+<th>累計利得</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A</td>
+<td>50</td>
+<td>3,000</td>
+<td>17,000</td>
+<td>50 股</td>
+<td>850,000</td>
+</tr>
+<tr>
+<td>B</td>
+<td>100</td>
+<td>5,000</td>
+<td>15,000</td>
+<td>100 股</td>
+<td>2,350,000</td>
+</tr>
+<tr>
+<td>C</td>
+<td>60</td>
+<td>8,000</td>
+<td>12,000</td>
+<td>54 股</td>
+<td>2,998,000</td>
+</tr>
+<tr>
+<td>D</td>
+<td>30</td>
+<td>25,000</td>
+<td>−5,000</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<p>批次 D 目前虧損 15 萬。如果同一年也把 D 賣掉再買回，虧損可以抵掉利得，空間多出 15 萬，C 剩下的 6 股（利得 72,000）也能一起賣掉，還有餘裕。</p>
+<p>我把這個排序寫成一支小腳本：輸入股價、匯率和空間，就會輸出賣出清單和虧損批次，12 月只要填入當天的數字。</p>
+<h3 id="執行上的細節"><a href="#執行上的細節" class="headerlink" title="執行上的細節"></a>執行上的細節</h3><ul>
+<li><strong>在哪裡賣、在哪裡買回</strong>：員工股票平台通常不適合直接收割，見下一節。</li>
+<li>台灣目前<strong>沒有</strong>類似美國洗售（wash sale）的規定，但虧損批次賣出再買回的認定，建議先問會計師。</li>
+<li><strong>成本證明一定要留</strong>：歸屬與購買紀錄、成交單。拿不出成本的話，國稅局可以用成交價的一定比例推定所得，會吃大虧。</li>
+</ul>
+<h3 id="我犯過的錯"><a href="#我犯過的錯" class="headerlink" title="我犯過的錯"></a>我犯過的錯</h3><p>有一年我完全不知道有這個空間，就這樣放掉了。回頭算才發現，那年底的帳上利得<strong>全部</strong>都可以在空間內免稅墊高；現在這些利得還留在帳上，以後賣出超過空間時要用 20% 課稅。空間每年都有，但過了 12 月 31 日就沒了。</p>
+<h2 id="四、執行管道：DTC-轉股、美元與複委託"><a href="#四、執行管道：DTC-轉股、美元與複委託" class="headerlink" title="四、執行管道：DTC 轉股、美元與複委託"></a>四、執行管道：DTC 轉股、美元與複委託</h2><p>知道要賣哪幾批之後，還要決定<strong>在哪裡賣、在哪裡買回</strong>。這一節是我比較過幾種做法後的整理（2026 年 11 月的費率，各家常調整，請以官網為準）。</p>
+<h3 id="為什麼不直接在員工股票平台做"><a href="#為什麼不直接在員工股票平台做" class="headerlink" title="為什麼不直接在員工股票平台做"></a>為什麼不直接在員工股票平台做</h3><p>員工股票平台（公司合作的券商）是為了「發股票、讓員工賣股票」設計的，用來收割常有幾個問題：</p>
+<ul>
+<li><strong>通常只能賣，不能買</strong>，賣完要把錢匯出去，再到別的地方買回，中間好幾天不在市場上。</li>
+<li><strong>不一定能指定要賣哪一批</strong>，預設多半是先進先出（FIFO），不一定是成本最低的那批。</li>
+<li>出金如果讓平台換成台幣，常會多收一筆換匯費。</li>
+</ul>
+<p>所以比較好的做法是：<strong>把股票轉到一個可以買賣的帳戶，在同一個帳戶裡賣出、立刻買回。</strong></p>
+<h3 id="三條路"><a href="#三條路" class="headerlink" title="三條路"></a>三條路</h3><table>
+<thead>
+<tr>
+<th>做法</th>
+<th>流程</th>
+<th>優點</th>
+<th>缺點</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>A. 平台賣出、匯回再買</td>
+<td>平台賣 → 美元電匯到台灣 → 複委託或美國券商買回</td>
+<td>不用多開帳戶</td>
+<td>不在市場好幾天；每次匯款都有費用</td>
+</tr>
+<tr>
+<td>B. DTC 轉到國內複委託</td>
+<td>股票轉到國內券商的複委託帳戶 → 帳內賣出買回</td>
+<td>不用跨境匯款；台灣券商、中文服務</td>
+<td>每筆交易手續費較高</td>
+</tr>
+<tr>
+<td>C. DTC 轉到美國券商</td>
+<td>股票轉到美國券商 → 帳內賣出買回</td>
+<td>交易幾乎免手續費</td>
+<td>錢要進出時有跨境匯款費</td>
+</tr>
+</tbody></table>
+<h3 id="DTC-轉股是什麼"><a href="#DTC-轉股是什麼" class="headerlink" title="DTC 轉股是什麼"></a>DTC 轉股是什麼</h3><p>DTC（Depository Trust Company）是美國的證券集中保管機構。<strong>DTC 轉股就是把股票從一家券商搬到另一家，不是賣出</strong>，所以：</p>
+<ul>
+<li><strong>不會產生所得</strong>，也不用繳稅；持有期間和每批的成本都沒變。</li>
+<li>你需要收件券商的 <strong>DTC 號碼</strong>（收件券商或它的清算商的代號）和你在那邊的帳號，在原平台送出申請。</li>
+<li>時間大約 <strong>10–15 個營業日</strong>，要收割的話 <strong>11 月中前</strong>就要送出。</li>
+<li><strong>零股</strong>（ESPP 的小數股、股利再投入）通常不能轉，會留在原平台或被換成現金。</li>
+<li>新券商不一定會帶到你的原始成本。台灣報稅用的成本本來就要自己算（歸屬日或購買日的市價 × 當天匯率），<strong>舊平台的歸屬、購買紀錄要自己存好。</strong></li>
+</ul>
+<p>和「賣出、匯款、再買回」比起來，轉股省了匯費，也不用承擔不在市場的那幾天的股價風險。</p>
+<h3 id="美元怎麼進出"><a href="#美元怎麼進出" class="headerlink" title="美元怎麼進出"></a>美元怎麼進出</h3><ul>
+<li><strong>從美國出金，一定選美元電匯</strong>，不要讓對方換成台幣，換匯費可能高達幾個百分點。</li>
+<li>台灣這邊用<strong>外幣帳戶</strong>收美元，要換台幣的時候自己挑匯率。</li>
+<li>一次跨境電匯的成本（匯出費、中間行、入帳費加起來），我估算大約 <strong>1,500 台幣</strong>。</li>
+<li>國內複委託如果用<strong>台幣交割</strong>，每筆交易都會換匯，匯差可能比手續費還高；要開<strong>美元交割帳戶</strong>。</li>
+</ul>
+<h3 id="複委託還是美國券商：一個簡單的判斷"><a href="#複委託還是美國券商：一個簡單的判斷" class="headerlink" title="複委託還是美國券商：一個簡單的判斷"></a>複委託還是美國券商：一個簡單的判斷</h3><p>兩者的成本結構剛好相反：</p>
+<ul>
+<li><strong>國內複委託</strong>：不用跨境匯款，但每筆交易收手續費（我拿到的優惠是 0.08%，有每月額度上限，超過恢復原費率）。</li>
+<li><strong>美國券商</strong>：交易幾乎免費，但每次錢要進出就要付一次跨境匯款費（約 1,500 台幣）。</li>
+</ul>
+<p>損益兩平點：0.08% × 交易金額 ＝ 1,500 台幣 → 交易金額約 <strong>5.7 萬美元</strong>。</p>
+<blockquote>
+<p><strong>每次匯款平均對應的交易金額超過約 5.7 萬美元，美國券商比較便宜；低於這個金額，複委託比較便宜。</strong></p>
+</blockquote>
+<p>收割通常是「轉股進去、在帳內賣出買回、錢不出來」，幾乎沒有匯款，交易金額又大，所以美國券商通常比較划算。反過來，如果你常常小額買美股，又不想處理跨境匯款，複委託比較方便。</p>
+<h3 id="美國券商比較（2026-11）"><a href="#美國券商比較（2026-11）" class="headerlink" title="美國券商比較（2026-11）"></a>美國券商比較（2026-11）</h3><table>
+<thead>
+<tr>
+<th></th>
+<th>Firstrade</th>
+<th>嘉信 Schwab</th>
+<th>IBKR 盈透</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>美股手續費</td>
+<td>0</td>
+<td>0</td>
+<td>每筆約 0.35–1 美元</td>
+</tr>
+<tr>
+<td>開戶門檻</td>
+<td>無</td>
+<td>國際帳戶約 2.5 萬美元</td>
+<td>無</td>
+</tr>
+<tr>
+<td>中文</td>
+<td>繁中介面與客服</td>
+<td>主要英文</td>
+<td>有中文介面</td>
+</tr>
+<tr>
+<td>市場</td>
+<td>美國</td>
+<td>主要美國</td>
+<td>150 多個市場（含英國、愛爾蘭掛牌 ETF）</td>
+</tr>
+<tr>
+<td>帳內換匯</td>
+<td>無</td>
+<td>無</td>
+<td>有，接近銀行間匯率</td>
+</tr>
+<tr>
+<td>匯出費</td>
+<td>每次約 25 美元</td>
+<td>約 25 美元</td>
+<td>每月第一次免費</td>
+</tr>
+</tbody></table>
+<p>共通點：都要簽 <strong>W-8BEN</strong>（非美國人身分聲明，簽署後第三年年底失效，沒交可能被預扣 24%）、股利預扣 30%、資本利得美國不課稅、都能接收 DTC 轉股。</p>
+<p>我最後選了 Firstrade：零手續費、有中文、只做美股剛好夠用。如果需要換匯或想買愛爾蘭掛牌的 ETF，IBKR 比較適合。</p>
+<h3 id="幾個操作細節"><a href="#幾個操作細節" class="headerlink" title="幾個操作細節"></a>幾個操作細節</h3><ul>
+<li><strong>現金帳戶就夠了</strong>，不需要開融資。現金帳戶有一個限制：用「還沒交割的賣出款」買進的股票，在那筆賣出款交割（T+1）之前不能再賣掉。收割是賣出後買回、長期持有，不受影響。</li>
+<li><strong>12 月中前完成交易</strong>，確保成交日在當年度；留幾天緩衝給轉股延遲或系統問題。</li>
+<li><strong>保留每一張交易確認單</strong>，那就是新的成本證明。</li>
+</ul>
+<h2 id="五、繳稅的現金"><a href="#五、繳稅的現金" class="headerlink" title="五、繳稅的現金"></a>五、繳稅的現金</h2><p>員工認股所得的稅要隔年 5 月一次繳，金額可能很大。我的現金來源順序：</p>
+<ol>
+<li><strong>隔年 2–5 月新歸屬的股票</strong>：歸屬後立刻賣，成本就是歸屬市價，幾乎不產生利得，也不吃空間。</li>
+<li>台股 ETF 等流動性好的資產。</li>
+<li>信用卡繳稅分期（問看看能不能提高臨時額度）。</li>
+<li>信貸。</li>
+</ol>
+<h2 id="六、其他要注意的"><a href="#六、其他要注意的" class="headerlink" title="六、其他要注意的"></a>六、其他要注意的</h2><ul>
+<li><strong>股利</strong>：美股股利對台灣居民預扣 30%（台美租稅協定生效前），也算海外所得。</li>
+<li><strong>美國遺產稅</strong>：非美國人持有美股，過世時遺產稅免稅額只有 US$60,000，最高稅率 40%，放在員工股票平台或美國券商都一樣。透過國內複委託持有在繼承手續上比較單純，但美股仍是美國資產，持股多的話建議請專業人士評估。</li>
+<li><strong>扣除額要先確認</strong>：列報受扶養親屬、身障特別扣除，要在報稅前準備好證明文件。</li>
+<li><strong>每年的固定動作</strong>：1 月拿憑單對帳、匯出前一年的股票紀錄、12 月初重算空間並收割、5 月申報。</li>
+</ul>
+<h2 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h2><ul>
+<li>RSU 歸屬、ESPP 購買時就要課稅，用當天市價與當天匯率計算，這也是之後的成本。</li>
+<li>賣出的利得只進最低稅負制，每年都有一個「海外利得空間」，空間內稅率 0%。</li>
+<li>每年 12 月在空間內賣出再買回，把成本墊高；空間用不完不能留到明年。</li>
+<li>收割前先用 DTC 把股票轉到能買賣的帳戶，11 月中前送出；錢不出來的話，美國券商通常最便宜。</li>
+</ul>
+<p>海外利得空間要先把整年的所得稅算出來才知道。怎麼提前精算，寫在上一篇：<a href="/precompute-income-tax/">11 月就把明年 5 月的所得稅算出來</a>。</p>
+<h2 id="參考資料"><a href="#參考資料" class="headerlink" title="參考資料"></a>參考資料</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-manual/national/individual-income-tax/6xKrvGR">財政部稅務入口網：最低稅負制</a></li>
+<li><a target="_blank" rel="noopener" href="https://law-out.mof.gov.tw/LawContent.aspx?id=GL006495">財政部：外國公司員工取得並執行員工認股權相關課稅規定（台財稅字第 09404527550 號）</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.etax.nat.gov.tw/etwmain/tax-info/understanding/tax-saving-secret/ZJ1Zn0P">財政部稅務入口網：特別扣除額</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割</p><p><a href="https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/">https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>楊竑昕</p></div></div><div class="level-item is-narrow"><div><h6>發表於</h6><p>2026-11-08</p></div></div><div class="level-item is-narrow"><div><h6>更新於</h6><p>2026-11-08</p></div></div><div class="level-item is-narrow"><div><h6>許可協議</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E5%A0%B1%E7%A8%85/">報稅</a><a class="link-muted mr-2" rel="tag" href="/tags/RSU/">RSU</a><a class="link-muted mr-2" rel="tag" href="/tags/ESPP/">ESPP</a><a class="link-muted mr-2" rel="tag" href="/tags/%E6%9C%80%E4%BD%8E%E7%A8%85%E8%B2%A0%E5%88%B6/">最低稅負制</a><a class="link-muted mr-2" rel="tag" href="/tags/%E7%BE%8E%E8%82%A1/">美股</a></div><div class="sharethis-inline-share-buttons" id="sharethis-share" data-share-provider="sharethis" data-url="https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/" data-title="外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割"></div><script>(function () {
+          var container = document.getElementById('sharethis-share');
+          (function () {
+    var urls = ["https://platform-api.sharethis.com/js/sharethis.js#property=60d7d9bc0c52fc001291b96c&product=inline-share-buttons"];
+    var attrs = {};
+    function run() {
+      
+      if (!container || !container.isConnected || container.querySelector('.st-btn')) return;
+      var sdk = window.__sharethis__;
+      // Reuse the account settings when PJAX replaces the container.
+      if (sdk && sdk.config && typeof sdk.load === 'function') {
+        var settings = Object.assign({}, sdk.config['inline-share-buttons']);
+        if (container.dataset.url) settings.url = container.dataset.url;
+        if (container.dataset.title) settings.title = container.dataset.title;
+        sdk.load('inline-share-buttons', settings);
+      }
+    }
+    function load(i) {
+      if (i >= urls.length) {
+        run();
+        return;
+      }
+      var script = null;
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].getAttribute('src') === urls[i]) {
+          script = document.scripts[j];
+          break;
+        }
+      }
+      if (script && script.getAttribute('data-loaded') !== 'false') {
+        load(i + 1);
+        return;
+      }
+      if (!script) {
+        script = document.createElement('script');
+        script.src = urls[i];
+        script.async = true;
+        script.setAttribute('data-loaded', 'false');
+        for (var name in attrs) {
+          script.setAttribute(name, attrs[name]);
+        }
+        script.addEventListener('load', function () {
+          this.setAttribute('data-loaded', 'true');
+        });
+        // Remove a script that fails to load, so that the next run, e.g., after a PJAX page switch,
+        // adds it again instead of waiting for it
+        script.addEventListener('error', function () {
+          this.remove();
+        });
+        document.head.appendChild(script);
+      }
+      script.addEventListener('load', function () {
+        load(i + 1);
+      });
+    }
+    load(0);
+  })();
+        })();</script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜歡這篇文章嗎? 贊助一下作者吧!</h3><div class="buttons is-centered"><a class="button donate" href="https://www.buymeacoffee.com/aaronyang" target="_blank" rel="noopener" data-type="buymeacoffee"><span class="icon is-small"><i class="fas fa-coffee"></i></span><span>送我杯咖啡</span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>PayPal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="jk195417@gmail.com"><input type="hidden" name="currency_code" value="USD"></form></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/precompute-income-tax/"><span class="level-item">11 月就把明年 5 月的所得稅算出來：提前精算的方法</span><i class="level-item fas fa-chevron-right" aria-hidden="true"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">評論</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = "https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/";
+            this.page.identifier = "rsu-espp-tax-and-gain-harvesting-in-taiwan/";
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            // Disqus parses computed link/background colors with a legacy RGB-only parser.
+            // Serialize the current theme colors to sRGB without changing the rest of the page.
+            var thread = d.getElementById('disqus_thread');
+            var canvas = d.createElement('canvas');
+            canvas.width = canvas.height = 1;
+            var context = canvas.getContext('2d');
+            function rgb(color) {
+                context.clearRect(0, 0, 1, 1);
+                context.fillStyle = color;
+                context.fillRect(0, 0, 1, 1);
+                var pixel = context.getImageData(0, 0, 1, 1).data;
+                return 'rgba(' + pixel[0] + ',' + pixel[1] + ',' + pixel[2] + ',' + pixel[3] / 255 + ')';
+            }
+            var link = d.createElement('a');
+            link.href = '#';
+            thread.appendChild(link);
+            var linkColor = rgb(getComputedStyle(link).color);
+            thread.removeChild(link);
+            var style = d.createElement('style');
+            style.textContent = '#disqus_thread a { color: ' + linkColor + '; }';
+            thread.parentNode.insertBefore(style, thread);
+            for (var node = thread; node; node = node.parentElement) {
+                var background = rgb(getComputedStyle(node).backgroundColor);
+                if (background !== 'rgba(0,0,0,0)') {
+                    thread.style.backgroundColor = background;
+                    break;
+                }
+            }
+            s.src = "//yang-hong-xin.disqus.com/embed.js";
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://www.gravatar.com/avatar/1d547423d2d1a87397303069bd302db4?s=128" alt="楊竑昕"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">楊竑昕</p><p class="is-size-6 is-block">Staff AI Engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>台中，台灣</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives/"><p class="title">35</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分類</p><a href="/categories/"><p class="title">6</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">標籤</p><a href="/tags/"><p class="title">82</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/jk195417" target="_blank" rel="me noopener">追蹤</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/jk195417" aria-label="Github"><i class="fab fa-github" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://facebook.com/yang.hong.xin" aria-label="Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Linkedin" href="https://linkedin.com/in/hongxin-yang/" aria-label="Linkedin"><i class="fab fa-linkedin" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Home" href="https://yang-hong-xin.com" aria-label="Home"><i class="fas fa-house" aria-hidden="true"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/atom.xml" aria-label="RSS"><i class="fas fa-rss" aria-hidden="true"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">文章目錄</h3><ul class="menu-list"><li><a class="level is-mobile" href="#兩個課稅時點"><span class="level-left"><span class="level-item">1</span><span class="level-item">兩個課稅時點</span></span></a></li><li><a class="level is-mobile" href="#一、員工認股所得怎麼算"><span class="level-left"><span class="level-item">2</span><span class="level-item">一、員工認股所得怎麼算</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#RSU"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">RSU</span></span></a></li><li><a class="level is-mobile" href="#ESPP"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">ESPP</span></span></a></li><li><a class="level is-mobile" href="#幾個細節"><span class="level-left"><span class="level-item">2.3</span><span class="level-item">幾個細節</span></span></a></li><li><a class="level is-mobile" href="#成本"><span class="level-left"><span class="level-item">2.4</span><span class="level-item">成本</span></span></a></li></ul></li><li><a class="level is-mobile" href="#二、最低稅負制與「海外利得空間」"><span class="level-left"><span class="level-item">3</span><span class="level-item">二、最低稅負制與「海外利得空間」</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#範例（虛構，簡化成單一計稅方式）"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">範例（虛構，簡化成單一計稅方式）</span></span></a></li><li><a class="level is-mobile" href="#空間怎麼變"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">空間怎麼變</span></span></a></li><li><a class="level is-mobile" href="#要注意的地方"><span class="level-left"><span class="level-item">3.3</span><span class="level-item">要注意的地方</span></span></a></li></ul></li><li><a class="level is-mobile" href="#三、獲利收割（tax-gain-harvesting）"><span class="level-left"><span class="level-item">4</span><span class="level-item">三、獲利收割（tax-gain harvesting）</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#做法"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">做法</span></span></a></li><li><a class="level is-mobile" href="#為什麼從成本最低的開始"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">為什麼從成本最低的開始</span></span></a></li><li><a class="level is-mobile" href="#範例（虛構）"><span class="level-left"><span class="level-item">4.3</span><span class="level-item">範例（虛構）</span></span></a></li><li><a class="level is-mobile" href="#執行上的細節"><span class="level-left"><span class="level-item">4.4</span><span class="level-item">執行上的細節</span></span></a></li><li><a class="level is-mobile" href="#我犯過的錯"><span class="level-left"><span class="level-item">4.5</span><span class="level-item">我犯過的錯</span></span></a></li></ul></li><li><a class="level is-mobile" href="#四、執行管道：DTC-轉股、美元與複委託"><span class="level-left"><span class="level-item">5</span><span class="level-item">四、執行管道：DTC 轉股、美元與複委託</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#為什麼不直接在員工股票平台做"><span class="level-left"><span class="level-item">5.1</span><span class="level-item">為什麼不直接在員工股票平台做</span></span></a></li><li><a class="level is-mobile" href="#三條路"><span class="level-left"><span class="level-item">5.2</span><span class="level-item">三條路</span></span></a></li><li><a class="level is-mobile" href="#DTC-轉股是什麼"><span class="level-left"><span class="level-item">5.3</span><span class="level-item">DTC 轉股是什麼</span></span></a></li><li><a class="level is-mobile" href="#美元怎麼進出"><span class="level-left"><span class="level-item">5.4</span><span class="level-item">美元怎麼進出</span></span></a></li><li><a class="level is-mobile" href="#複委託還是美國券商：一個簡單的判斷"><span class="level-left"><span class="level-item">5.5</span><span class="level-item">複委託還是美國券商：一個簡單的判斷</span></span></a></li><li><a class="level is-mobile" href="#美國券商比較（2026-11）"><span class="level-left"><span class="level-item">5.6</span><span class="level-item">美國券商比較（2026-11）</span></span></a></li><li><a class="level is-mobile" href="#幾個操作細節"><span class="level-left"><span class="level-item">5.7</span><span class="level-item">幾個操作細節</span></span></a></li></ul></li><li><a class="level is-mobile" href="#五、繳稅的現金"><span class="level-left"><span class="level-item">6</span><span class="level-item">五、繳稅的現金</span></span></a></li><li><a class="level is-mobile" href="#六、其他要注意的"><span class="level-left"><span class="level-item">7</span><span class="level-item">六、其他要注意的</span></span></a></li><li><a class="level is-mobile" href="#小結"><span class="level-left"><span class="level-item">8</span><span class="level-item">小結</span></span></a></li><li><a class="level is-mobile" href="#參考資料"><span class="level-left"><span class="level-item">9</span><span class="level-item">參考資料</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">連結</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://yang-hong-xin.notion.site/Resume-b8b910439158413a81868e1a39c27310" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Resume</span></span><span class="level-right"><span class="level-item tag">yang-hong-xin.notion.site</span></span></a></li><li><a class="level is-mobile" href="https://yang-hong-xin.notion.site/926f9aff8ffd4166a8e1ed5d37f6cd89" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">履歷</span></span><span class="level-right"><span class="level-item tag">yang-hong-xin.notion.site</span></span></a></li><li><a class="level is-mobile" href="https://hdl.handle.net/11296/gazcm2" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Master Thesis</span></span><span class="level-right"><span class="level-item tag">hdl.handle.net</span></span></a></li><li><a class="level is-mobile" href="https://yang-hong-xin.com/me" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Me</span></span><span class="level-right"><span class="level-item tag">yang-hong-xin.com</span></span></a></li><li><a class="level is-mobile" href="https://resume.yang-hong-xin.com" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">Resume PDF</span></span><span class="level-right"><span class="level-item tag">resume.yang-hong-xin.com</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">分類</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"><span class="level-start"><span class="level-item">技術文章</span></span><span class="level-end"><span class="level-item tag">30</span></span></a><ul><li><a class="level is-mobile" href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E5%BE%9E-Ruby-%E5%88%B0-C/"><span class="level-start"><span class="level-item">從 Ruby 到 C#</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"><span class="level-start"><span class="level-item">碩論</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/%E7%90%86%E8%B2%A1/"><span class="level-start"><span class="level-item">理財</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%94%9F%E6%B4%BB/"><span class="level-start"><span class="level-item">生活</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%BB%9F%E9%AB%94%E5%88%86%E4%BA%AB/"><span class="level-start"><span class="level-item">軟體分享</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">最新文章</h3><article class="media"><div class="media-content"><p class="date"><time datetime="2026-11-08T13:00:00.000Z">2026-11-08</time></p><p class="title"><a href="/rsu-espp-tax-and-gain-harvesting-in-taiwan/">外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割</a></p><p class="categories"><a href="/categories/%E7%90%86%E8%B2%A1/">理財</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time datetime="2026-11-08T12:00:00.000Z">2026-11-08</time></p><p class="title"><a href="/precompute-income-tax/">11 月就把明年 5 月的所得稅算出來：提前精算的方法</a></p><p class="categories"><a href="/categories/%E7%90%86%E8%B2%A1/">理財</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/make-your-open-source-projects-professional-with-good-documentation/"><img src="/make-your-open-source-projects-professional-with-good-documentation/markdown.png" alt="為你的開源專案加些文件 讓它看起來很專業吧" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2021-07-22T12:39:19.000Z">2021-07-22</time></p><p class="title"><a href="/make-your-open-source-projects-professional-with-good-documentation/">為你的開源專案加些文件 讓它看起來很專業吧</a></p><p class="categories"><a href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/">技術文章</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/"><img src="/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/logo.png" alt="Unite Your Angular Coding Style With Teammates By Visual Studio Code &amp; ESLint &amp; Prettier" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2021-07-21T14:39:19.000Z">2021-07-21</time></p><p class="title"><a href="/unite-your-angular-coding-style-with-teammates-by-vscode-and-eslint-and-prettier/">Unite Your Angular Coding Style With Teammates By Visual Studio Code &amp; ESLint &amp; Prettier</a></p><p class="categories"><a href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/">技術文章</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/use-finite-state-machine-to-manage-state/"><img src="/use-finite-state-machine-to-manage-state/redux-lifecycle.png" alt="Use Finite-state Machine to manage state" loading="lazy" decoding="async"></a></figure><div class="media-content"><p class="date"><time datetime="2021-07-03T03:00:05.000Z">2021-07-03</time></p><p class="title"><a href="/use-finite-state-machine-to-manage-state/">Use Finite-state Machine to manage state</a></p><p class="categories"><a href="/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/">技術文章</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">彙整</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2026/11/"><span class="level-start"><span class="level-item">十一月 2026</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/07/"><span class="level-start"><span class="level-item">七月 2021</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2021/06/"><span class="level-start"><span class="level-item">六月 2021</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/04/"><span class="level-start"><span class="level-item">四月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/03/"><span class="level-start"><span class="level-item">三月 2020</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/02/"><span class="level-start"><span class="level-item">二月 2020</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2020/01/"><span class="level-start"><span class="level-item">一月 2020</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/10/"><span class="level-start"><span class="level-item">十月 2019</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">九月 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/06/"><span class="level-start"><span class="level-item">六月 2019</span></span><span class="level-end"><span class="level-item tag">9</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/03/"><span class="level-start"><span class="level-item">三月 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/04/"><span class="level-start"><span class="level-item">四月 2018</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">標籤</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AI/"><span class="tag">AI</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ESPP/"><span class="tag">ESPP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/RSU/"><span class="tag">RSU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/alternative/"><span class="tag">alternative</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/angular/"><span class="tag">angular</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/baidu/"><span class="tag">baidu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/boot-configuration-data/"><span class="tag">boot-configuration-data</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/brew/"><span class="tag">brew</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/c/"><span class="tag">c#</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/changelog/"><span class="tag">changelog</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/chatbot/"><span class="tag">chatbot</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cloudflare/"><span class="tag">cloudflare</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/code-of-conduct/"><span class="tag">code of conduct</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/coding-style/"><span class="tag">coding style</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/contributing/"><span class="tag">contributing</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/cuda/"><span class="tag">cuda</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/data-visualization/"><span class="tag">data visualization</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/deploy/"><span class="tag">deploy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/development/"><span class="tag">development</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/dns/"><span class="tag">dns</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/docker/"><span class="tag">docker</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/documentation/"><span class="tag">documentation</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/email/"><span class="tag">email</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/eslint/"><span class="tag">eslint</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/formatter/"><span class="tag">formatter</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/free/"><span class="tag">free</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/github/"><span class="tag">github</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/gpu/"><span class="tag">gpu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/graph/"><span class="tag">graph</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/heroku/"><span class="tag">heroku</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo/"><span class="tag">hexo</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/hexo-theme/"><span class="tag">hexo-theme</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/https/"><span class="tag">https</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/illustrator/"><span class="tag">illustrator</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/index/"><span class="tag">index</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/javascript/"><span class="tag">javascript</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/kill/"><span class="tag">kill</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/license/"><span class="tag">license</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/line/"><span class="tag">line</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/linter/"><span class="tag">linter</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/localhost/"><span class="tag">localhost</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mac/"><span class="tag">mac</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/macbook/"><span class="tag">macbook</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/mkcert/"><span class="tag">mkcert</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nlp/"><span class="tag">nlp</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/nvidia-gpu-driver/"><span class="tag">nvidia gpu driver</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/os-x/"><span class="tag">os-x</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/osx/"><span class="tag">osx</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/pid/"><span class="tag">pid</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/powershell/"><span class="tag">powershell</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/prettier/"><span class="tag">prettier</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/proxy/"><span class="tag">proxy</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/python/"><span class="tag">python</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rails/"><span class="tag">rails</span><span class="tag">5</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rdbms/"><span class="tag">rdbms</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/readme/"><span class="tag">readme</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/repository/"><span class="tag">repository</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rich-menu/"><span class="tag">rich menu</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ruby/"><span class="tag">ruby</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rvm/"><span class="tag">rvm</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/rxjs/"><span class="tag">rxjs</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sendgrid/"><span class="tag">sendgrid</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sentiment/"><span class="tag">sentiment</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/sidekiq/"><span class="tag">sidekiq</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ssl/"><span class="tag">ssl</span><span class="tag">4</span></a></div><div class="control"><a class="tags has-addons" href="/tags/state-management/"><span class="tag">state management</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/tensorflow/"><span class="tag">tensorflow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/terminal/"><span class="tag">terminal</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ubuntu/"><span class="tag">ubuntu</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/vscode/"><span class="tag">vscode</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/webpack-dev-server/"><span class="tag">webpack-dev-server</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/webpacker/"><span class="tag">webpacker</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/windows/"><span class="tag">windows</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/windows-boot-error/"><span class="tag">windows-boot-error</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/wsl/"><span class="tag">wsl</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/yilia/"><span class="tag">yilia</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%A0%B1%E7%A8%85/"><span class="tag">報稅</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%88%E5%B9%95%E6%95%99%E5%AE%A4/"><span class="tag">彈幕教室</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%9C%80%E4%BD%8E%E7%A8%85%E8%B2%A0%E5%88%B6/"><span class="tag">最低稅負制</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A8%85%E5%8B%99%E8%A6%8F%E5%8A%83/"><span class="tag">稅務規劃</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%B6%9C%E6%89%80%E7%A8%85/"><span class="tag">綜所稅</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%BE%8E%E8%82%A1/"><span class="tag">美股</span><span class="tag">1</span></a></div></div></div></div></div><div class="card widget" data-type="adsense"><div class="card-content"><div class="menu"><h3 class="menu-label">廣告</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6329280350982888" data-ad-slot="9953995920" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/images/logo.png" alt="Hong Xin&#039;s Blog" height="28"></a><p class="is-size-7"><span>&copy; 2026 楊竑昕</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p><p class="is-size-7">© 2023</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/" aria-label="Creative Commons"><i class="fab fa-creative-commons" aria-hidden="true"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/" aria-label="Attribution 4.0 International"><i class="fab fa-creative-commons-by" aria-hidden="true"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/jk195417/blog" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script><script>(function installGallery(window) {
+  if (window.HexoGallery) return;
+  const document = window.document;
+  const requests = new Map();
+  const layouts = new Map();
+  const lightboxes = new Map();
+  function destroyLightbox(container) {
+    const state = lightboxes.get(container);
+    if (!state) return;
+    container.removeEventListener('click', state.click);
+    // The SDK removes its container through parentNode, even after a host replaced the body.
+    const dialog = state.instance.$container && state.instance.$container.get();
+    if (dialog && !dialog.parentNode) {
+      dialog.style.display = 'none';
+      document.body.appendChild(dialog);
+    }
+    if (state.instance.lgOpened) {
+      state.instance.settings.startAnimationDuration = 0;
+      state.instance.settings.backdropDuration = 0;
+    }
+    state.instance.destroy();
+    lightboxes.delete(container);
+  }
+  function lightbox(container, enabled) {
+    if (!enabled) {
+      destroyLightbox(container);
+      return;
+    }
+    if (typeof window.lightGallery !== 'function') return;
+    const plugins = (window.HexoGallery.lightGalleryPlugins || []).map(name => window[name]);
+    if (plugins.some(plugin => typeof plugin !== 'function')) return;
+    const items = Array.from(container.querySelectorAll('a.gallery-item[href]'));
+    if (!items.length) {
+      destroyLightbox(container);
+      return;
+    }
+    const elements = items.map(link => {
+      const image = link.querySelector('img');
+      const caption = document.createElement('span');
+      caption.textContent = image ? image.alt : '';
+      return {
+        src: link.href,
+        thumb: image ? image.currentSrc || image.src : link.href,
+        subHtml: caption.innerHTML,
+        alt: caption.innerHTML.replace(/"/g, '&quot;')
+      };
+    });
+    const signature = JSON.stringify(elements);
+    let state = lightboxes.get(container);
+    if (state) {
+      if (!sameItems(state.items, items) || state.signature !== signature) {
+        if (state.instance.lgOpened) {
+          state.instance.updateSlides(elements, Math.min(state.instance.index, elements.length - 1));
+        } else {
+          state.instance.refresh(elements);
+        }
+        state.items = items;
+        state.signature = signature;
+      }
+      return;
+    }
+    const instance = window.lightGallery(container, {
+      dynamic: true,
+      dynamicEl: elements,
+      plugins
+    });
+    state = {
+      instance,
+      items,
+      signature,
+      click: null
+    };
+    state.click = event => {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const link = event.target.closest('a.gallery-item');
+      const index = state.items.indexOf(link);
+      if (index < 0) return;
+      event.preventDefault();
+      instance.openGallery(index, link);
+    };
+    container.addEventListener('click', state.click);
+    lightboxes.set(container, state);
+  }
+  function sameItems(items, current) {
+    return items.length === current.length && Array.from(items).every((item, i) => item === current[i]);
+  }
+  function enhance(container) {
+    container.querySelectorAll('img:not(.not-gallery-item)').forEach(image => {
+      // Third-party SDK icons are controls, not article images. Script-load retries also
+      // scan icons inserted after the article's initial enhancement.
+      if (image.closest('a, .sharethis-inline-share-buttons, .a2a_kit, [data-share-provider]')) return;
+      const link = document.createElement('a');
+      link.className = 'gallery-item';
+      const src = image.getAttribute('src');
+      if (src !== null) link.setAttribute('href', src);
+      image.parentNode.insertBefore(link, image);
+      link.appendChild(image);
+      if (image.alt) {
+        const caption = document.createElement('p');
+        caption.className = 'has-text-centered is-size-6 caption';
+        caption.textContent = image.alt;
+        link.appendChild(caption);
+      }
+    });
+  }
+  function apply(root, options) {
+    const containers = root === document ? root.querySelectorAll('.article') : [root];
+    containers.forEach(enhance);
+    // Do not capture an incomplete article while HTML is still being parsed.
+    if (document.readyState === 'loading') return;
+    containers.forEach(container => lightbox(container, options.lightGallery));
+    if (options.justifiedGallery && typeof window.JustifiedGallery === 'function') {
+      const galleries = Array.from(root.querySelectorAll('.justified-gallery'));
+      if (root !== document && root.matches('.justified-gallery')) galleries.unshift(root);
+      galleries.forEach(gallery => {
+        const paragraphs = new Set(Array.from(gallery.querySelectorAll(':scope > p > .gallery-item'), link => link.parentNode));
+        paragraphs.forEach(paragraph => {
+          paragraph.replaceWith(...paragraph.childNodes);
+        });
+        gallery.querySelectorAll(':scope > .gallery-item > .caption').forEach(caption => {
+          caption.classList.add('jg-caption');
+        });
+        let state = layouts.get(gallery);
+        const items = () => Array.from(gallery.children).filter(item => !item.classList.contains('jg-spinner') && (item.matches(state.instance.settings.selector) || item.matches('div')));
+        if (state) {
+          if (sameItems(state.items, items())) return;
+          // init refreshes entries but starts another width watcher; stop and rewind first.
+          state.instance.widthWatcher.stop();
+          state.instance.stopImgAnalyzerStarter();
+          state.instance.rewind();
+        } else {
+          // The SDK reuses .jg-caption and safely creates captions for pre-existing links.
+          state = {
+            instance: new window.JustifiedGallery(gallery)
+          };
+          layouts.set(gallery, state);
+        }
+        state.instance.init();
+        state.items = items();
+      });
+    }
+  }
+  function prune() {
+    layouts.forEach((state, gallery) => {
+      if (!gallery.isConnected) destroyLayout(gallery);
+    });
+    lightboxes.forEach((state, container) => {
+      if (!container.isConnected) destroyLightbox(container);
+    });
+    requests.forEach((options, root) => {
+      if (root !== document && !root.isConnected) requests.delete(root);
+    });
+  }
+  function destroyLayout(gallery) {
+    const {
+      instance
+    } = layouts.get(gallery);
+    // The SDK's destroy does not stop an active loading spinner.
+    instance.stopLoadingSpinnerAnimation();
+    instance.destroy();
+    layouts.delete(gallery);
+  }
+  function retry() {
+    prune();
+    requests.forEach((options, root) => apply(root, options));
+  }
+  window.HexoGallery = {
+    /**
+     * Enhance images in a content container, optionally initializing the two Gallery SDKs.
+     * Repeated calls reuse existing wrappers, captions and plugin instances. Missing SDKs can be
+     * retried by calling init again; DOM ready, window load and subsequent script loads also retry
+     * connected containers with their latest options. SDK initialization waits for DOM readiness.
+     * Changed item collections refresh their existing SDK instance. Disabling the lightbox destroys
+     * it; the independently managed layout plugin is unchanged.
+     * @param {Document|Element} [root=document] Content container; document targets .article images
+     *     and lightboxes, and all .justified-gallery elements.
+     * @param {Object} [options={}] SDK opt-ins; omitted flags disable plugin initialization.
+     * @param {boolean} [options.lightGallery=false] Initialize lightGallery when available.
+     * @param {boolean} [options.justifiedGallery=false] Initialize justifiedGallery when available.
+     */
+    init: function (root, options) {
+      root = root || document;
+      options = options || {};
+      const enabled = {
+        lightGallery: options.lightGallery === true,
+        justifiedGallery: options.justifiedGallery === true
+      };
+      prune();
+      requests.set(root, enabled);
+      apply(root, enabled);
+    },
+    /** Destroy lightboxes, layouts and pending retries before content is replaced (e.g. PJAX). */
+    destroy: function (root) {
+      root = root || document;
+      lightboxes.forEach((state, container) => {
+        if (root === document || root === container || root.contains(container)) destroyLightbox(container);
+      });
+      layouts.forEach((state, gallery) => {
+        if (root === document || root === gallery || root.contains(gallery)) destroyLayout(gallery);
+      });
+      requests.forEach((options, target) => {
+        if (root === document || root === target || root.contains(target)) requests.delete(target);
+      });
+    }
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', retry, {
+      once: true
+    });
+  }
+  if (document.readyState !== 'complete') window.addEventListener('load', retry, {
+    once: true
+  });
+  document.addEventListener('hexo:gallery:ready', retry);
+  // Deferred scripts may arrive after init, including on the first enabled page reached by PJAX.
+  // Retry the latest requests, rather than capturing a previous page's enabled configuration.
+  document.addEventListener('load', event => {
+    if (event.target.tagName === 'SCRIPT') retry();
+  }, true);
+})(window);</script><script data-pjax>var IcarusThemeSettings = {"gallery":true,"article":{"highlight":{"clipboard":false,"fold":"unfolded","fold_preview":0}},"i18n":{"copy":"複製","copied":"已複製！"}};
+if (document.readyState !== 'loading') {
+    window.HexoGallery.init(document, {
+        lightGallery: IcarusThemeSettings.gallery,
+        justifiedGallery: IcarusThemeSettings.gallery
+    });
+}</script><script data-pjax src="/js/column.js"></script><script src="/js/navbar.js" defer></script><script src="/js/github-calendar.js" defer></script><script src="/js/animation.js" onerror="document.documentElement.classList.remove(&#039;is-animating&#039;)"></script><button type="button" id="back-to-top" title="回到頁首" aria-label="回到頁首"><i class="fas fa-chevron-up" aria-hidden="true"></i></button><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script>(function () {
+    var urls = ["https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js"];
+    var attrs = {};
+    function run() {
+      
+      if (!window.hexoComponentCookieConsentPopup) {
+      window.hexoComponentCookieConsentPopup = true;
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        
+        content: {
+          message: "此網站使用Cookie來改善您的體驗。",
+          dismiss: "知道了！",
+          allow: "允許使用Cookie",
+          deny: "拒絕",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      }, function (popup) {
+        window.hexoComponentCookieConsentPopup = popup;
+        
+      });
+      }
+    }
+    function load(i) {
+      if (i >= urls.length) {
+        run();
+        return;
+      }
+      var script = null;
+      for (var j = 0; j < document.scripts.length; j++) {
+        if (document.scripts[j].getAttribute('src') === urls[i]) {
+          script = document.scripts[j];
+          break;
+        }
+      }
+      if (script && script.getAttribute('data-loaded') !== 'false') {
+        load(i + 1);
+        return;
+      }
+      if (!script) {
+        script = document.createElement('script');
+        script.src = urls[i];
+        script.async = true;
+        script.setAttribute('data-loaded', 'false');
+        for (var name in attrs) {
+          script.setAttribute(name, attrs[name]);
+        }
+        script.addEventListener('load', function () {
+          this.setAttribute('data-loaded', 'true');
+        });
+        // Remove a script that fails to load, so that the next run, e.g., after a PJAX page switch,
+        // adds it again instead of waiting for it
+        script.addEventListener('error', function () {
+          this.remove();
+        });
+        document.head.appendChild(script);
+      }
+      script.addEventListener('load', function () {
+        load(i + 1);
+      });
+    }
+    load(0);
+  })();</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/zoom/lg-zoom.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/lightgallery@3.0.0/plugins/fullscreen/lg-fullscreen.min.js" defer></script><script>(function installGallery(window) {
+  if (window.HexoGallery) return;
+  const document = window.document;
+  const requests = new Map();
+  const layouts = new Map();
+  const lightboxes = new Map();
+  function destroyLightbox(container) {
+    const state = lightboxes.get(container);
+    if (!state) return;
+    container.removeEventListener('click', state.click);
+    // The SDK removes its container through parentNode, even after a host replaced the body.
+    const dialog = state.instance.$container && state.instance.$container.get();
+    if (dialog && !dialog.parentNode) {
+      dialog.style.display = 'none';
+      document.body.appendChild(dialog);
+    }
+    if (state.instance.lgOpened) {
+      state.instance.settings.startAnimationDuration = 0;
+      state.instance.settings.backdropDuration = 0;
+    }
+    state.instance.destroy();
+    lightboxes.delete(container);
+  }
+  function lightbox(container, enabled) {
+    if (!enabled) {
+      destroyLightbox(container);
+      return;
+    }
+    if (typeof window.lightGallery !== 'function') return;
+    const plugins = (window.HexoGallery.lightGalleryPlugins || []).map(name => window[name]);
+    if (plugins.some(plugin => typeof plugin !== 'function')) return;
+    const items = Array.from(container.querySelectorAll('a.gallery-item[href]'));
+    if (!items.length) {
+      destroyLightbox(container);
+      return;
+    }
+    const elements = items.map(link => {
+      const image = link.querySelector('img');
+      const caption = document.createElement('span');
+      caption.textContent = image ? image.alt : '';
+      return {
+        src: link.href,
+        thumb: image ? image.currentSrc || image.src : link.href,
+        subHtml: caption.innerHTML,
+        alt: caption.innerHTML.replace(/"/g, '&quot;')
+      };
+    });
+    const signature = JSON.stringify(elements);
+    let state = lightboxes.get(container);
+    if (state) {
+      if (!sameItems(state.items, items) || state.signature !== signature) {
+        if (state.instance.lgOpened) {
+          state.instance.updateSlides(elements, Math.min(state.instance.index, elements.length - 1));
+        } else {
+          state.instance.refresh(elements);
+        }
+        state.items = items;
+        state.signature = signature;
+      }
+      return;
+    }
+    const instance = window.lightGallery(container, {
+      dynamic: true,
+      dynamicEl: elements,
+      plugins
+    });
+    state = {
+      instance,
+      items,
+      signature,
+      click: null
+    };
+    state.click = event => {
+      if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      const link = event.target.closest('a.gallery-item');
+      const index = state.items.indexOf(link);
+      if (index < 0) return;
+      event.preventDefault();
+      instance.openGallery(index, link);
+    };
+    container.addEventListener('click', state.click);
+    lightboxes.set(container, state);
+  }
+  function sameItems(items, current) {
+    return items.length === current.length && Array.from(items).every((item, i) => item === current[i]);
+  }
+  function enhance(container) {
+    container.querySelectorAll('img:not(.not-gallery-item)').forEach(image => {
+      // Third-party SDK icons are controls, not article images. Script-load retries also
+      // scan icons inserted after the article's initial enhancement.
+      if (image.closest('a, .sharethis-inline-share-buttons, .a2a_kit, [data-share-provider]')) return;
+      const link = document.createElement('a');
+      link.className = 'gallery-item';
+      const src = image.getAttribute('src');
+      if (src !== null) link.setAttribute('href', src);
+      image.parentNode.insertBefore(link, image);
+      link.appendChild(image);
+      if (image.alt) {
+        const caption = document.createElement('p');
+        caption.className = 'has-text-centered is-size-6 caption';
+        caption.textContent = image.alt;
+        link.appendChild(caption);
+      }
+    });
+  }
+  function apply(root, options) {
+    const containers = root === document ? root.querySelectorAll('.article') : [root];
+    containers.forEach(enhance);
+    // Do not capture an incomplete article while HTML is still being parsed.
+    if (document.readyState === 'loading') return;
+    containers.forEach(container => lightbox(container, options.lightGallery));
+    if (options.justifiedGallery && typeof window.JustifiedGallery === 'function') {
+      const galleries = Array.from(root.querySelectorAll('.justified-gallery'));
+      if (root !== document && root.matches('.justified-gallery')) galleries.unshift(root);
+      galleries.forEach(gallery => {
+        const paragraphs = new Set(Array.from(gallery.querySelectorAll(':scope > p > .gallery-item'), link => link.parentNode));
+        paragraphs.forEach(paragraph => {
+          paragraph.replaceWith(...paragraph.childNodes);
+        });
+        gallery.querySelectorAll(':scope > .gallery-item > .caption').forEach(caption => {
+          caption.classList.add('jg-caption');
+        });
+        let state = layouts.get(gallery);
+        const items = () => Array.from(gallery.children).filter(item => !item.classList.contains('jg-spinner') && (item.matches(state.instance.settings.selector) || item.matches('div')));
+        if (state) {
+          if (sameItems(state.items, items())) return;
+          // init refreshes entries but starts another width watcher; stop and rewind first.
+          state.instance.widthWatcher.stop();
+          state.instance.stopImgAnalyzerStarter();
+          state.instance.rewind();
+        } else {
+          // The SDK reuses .jg-caption and safely creates captions for pre-existing links.
+          state = {
+            instance: new window.JustifiedGallery(gallery)
+          };
+          layouts.set(gallery, state);
+        }
+        state.instance.init();
+        state.items = items();
+      });
+    }
+  }
+  function prune() {
+    layouts.forEach((state, gallery) => {
+      if (!gallery.isConnected) destroyLayout(gallery);
+    });
+    lightboxes.forEach((state, container) => {
+      if (!container.isConnected) destroyLightbox(container);
+    });
+    requests.forEach((options, root) => {
+      if (root !== document && !root.isConnected) requests.delete(root);
+    });
+  }
+  function destroyLayout(gallery) {
+    const {
+      instance
+    } = layouts.get(gallery);
+    // The SDK's destroy does not stop an active loading spinner.
+    instance.stopLoadingSpinnerAnimation();
+    instance.destroy();
+    layouts.delete(gallery);
+  }
+  function retry() {
+    prune();
+    requests.forEach((options, root) => apply(root, options));
+  }
+  window.HexoGallery = {
+    /**
+     * Enhance images in a content container, optionally initializing the two Gallery SDKs.
+     * Repeated calls reuse existing wrappers, captions and plugin instances. Missing SDKs can be
+     * retried by calling init again; DOM ready, window load and subsequent script loads also retry
+     * connected containers with their latest options. SDK initialization waits for DOM readiness.
+     * Changed item collections refresh their existing SDK instance. Disabling the lightbox destroys
+     * it; the independently managed layout plugin is unchanged.
+     * @param {Document|Element} [root=document] Content container; document targets .article images
+     *     and lightboxes, and all .justified-gallery elements.
+     * @param {Object} [options={}] SDK opt-ins; omitted flags disable plugin initialization.
+     * @param {boolean} [options.lightGallery=false] Initialize lightGallery when available.
+     * @param {boolean} [options.justifiedGallery=false] Initialize justifiedGallery when available.
+     */
+    init: function (root, options) {
+      root = root || document;
+      options = options || {};
+      const enabled = {
+        lightGallery: options.lightGallery === true,
+        justifiedGallery: options.justifiedGallery === true
+      };
+      prune();
+      requests.set(root, enabled);
+      apply(root, enabled);
+    },
+    /** Destroy lightboxes, layouts and pending retries before content is replaced (e.g. PJAX). */
+    destroy: function (root) {
+      root = root || document;
+      lightboxes.forEach((state, container) => {
+        if (root === document || root === container || root.contains(container)) destroyLightbox(container);
+      });
+      layouts.forEach((state, gallery) => {
+        if (root === document || root === gallery || root.contains(gallery)) destroyLayout(gallery);
+      });
+      requests.forEach((options, target) => {
+        if (root === document || root === target || root.contains(target)) requests.delete(target);
+      });
+    }
+  };
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', retry, {
+      once: true
+    });
+  }
+  if (document.readyState !== 'complete') window.addEventListener('load', retry, {
+    once: true
+  });
+  document.addEventListener('hexo:gallery:ready', retry);
+  // Deferred scripts may arrive after init, including on the first enabled page reached by PJAX.
+  // Retry the latest requests, rather than capturing a previous page's enabled configuration.
+  document.addEventListener('load', event => {
+    if (event.target.tagName === 'SCRIPT') retry();
+  }, true);
+})(window);
+window.HexoGallery.lightGalleryPlugins = ["lgZoom","lgThumbnail","lgFullscreen"];
+window.HexoGallery.init(document, {
+        lightGallery: true,
+        justifiedGallery: true
+    });</script><script type="module">import { JustifiedGallery } from "https://cdn.jsdelivr.net/npm/justified-gallery@4.0.2/dist/justified-gallery.js";
+window.JustifiedGallery = JustifiedGallery;
+document.dispatchEvent(new Event('hexo:gallery:ready'));</script><!--!--><!--!--><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="請輸入關鍵字..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax>(function installSearchbox(window) {
+  if (window.loadSearchbox) return;
+  const document = window.document;
+  let current;
+  window.loadSearchbox = function ($main, options) {
+    const $ = window.jQuery;
+    options = options || {};
+    // Preserve focus state only when replacing the controller for the same open DOM element.
+    let opener = current ? current.destroy($main[0]) : null;
+    let touch = false;
+    const $document = $(document);
+    const namespace = '.hexoSearchbox';
+    const controller = {
+      isCurrent: function () {
+        return current === controller && document.contains($main[0]);
+      },
+      destroy: function (nextMain) {
+        if (current !== controller) return null;
+        const nextOpener = nextMain === $main[0] && $main.hasClass('show') ? opener : null;
+        $document.off(namespace);
+        opener = null;
+        current = null;
+        if (options.onDestroy) options.onDestroy();
+        return nextOpener;
+      }
+    };
+    current = controller;
+    function open() {
+      if (!controller.isCurrent()) return;
+      if (!$main.hasClass('show')) {
+        opener = document.activeElement;
+        $main.addClass('show');
+      }
+      $main.find('.searchbox-input').focus();
+    }
+    function close(restoreFocus) {
+      $main.removeClass('show');
+      if (restoreFocus !== false && opener && document.contains(opener)) opener.focus();
+      opener = null;
+    }
+    function isSearchShortcut(e) {
+      if (e.altKey) return false;
+      if (e.ctrlKey || e.metaKey) {
+        return !e.shiftKey && typeof e.key === 'string' && e.key.toLowerCase() === 'k';
+      }
+      // e.key already accounts for the keyboard layout (including Shift).
+      const target = e.target;
+      const typing = target.isContentEditable || /^(input|textarea|select)$/i.test(target.tagName);
+      return e.key === '/' && !typing;
+    }
+    $document.on('click' + namespace, '.navbar-main .search', open).on('click' + namespace + (options.touch ? ' touchend' + namespace : ''), '.searchbox-close, .searchbox .searchbox-mask', e => {
+      if (!controller.isCurrent()) return;
+      if (e.type !== 'click' && !touch) return;
+      if (options.touch) {
+        $('.navbar-main').css('pointer-events', 'none');
+        setTimeout(() => {
+          $('.navbar-main').css('pointer-events', 'auto');
+        }, 400);
+      }
+      close();
+      touch = false;
+    }).on('focusin' + namespace, e => {
+      if (controller.isCurrent() && $main.hasClass('show') && !$main[0].contains(e.target)) {
+        close(false);
+      }
+    }).on('keydown' + namespace, e => {
+      if (!controller.isCurrent()) return;
+      if (isSearchShortcut(e)) {
+        e.preventDefault();
+        open();
+        return;
+      }
+      if (!$main.hasClass('show')) return;
+      if (e.keyCode === 27) close();else if (options.onKeyDown) options.onKeyDown(e);
+    }).on('touchstart' + namespace, () => {
+      touch = true;
+    }).on('touchmove' + namespace, () => {
+      touch = false;
+    });
+    return controller;
+  };
+})(window);
+window.searchInsight = (function createInsightSearch() {
+  const content = {
+    fields: ['title', 'text'],
+    weights: [3, 1]
+  };
+  const taxonomy = {
+    fields: ['name', 'slug'],
+    weights: [1, 1]
+  };
+  const sections = {
+    posts: content,
+    pages: content,
+    categories: taxonomy,
+    tags: taxonomy
+  };
+  function parseKeywords(query) {
+    return query.split(' ').filter(keyword => {
+      return !!keyword;
+    }).map(keyword => {
+      return keyword.toLowerCase();
+    });
+  }
+
+  // Every keyword must occur in at least one own field; keywords may span different fields.
+  function filter(keywords, obj, fields) {
+    const containKeywords = keywords.filter(keyword => {
+      const containFields = fields.filter(field => {
+        if (!Object.prototype.hasOwnProperty.call(obj, field)) {
+          return false;
+        }
+        if (obj[field].toLowerCase().indexOf(keyword) > -1) {
+          return true;
+        }
+        return false;
+      });
+      if (containFields.length > 0) {
+        return true;
+      }
+      return false;
+    });
+    return containKeywords.length === keywords.length;
+  }
+
+  // Count non-overlapping occurrences of a literal lowercase keyword, not a regular expression.
+  function countMatches(text, keyword) {
+    let count = 0;
+    for (let i = text.indexOf(keyword); i !== -1; i = text.indexOf(keyword, i + keyword.length)) {
+      count++;
+    }
+    return count;
+  }
+  function weight(keywords, obj, fields, weights) {
+    let value = 0;
+    keywords.forEach(keyword => {
+      fields.forEach((field, index) => {
+        if (Object.prototype.hasOwnProperty.call(obj, field)) {
+          value += countMatches(obj[field].toLowerCase(), keyword) * weights[index];
+        }
+      });
+    });
+    return value;
+  }
+
+  // Weigh each matching item once. Equal weights retain the input order, including an empty query.
+  function topItems(items, keywords, config) {
+    return items.filter(item => {
+      return filter(keywords, item, config.fields);
+    }).map(item => {
+      return {
+        item,
+        weight: weight(keywords, item, config.fields, config.weights)
+      };
+    }).sort((a, b) => {
+      return b.weight - a.weight;
+    }).slice(0, 5).map(result => {
+      return result.item;
+    });
+  }
+  return function search(json, query) {
+    const keywords = parseKeywords(query);
+    const results = {};
+    Object.keys(sections).forEach(section => {
+      results[section] = topItems(json[section], keywords, sections[section]);
+    });
+    return {
+      keywords,
+      results
+    };
+  };
+})();</script><script data-pjax src="/js/insight.js" defer></script><script data-pjax>function initInsight() {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"請輸入關鍵字...","untitled":"(無標題)","posts":"文章","pages":"頁面","categories":"分類","tags":"標籤"});
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initInsight, { once: true });
+        } else {
+            initInsight();
+        }</script></body></html>

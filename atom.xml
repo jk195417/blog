@@ -11,7 +11,47 @@
   <rights>All rights reserved 2026, 楊竑昕</rights>
   <subtitle>楊竑昕的部落格</subtitle>
   <title>Hong Xin's Blog</title>
-  <updated>2026-10-27T16:02:39.131Z</updated>
+  <updated>2026-11-08T10:17:58.456Z</updated>
+  <entry>
+    <author>
+      <name>楊竑昕</name>
+    </author>
+    <category term="理財" scheme="https://blog.yang-hong-xin.com/categories/%E7%90%86%E8%B2%A1/"/>
+    <category term="報稅" scheme="https://blog.yang-hong-xin.com/tags/%E5%A0%B1%E7%A8%85/"/>
+    <category term="RSU" scheme="https://blog.yang-hong-xin.com/tags/RSU/"/>
+    <category term="ESPP" scheme="https://blog.yang-hong-xin.com/tags/ESPP/"/>
+    <category term="最低稅負制" scheme="https://blog.yang-hong-xin.com/tags/%E6%9C%80%E4%BD%8E%E7%A8%85%E8%B2%A0%E5%88%B6/"/>
+    <category term="美股" scheme="https://blog.yang-hong-xin.com/tags/%E7%BE%8E%E8%82%A1/"/>
+    <id>https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/</id>
+    <link href="https://blog.yang-hong-xin.com/rsu-espp-tax-and-gain-harvesting-in-taiwan/"/>
+    <published>2026-11-08T13:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>在外商工作，公司常會給 RSU（限制型股票）和 ESPP（員工認股計畫）。這些股票在台灣要課兩次稅：<strong>拿到的時候</strong>算綜合所得，<strong>賣出的時候</strong>價差算海外所得。前者常常讓人一口氣跳到很高的級距；後者如果懂得利用最低稅負制的空間，每年 12 月可以合法地把成本墊高，以後少繳很多稅。</p>
+<p>這篇整理我自己的算法和每年的固定動作。所有範例數字都是<strong>虛構</strong>的，稅率與扣除額用 115 年度（2027 年 5 月申報）的公告金額。</p>]]>
+    </summary>
+    <title>外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割</title>
+    <updated>2026-11-08T10:17:58.456Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>楊竑昕</name>
+    </author>
+    <category term="理財" scheme="https://blog.yang-hong-xin.com/categories/%E7%90%86%E8%B2%A1/"/>
+    <category term="報稅" scheme="https://blog.yang-hong-xin.com/tags/%E5%A0%B1%E7%A8%85/"/>
+    <category term="綜所稅" scheme="https://blog.yang-hong-xin.com/tags/%E7%B6%9C%E6%89%80%E7%A8%85/"/>
+    <category term="稅務規劃" scheme="https://blog.yang-hong-xin.com/tags/%E7%A8%85%E5%8B%99%E8%A6%8F%E5%8A%83/"/>
+    <category term="AI" scheme="https://blog.yang-hong-xin.com/tags/AI/"/>
+    <id>https://blog.yang-hong-xin.com/precompute-income-tax/</id>
+    <link href="https://blog.yang-hong-xin.com/precompute-income-tax/"/>
+    <published>2026-11-08T12:00:00.000Z</published>
+    <summary>
+      <![CDATA[<p>大部分人是 5 月打開報稅軟體，才知道今年要繳多少（或退多少）。如果你只有薪水，這樣沒什麼問題；但如果你有公司股票、獎金、海外投資，或收入每年變動很大，<strong>等到 5 月才算，很多能影響稅額的決定早就過期了</strong>。</p>
+<p>這篇整理我每年 11 月開始做的事：<strong>在年底前把明年 5 月的綜所稅精算出來</strong>。包括什麼時候算、要準備哪些數字、還沒發生的收入怎麼估、怎麼確認算得對，以及算完之後可以做哪些決定。</p>
+<p>這件事本來很花時間，今年我用 AI 協助整理資料和驗證，文中會在適當的地方說明它幫了什麼。</p>]]>
+    </summary>
+    <title>11 月就把明年 5 月的所得稅算出來：提前精算的方法</title>
+    <updated>2026-11-08T10:17:58.456Z</updated>
+  </entry>
   <entry>
     <author>
       <name>楊竑昕</name>
@@ -42,7 +82,7 @@
 <p>其實啊，專案剛起步時，我們可以先從基礎的做起，例如這些被 check in 在各個知名 Git Repositories 中的文件</p>]]>
     </summary>
     <title>為你的開源專案加些文件 讓它看起來很專業吧</title>
-    <updated>2026-10-27T16:02:39.131Z</updated>
+    <updated>2026-11-08T10:17:58.454Z</updated>
   </entry>
   <entry>
     <author>
@@ -75,7 +115,7 @@
     <title>
       <![CDATA[Unite Your Angular Coding Style With Teammates By Visual Studio Code & ESLint & Prettier]]>
     </title>
-    <updated>2026-10-27T16:02:39.131Z</updated>
+    <updated>2026-11-08T10:17:58.454Z</updated>
   </entry>
   <entry>
     <author>
@@ -96,7 +136,7 @@
 </ul>]]>
     </summary>
     <title>Use Finite-state Machine to manage state</title>
-    <updated>2026-10-27T16:02:39.131Z</updated>
+    <updated>2026-11-08T10:17:58.454Z</updated>
   </entry>
   <entry>
     <author>
@@ -124,7 +164,7 @@
 <p>Maybe only need to takes 15 mins to set everything right.</p>]]>
     </summary>
     <title>Make your PowerShell fancy by Windows Terminal and Oh My Posh</title>
-    <updated>2026-10-27T16:02:39.131Z</updated>
+    <updated>2026-11-08T10:17:58.454Z</updated>
   </entry>
   <entry>
     <author>
@@ -142,7 +182,7 @@
 <p>那或許你可以試試這些開源（或免費）的繪圖軟體，有機會替你省下每個月 1000 元的 Adobe Illustrator 喔！</p>]]>
     </summary>
     <title>代替 Illustrator 的免費繪圖軟體</title>
-    <updated>2026-10-27T16:02:39.124Z</updated>
+    <updated>2026-11-08T10:17:58.447Z</updated>
   </entry>
   <entry>
     <author>
@@ -169,7 +209,7 @@
 <p>當安裝完成後，我們就能在右上角的工具欄看到鯨魚 🐳 icon</p>]]>
     </summary>
     <title>在 Mac 上 安裝 Docker for Mac</title>
-    <updated>2026-10-27T16:02:39.118Z</updated>
+    <updated>2026-11-08T10:17:58.440Z</updated>
   </entry>
   <entry>
     <author>
@@ -191,7 +231,7 @@
 <p>I will use <strong>PostgreSQL</strong> as an example in this article because it is my favorite database.</p>]]>
     </summary>
     <title>Expression Index in RDBMS</title>
-    <updated>2026-10-27T16:02:39.113Z</updated>
+    <updated>2026-11-08T10:17:58.434Z</updated>
   </entry>
   <entry>
     <author>
@@ -209,7 +249,7 @@
 <p>欸，不是，我們快速帶過相同用法的 operators ，然後聊聊有差異的地方，這樣總行了吧</p>]]>
     </summary>
     <title>從 Ruby 到 C# - operators</title>
-    <updated>2026-10-27T16:02:39.116Z</updated>
+    <updated>2026-11-08T10:17:58.438Z</updated>
   </entry>
   <entry>
     <author>
@@ -232,7 +272,7 @@
 </blockquote>]]>
     </summary>
     <title>從 Ruby 到 C#</title>
-    <updated>2026-10-27T16:02:39.117Z</updated>
+    <updated>2026-11-08T10:17:58.439Z</updated>
   </entry>
   <entry>
     <author>
@@ -250,7 +290,7 @@
 <img src="/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/powerlevel10k.png" class="">]]>
     </summary>
     <title>Win10 WSL combo : Terminus + Ubuntu + Oh My Zsh + Powerlevel10k</title>
-    <updated>2026-10-27T16:02:39.106Z</updated>
+    <updated>2026-11-08T10:17:58.426Z</updated>
   </entry>
   <entry>
     <author>
@@ -266,7 +306,7 @@
       <![CDATA[<p>本篇只是閱讀原文後的譯文<br>原文出處： <a href="https://blog.strongbrew.io/rxjs-best-practices-in-angular">https://blog.strongbrew.io/rxjs-best-practices-in-angular</a></p>]]>
     </summary>
     <title>在 Angular 中請這樣用 RxJS</title>
-    <updated>2026-10-27T16:02:39.106Z</updated>
+    <updated>2026-11-08T10:17:58.425Z</updated>
   </entry>
   <entry>
     <author>
@@ -286,7 +326,7 @@
 <p>這表示寄件者與實際寄送 email 的網域不同，見 <a href="https://support.google.com/mail/answer/1311182">https://support.google.com/mail/answer/1311182</a></p>]]>
     </summary>
     <title>在 SendGrid 上驗證你的網域</title>
-    <updated>2026-10-27T16:02:39.104Z</updated>
+    <updated>2026-11-08T10:17:58.423Z</updated>
   </entry>
   <entry>
     <author>
@@ -303,7 +343,7 @@
 <p>接下來我們將用 <strong><a href="http://proxy.company.com/">http://proxy.company.com:80</a></strong>  這個  proxy server  為例，示範如何設置其他工具的 proxy。</p>]]>
     </summary>
     <title>Developer 最常用的 Proxy 設定</title>
-    <updated>2026-10-27T16:02:39.104Z</updated>
+    <updated>2026-11-08T10:17:58.423Z</updated>
   </entry>
   <entry>
     <author>
@@ -323,7 +363,7 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>Rails Webpacker 的 HTTPS 設定</title>
-    <updated>2026-10-27T16:02:39.101Z</updated>
+    <updated>2026-11-08T10:17:58.419Z</updated>
   </entry>
   <entry>
     <author>
@@ -343,7 +383,7 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>Rails 在開發環境中啟用 HTTPS</title>
-    <updated>2026-10-27T16:02:39.098Z</updated>
+    <updated>2026-11-08T10:17:58.416Z</updated>
   </entry>
   <entry>
     <author>
@@ -360,16 +400,16 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>My Macbook Pro 13&quot; 2019</title>
-    <updated>2026-10-27T16:02:39.098Z</updated>
+    <updated>2026-11-08T10:17:58.416Z</updated>
   </entry>
   <entry>
     <author>
       <name>楊竑昕</name>
     </author>
     <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
-    <category term="windows" scheme="https://blog.yang-hong-xin.com/tags/windows/"/>
     <category term="boot-configuration-data" scheme="https://blog.yang-hong-xin.com/tags/boot-configuration-data/"/>
     <category term="windows-boot-error" scheme="https://blog.yang-hong-xin.com/tags/windows-boot-error/"/>
+    <category term="windows" scheme="https://blog.yang-hong-xin.com/tags/windows/"/>
     <id>https://blog.yang-hong-xin.com/windows-boot-manager-missing-from-boot-menu/</id>
     <link href="https://blog.yang-hong-xin.com/windows-boot-manager-missing-from-boot-menu/"/>
     <published>2019-09-13T18:01:48.000Z</published>
@@ -378,7 +418,7 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>記一次 Boot Menu 找不到 Windows Boot Manager</title>
-    <updated>2026-10-27T16:02:39.100Z</updated>
+    <updated>2026-11-08T10:17:58.419Z</updated>
   </entry>
   <entry>
     <author>
@@ -400,61 +440,6 @@
 <p>我的 rich menu  長這樣</p>]]>
     </summary>
     <title>來為你的 Line bot 加上一個圖文選單吧！</title>
-    <updated>2026-10-27T16:02:39.094Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>楊竑昕</name>
-    </author>
-    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
-    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
-    <category term="nlp" scheme="https://blog.yang-hong-xin.com/tags/nlp/"/>
-    <category term="baidu" scheme="https://blog.yang-hong-xin.com/tags/baidu/"/>
-    <category term="sentiment" scheme="https://blog.yang-hong-xin.com/tags/sentiment/"/>
-    <id>https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/</id>
-    <link href="https://blog.yang-hong-xin.com/chinese-sentiment-analysis-using-baidu-aip-service/"/>
-    <published>2019-06-11T09:19:47.000Z</published>
-    <summary>
-      <![CDATA[<p>Google 的自然語言處理雖然非常的強大，但是中文的情緒分析並非他的強項，目前中文的自然語言處理研究出處非常多是出於中國大陸，所以當需要用到中文的情緒分析時， <a href="https://ai.baidu.com/">百度 AI 開放平台</a> 就成為我們的首選啦。</p>
-<p>平台目前的收費非常的便宜，例如本次介紹的 <strong>情感傾向分析接口</strong>，提供了 <strong>5QPS</strong> 免費額度，每秒免費請求 5 次超佛心的啊！根本就相當於不用錢。</p>
-<blockquote>
-<p>注意！要註冊百度帳號必須要有 +86 開頭的中國手機門號喔。</p>
-</blockquote>
-<p>使用百度 AI 開放平台的情緒分析服務很簡單，步驟就 4 個。</p>
-<ol>
-<li>註冊帳號</li>
-<li>創建 <strong>自然語言處理</strong> 應用</li>
-<li>獲取 <code>access_token</code></li>
-<li>使用 <strong>情感傾向分析接口</strong></li>
-</ol>]]>
-    </summary>
-    <title>手把手帶你使用 baidu-aip 的情緒分析服務</title>
-    <updated>2026-10-27T16:02:39.093Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>楊竑昕</name>
-    </author>
-    <category term="技術文章" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/"/>
-    <category term="碩論" scheme="https://blog.yang-hong-xin.com/categories/%E6%8A%80%E8%A1%93%E6%96%87%E7%AB%A0/%E7%A2%A9%E8%AB%96/"/>
-    <category term="javascript" scheme="https://blog.yang-hong-xin.com/tags/javascript/"/>
-    <category term="graph" scheme="https://blog.yang-hong-xin.com/tags/graph/"/>
-    <category term="data visualization" scheme="https://blog.yang-hong-xin.com/tags/data-visualization/"/>
-    <id>https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/</id>
-    <link href="https://blog.yang-hong-xin.com/network-graphing-in-javascript-force-graph/"/>
-    <published>2019-06-11T08:32:05.000Z</published>
-    <summary>
-      <![CDATA[<p>分析網路關係，並將資料視覺化，最常見的就是 network graph。</p>
-<h1 id="常見套件"><a href="#常見套件" class="headerlink" title="常見套件"></a>常見套件</h1><ul>
-<li><a href="https://github.com/vasturiano/3d-force-graph">https://github.com/vasturiano/3d-force-graph</a><br> 本文主角，支援 3D 與圖互動。</li>
-<li><a href="https://github.com/vasturiano/force-graph">https://github.com/vasturiano/force-graph</a><br> 本文主角，支援與圖互動。</li>
-<li><a href="https://github.com/jacomyal/sigma.js">https://github.com/jacomyal/sigma.js</a><br> 文檔寫在程式碼與範例中，需要參考它的範例原始碼。將圖展開可以使用它提供的 plugin <a href="https://github.com/jacomyal/sigma.js/tree/master/plugins/sigma.layout.forceAtlas2" title="sigma.layout.forceAtlas2">forceAtlas2</a>，與圖互動需要自己 coding 擴充。</li>
-<li><a href="https://github.com/cytoscape/cytoscape.js">https://github.com/cytoscape/cytoscape.js</a><br> 提供許多範例可以參考。</li>
-<li><a href="https://github.com/almende/vis">https://github.com/almende/vis</a><br> 不只做 network graph，可上<a href="http://visjs.org/network_examples.html">官網</a>參考範例。</li>
-<li><a href="https://github.com/davidpiegza/Graph-Visualization">https://github.com/davidpiegza/Graph-Visualization</a><br> 支援 3D，文檔並不齊全，需要參考它的<a href="https://github.com/davidpiegza/Graph-Visualization/tree/master/examples">範例原始碼</a></li>
-</ul>]]>
-    </summary>
-    <title>Network graphing in JavaScript - force-graph</title>
-    <updated>2026-10-27T16:02:39.097Z</updated>
+    <updated>2026-11-08T10:17:58.411Z</updated>
   </entry>
 </feed>
