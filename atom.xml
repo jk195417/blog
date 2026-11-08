@@ -11,7 +11,7 @@
   <rights>All rights reserved 2026, 楊竑昕</rights>
   <subtitle>楊竑昕的部落格</subtitle>
   <title>Hong Xin's Blog</title>
-  <updated>2026-11-08T10:17:58.456Z</updated>
+  <updated>2026-11-08T10:23:24.344Z</updated>
   <entry>
     <author>
       <name>楊竑昕</name>
@@ -30,7 +30,7 @@
 <p>這篇整理我自己的算法和每年的固定動作。所有範例數字都是<strong>虛構</strong>的，稅率與扣除額用 115 年度（2027 年 5 月申報）的公告金額。</p>]]>
     </summary>
     <title>外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的獲利收割</title>
-    <updated>2026-11-08T10:17:58.456Z</updated>
+    <updated>2026-11-08T10:23:24.344Z</updated>
   </entry>
   <entry>
     <author>
@@ -50,7 +50,7 @@
 <p>這件事本來很花時間，今年我用 AI 協助整理資料和驗證，文中會在適當的地方說明它幫了什麼。</p>]]>
     </summary>
     <title>11 月就把明年 5 月的所得稅算出來：提前精算的方法</title>
-    <updated>2026-11-08T10:17:58.456Z</updated>
+    <updated>2026-11-08T10:23:24.344Z</updated>
   </entry>
   <entry>
     <author>
@@ -82,7 +82,7 @@
 <p>其實啊，專案剛起步時，我們可以先從基礎的做起，例如這些被 check in 在各個知名 Git Repositories 中的文件</p>]]>
     </summary>
     <title>為你的開源專案加些文件 讓它看起來很專業吧</title>
-    <updated>2026-11-08T10:17:58.454Z</updated>
+    <updated>2026-11-08T10:23:24.343Z</updated>
   </entry>
   <entry>
     <author>
@@ -115,7 +115,7 @@
     <title>
       <![CDATA[Unite Your Angular Coding Style With Teammates By Visual Studio Code & ESLint & Prettier]]>
     </title>
-    <updated>2026-11-08T10:17:58.454Z</updated>
+    <updated>2026-11-08T10:23:24.343Z</updated>
   </entry>
   <entry>
     <author>
@@ -136,7 +136,7 @@
 </ul>]]>
     </summary>
     <title>Use Finite-state Machine to manage state</title>
-    <updated>2026-11-08T10:17:58.454Z</updated>
+    <updated>2026-11-08T10:23:24.343Z</updated>
   </entry>
   <entry>
     <author>
@@ -164,7 +164,7 @@
 <p>Maybe only need to takes 15 mins to set everything right.</p>]]>
     </summary>
     <title>Make your PowerShell fancy by Windows Terminal and Oh My Posh</title>
-    <updated>2026-11-08T10:17:58.454Z</updated>
+    <updated>2026-11-08T10:23:24.343Z</updated>
   </entry>
   <entry>
     <author>
@@ -182,7 +182,7 @@
 <p>那或許你可以試試這些開源（或免費）的繪圖軟體，有機會替你省下每個月 1000 元的 Adobe Illustrator 喔！</p>]]>
     </summary>
     <title>代替 Illustrator 的免費繪圖軟體</title>
-    <updated>2026-11-08T10:17:58.447Z</updated>
+    <updated>2026-11-08T10:23:24.337Z</updated>
   </entry>
   <entry>
     <author>
@@ -209,7 +209,7 @@
 <p>當安裝完成後，我們就能在右上角的工具欄看到鯨魚 🐳 icon</p>]]>
     </summary>
     <title>在 Mac 上 安裝 Docker for Mac</title>
-    <updated>2026-11-08T10:17:58.440Z</updated>
+    <updated>2026-11-08T10:23:24.332Z</updated>
   </entry>
   <entry>
     <author>
@@ -231,7 +231,7 @@
 <p>I will use <strong>PostgreSQL</strong> as an example in this article because it is my favorite database.</p>]]>
     </summary>
     <title>Expression Index in RDBMS</title>
-    <updated>2026-11-08T10:17:58.434Z</updated>
+    <updated>2026-11-08T10:23:24.326Z</updated>
   </entry>
   <entry>
     <author>
@@ -249,7 +249,7 @@
 <p>欸，不是，我們快速帶過相同用法的 operators ，然後聊聊有差異的地方，這樣總行了吧</p>]]>
     </summary>
     <title>從 Ruby 到 C# - operators</title>
-    <updated>2026-11-08T10:17:58.438Z</updated>
+    <updated>2026-11-08T10:23:24.330Z</updated>
   </entry>
   <entry>
     <author>
@@ -272,7 +272,7 @@
 </blockquote>]]>
     </summary>
     <title>從 Ruby 到 C#</title>
-    <updated>2026-11-08T10:17:58.439Z</updated>
+    <updated>2026-11-08T10:23:24.331Z</updated>
   </entry>
   <entry>
     <author>
@@ -290,7 +290,7 @@
 <img src="/win10-wsl-combo-terminus-ubuntu-oh-my-zsh-powerlevel10k/powerlevel10k.png" class="">]]>
     </summary>
     <title>Win10 WSL combo : Terminus + Ubuntu + Oh My Zsh + Powerlevel10k</title>
-    <updated>2026-11-08T10:17:58.426Z</updated>
+    <updated>2026-11-08T10:23:24.320Z</updated>
   </entry>
   <entry>
     <author>
@@ -306,7 +306,7 @@
       <![CDATA[<p>本篇只是閱讀原文後的譯文<br>原文出處： <a href="https://blog.strongbrew.io/rxjs-best-practices-in-angular">https://blog.strongbrew.io/rxjs-best-practices-in-angular</a></p>]]>
     </summary>
     <title>在 Angular 中請這樣用 RxJS</title>
-    <updated>2026-11-08T10:17:58.425Z</updated>
+    <updated>2026-11-08T10:23:24.320Z</updated>
   </entry>
   <entry>
     <author>
@@ -326,7 +326,7 @@
 <p>這表示寄件者與實際寄送 email 的網域不同，見 <a href="https://support.google.com/mail/answer/1311182">https://support.google.com/mail/answer/1311182</a></p>]]>
     </summary>
     <title>在 SendGrid 上驗證你的網域</title>
-    <updated>2026-11-08T10:17:58.423Z</updated>
+    <updated>2026-11-08T10:23:24.318Z</updated>
   </entry>
   <entry>
     <author>
@@ -343,7 +343,7 @@
 <p>接下來我們將用 <strong><a href="http://proxy.company.com/">http://proxy.company.com:80</a></strong>  這個  proxy server  為例，示範如何設置其他工具的 proxy。</p>]]>
     </summary>
     <title>Developer 最常用的 Proxy 設定</title>
-    <updated>2026-11-08T10:17:58.423Z</updated>
+    <updated>2026-11-08T10:23:24.318Z</updated>
   </entry>
   <entry>
     <author>
@@ -363,7 +363,7 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>Rails Webpacker 的 HTTPS 設定</title>
-    <updated>2026-11-08T10:17:58.419Z</updated>
+    <updated>2026-11-08T10:23:24.315Z</updated>
   </entry>
   <entry>
     <author>
@@ -383,7 +383,7 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>Rails 在開發環境中啟用 HTTPS</title>
-    <updated>2026-11-08T10:17:58.416Z</updated>
+    <updated>2026-11-08T10:23:24.311Z</updated>
   </entry>
   <entry>
     <author>
@@ -400,7 +400,7 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>My Macbook Pro 13&quot; 2019</title>
-    <updated>2026-11-08T10:17:58.416Z</updated>
+    <updated>2026-11-08T10:23:24.312Z</updated>
   </entry>
   <entry>
     <author>
@@ -418,7 +418,7 @@
 <p>本文原發表於 <a]]>
     </summary>
     <title>記一次 Boot Menu 找不到 Windows Boot Manager</title>
-    <updated>2026-11-08T10:17:58.419Z</updated>
+    <updated>2026-11-08T10:23:24.314Z</updated>
   </entry>
   <entry>
     <author>
@@ -440,6 +440,6 @@
 <p>我的 rich menu  長這樣</p>]]>
     </summary>
     <title>來為你的 Line bot 加上一個圖文選單吧！</title>
-    <updated>2026-11-08T10:17:58.411Z</updated>
+    <updated>2026-11-08T10:23:24.308Z</updated>
   </entry>
 </feed>
