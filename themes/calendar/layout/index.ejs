@@ -1,0 +1,36 @@
+<%
+  const posts = page.posts.toArray();
+  const first = page.current === 1;
+  const today = first ? posts[0] : null;
+  const rest = first ? posts.slice(1) : posts;
+%>
+<div class="col">
+  <% if (today) {
+       const sameDay = site.posts.filter((p) => p.date.format('YYYY-MM-DD') === today.date.format('YYYY-MM-DD')).length; %>
+  <article class="pg">
+    <div class="bind" aria-hidden="true"><i></i><i></i></div>
+    <div class="mh"><span><%= today.date.format('YYYY') %> 年 <%= cal_month_name(today.date) %></span><span class="num"><%= today.date.locale('en').format('MMMM').toUpperCase() %></span></div>
+    <div class="day">
+      <span class="big num"><%= today.date.format('DD') %></span>
+      <div class="wd"><%= cal_weekday(today.date) %><small><%= sameDay > 1 ? `這一天發了 ${sameDay} 篇文章` : '最新的一頁' %> · 全部 <%= site.posts.length %> 頁</small></div>
+    </div>
+    <%- partial('_partial/yiji', { post: today }) %>
+    <div class="story">
+      <small><%= (today.categories.map((c) => c.name)[0] || '文章') %> · 閱讀 <%= cal_read_minutes(today) %> 分鐘</small>
+      <h1><a href="<%- url_for(today.path) %>"><%= today.title %></a></h1>
+      <% if (today.excerpt) { %><p><%= truncate(strip_html(today.excerpt).replace(/\s+/g, ' ').trim(), { length: 160 }) %></p><% } %>
+      <a class="go" href="<%- url_for(today.path) %>">閱讀這一頁 →</a>
+    </div>
+  </article>
+  <% } %>
+
+  <h2 class="sec"><%= first ? '撕下來的舊頁' : '更早的舊頁' %><i></i></h2>
+  <div class="old">
+    <% rest.forEach((post, i) => { %><%- partial('_partial/sheet', { post, red: first && i === 0 && today && post.date.format('YYYY-MM-DD') === today.date.format('YYYY-MM-DD') }) %><% }) %>
+  </div>
+  <%- partial('_partial/pager') %>
+</div>
+<aside class="side">
+  <%- partial('_partial/month', { at: (today || posts[0]).date, mark: (today || posts[0]).date.format('YYYY-MM-DD') }) %>
+  <%- partial('_partial/side-terms') %>
+</aside>

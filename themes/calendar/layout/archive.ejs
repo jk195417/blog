@@ -1,0 +1,34 @@
+<%
+  let heading = '封存';
+  if (is_category()) heading = '分類：' + page.category;
+  else if (is_tag()) heading = '標籤：#' + page.tag;
+  else if (page.year) heading = page.year + ' 年' + (page.month ? ' ' + page.month + ' 月' : '');
+  const posts = page.posts.toArray();
+  const groups = [];
+  posts.forEach((post) => {
+    const key = post.date.format('YYYY-MM');
+    let g = groups[groups.length - 1];
+    if (!g || g.key !== key) groups.push(g = { key, at: post.date, posts: [] });
+    g.posts.push(post);
+  });
+%>
+<div class="col">
+  <header class="ph plain">
+    <div class="tt">
+      <small class="kicker">翻頁</small>
+      <h1><%= heading %></h1>
+      <p class="m"><span>共 <%= page.posts.length %> 頁</span></p>
+    </div>
+  </header>
+  <% groups.forEach((g) => { %>
+    <h2 class="sec"><%= g.at.format('YYYY') %> 年 <%= cal_month_name(g.at) %><i></i></h2>
+    <div class="old">
+      <% g.posts.forEach((post) => { %><%- partial('_partial/sheet', { post, red: false }) %><% }) %>
+    </div>
+  <% }) %>
+  <%- partial('_partial/pager') %>
+</div>
+<aside class="side">
+  <% if (posts.length) { %><%- partial('_partial/month', { at: posts[0].date }) %><% } %>
+  <%- partial('_partial/side-terms') %>
+</aside>

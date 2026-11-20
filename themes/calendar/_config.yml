@@ -1,0 +1,24 @@
+# 日曆紙主題設定。可以在部落格根目錄的 _config.calendar.yml 覆寫。
+
+# 頁首左上角的名稱；留空就用 _config.yml 的 title
+brand:
+
+# 頁首選單。值以 / 開頭是站內連結，其他是外部連結
+menu:
+  首頁: /
+  技術: /categories/技術文章/
+  理財: /categories/理財/
+  封存: /archives/
+  標籤: /tags/
+  關於: https://yang-hong-xin.com/me
+
+favicon: /images/favicon.png
+rss: /atom.xml
+
+# 文章頁底部的 Disqus 留言；留空就不顯示
+disqus_shortname:
+
+footer:
+  github: https://github.com/jk195417/blog
+  license: CC BY 4.0
+  license_url: https://creativecommons.org/licenses/by/4.0/

@@ -1,0 +1,71 @@
+<%
+  const post = page;
+  const minutes = cal_read_minutes(post);
+  const schedule = cal_schedule(post);
+  // Only an `updated:` written in the front-matter counts; the file's mtime
+  // changes on any edit, even one that only touches front-matter.
+  const updatedSet = /^updated:\s*\S/m.test(String(post.raw || '').split(/^---\s*$/m)[1] || '');
+  const updated = updatedSet && post.updated.format('YYYY-MM-DD') !== post.date.format('YYYY-MM-DD') ? post.updated : null;
+  const sameDay = cal_same_day(post);
+%>
+<div class="col">
+  <article>
+    <header class="ph">
+      <div class="dt">
+        <div class="bind" aria-hidden="true"><i></i><i></i></div>
+        <span><%= post.date.format('YYYY') %> · <%= cal_month_name(post.date) %></span>
+        <b class="num"><%= post.date.format('DD') %></b>
+        <small><%= cal_weekday(post.date) %></small>
+      </div>
+      <div class="tt">
+        <% if (post.categories.length) { %><a class="kicker" href="<%- url_for(post.categories.data[0].path) %>"><%= post.categories.map((c) => c.name).join(' · ') %></a><% } %>
+        <h1><%= post.title %></h1>
+        <p class="m">
+          <span><%= config.author %></span>
+          <span>閱讀 <%= minutes %> 分鐘</span>
+          <time datetime="<%= post.date.toISOString() %>"><%= post.date.format('YYYY-MM-DD') %></time>
+          <% if (updated) { %><span><%= updated.format('M 月 D 日') %>更新</span><% } %>
+        </p>
+        <% if (post.tags.length) { %><p class="tags"><% post.tags.each((tag) => { %><a href="<%- url_for(tag.path) %>">#<%= tag.name %></a><% }) %></p><% } %>
+      </div>
+      <%- partial('_partial/yiji', { post }) %>
+    </header>
+
+    <div class="paper art">
+      <%- post.content %>
+    </div>
+
+    <nav class="around" aria-label="上一篇與下一篇">
+      <% if (post.prev) { %><a href="<%- url_for(post.prev.path) %>"><small>← 下一頁（較新）</small><%= post.prev.title %></a><% } else { %><span></span><% } %>
+      <% if (post.next) { %><a class="r" href="<%- url_for(post.next.path) %>"><small>上一頁（較舊）→</small><%= post.next.title %></a><% } %>
+    </nav>
+
+    <% if (theme.disqus_shortname && post.comments !== false) { %>
+    <section class="paper comments">
+      <h2 class="bh"><span>留言</span></h2>
+      <div id="disqus_thread" data-shortname="<%= theme.disqus_shortname %>" data-url="<%= full_url_for(post.path) %>" data-id="<%= post.path %>">
+        <button type="button" class="load-comments">載入 Disqus 留言</button>
+      </div>
+    </section>
+    <% } %>
+  </article>
+</div>
+<aside class="side">
+  <%- partial('_partial/month', { at: post.date, mark: post.date.format('YYYY-MM-DD') }) %>
+  <% if (sameDay.length) { %>
+  <section class="box">
+    <h2 class="bh"><span>同一天</span></h2>
+    <div class="old">
+      <% sameDay.forEach((p) => { %><%- partial('_partial/sheet', { post: p, red: true }) %><% }) %>
+    </div>
+  </section>
+  <% } %>
+  <% if (schedule.length) { %>
+  <section class="box sticky">
+    <h2 class="bh"><span>本頁行程</span><span class="sub num"><%= minutes %> 分鐘</span></h2>
+    <ol class="sch">
+      <% schedule.forEach((s) => { %><li><a href="#<%= s.id %>" data-toc="<%= s.id %>"><span class="num"><%= s.minute %> 分</span><span><%= s.text %></span></a></li><% }) %>
+    </ol>
+  </section>
+  <% } %>
+</aside>

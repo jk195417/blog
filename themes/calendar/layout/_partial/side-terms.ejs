@@ -1,0 +1,15 @@
+<section class="box">
+  <h2 class="bh"><span>分類</span></h2>
+  <% site.categories.sort('name').each((cat) => { if (!cat.length) return; %>
+    <a class="row" href="<%- url_for(cat.path) %>"><span><%= cat.name %></span><b class="num"><%= cat.length %></b></a>
+  <% }) %>
+</section>
+<section class="box">
+  <h2 class="bh"><span>翻頁</span><span class="sub">依年份</span></h2>
+  <div class="years">
+    <% const years = [...new Set(site.posts.sort('-date').map((p) => p.date.format('YYYY')))];
+       years.forEach((y, i) => { %>
+      <a class="num<%= i === 0 ? ' on' : '' %>" href="<%- url_for(config.archive_dir + '/' + y + '/') %>"><%= y %></a>
+    <% }) %>
+  </div>
+</section>

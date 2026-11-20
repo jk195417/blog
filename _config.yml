@@ -97,7 +97,7 @@ jsonContent:
     author: true
     categories: true
     tags: true
-theme: icarus
+theme: calendar
 deploy:
   type: git
   repo: git@github.com:jk195417/blog.git

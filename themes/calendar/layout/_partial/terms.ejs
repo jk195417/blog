@@ -1,0 +1,16 @@
+<% const list = site[kind].sort('-length').filter((t) => t.length).toArray(); %>
+<div class="col">
+  <header class="ph plain">
+    <div class="tt">
+      <small class="kicker">翻頁</small>
+      <h1><%= kind === 'tags' ? '標籤' : '分類' %></h1>
+      <p class="m"><span>共 <%= list.length %> 個</span></p>
+    </div>
+  </header>
+  <div class="paper chips">
+    <% list.forEach((t) => { %><a href="<%- url_for(t.path) %>"><%= kind === 'tags' ? '#' : '' %><%= t.name %><b class="num"><%= t.length %></b></a><% }) %>
+  </div>
+</div>
+<aside class="side">
+  <%- partial('_partial/month', { at: site.posts.sort('-date').first().date }) %>
+</aside>
