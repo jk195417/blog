@@ -3,6 +3,8 @@ title: 外商員工的 RSU/ESPP 在台灣怎麼報稅，以及每年 12 月的�
 date: 2026-11-08 21:00:00
 thumbnail: rsu-espp-tax-and-gain-harvesting-in-taiwan/cover.png
 toc: true
+yi: 歸屬時就把所得記下來、12 月前用完最低稅負的額度
+ji: 以為沒賣就不用報稅
 categories:
   - 理財
 tags:

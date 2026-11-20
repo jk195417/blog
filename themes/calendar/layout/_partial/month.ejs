@@ -1,0 +1,11 @@
+<%# Month calendar. calendar.js fills it in from the post dates and lets readers flip months. %>
+<section class="box month" data-month="<%= at.format('YYYY-MM') %>"<%- typeof mark !== 'undefined' && mark ? ` data-mark="${mark}"` : '' %>>
+  <h2 class="bh">
+    <button type="button" class="flip" data-flip="-1" aria-label="上個月">‹</button>
+    <span data-month-label><%= cal_month_name(at) %></span>
+    <span class="num" data-year-label><%= at.format('YYYY') %></span>
+    <button type="button" class="flip" data-flip="1" aria-label="下個月">›</button>
+  </h2>
+  <div class="mon num" data-month-grid></div>
+  <p class="hint">有圓點的日子有發文，點了就打開那一篇。</p>
+</section>

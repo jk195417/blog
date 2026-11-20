@@ -1,0 +1,9 @@
+<%# 宜／忌 from the post's front-matter `yi` and `ji`; shows nothing when both are missing. %>
+<% const list = (v) => [].concat(v || []).filter(Boolean).join('、');
+   const yi = list(post.yi), ji = list(post.ji);
+   if (yi || ji) { %>
+<div class="yj">
+  <% if (yi) { %><div class="y"><b>宜</b><span><%= yi %></span></div><% } %>
+  <% if (ji) { %><div class="j"><b>忌</b><span><%= ji %></span></div><% } %>
+</div>
+<% } %>

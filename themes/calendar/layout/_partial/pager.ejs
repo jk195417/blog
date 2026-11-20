@@ -1,0 +1,7 @@
+<% if (page.total > 1) { %>
+<nav class="pager" aria-label="分頁">
+  <% if (page.prev) { %><a href="<%- url_for(page.prev_link) %>">← 新一點的</a><% } else { %><span></span><% } %>
+  <span class="num">第 <%= page.current %> 頁，共 <%= page.total %> 頁</span>
+  <% if (page.next) { %><a href="<%- url_for(page.next_link) %>">舊一點的 →</a><% } else { %><span></span><% } %>
+</nav>
+<% } %>

@@ -1,0 +1,58 @@
+<%
+  const brand = theme.brand || config.title;
+  let pageTitle = config.title;
+  if (is_post() || (page.title && !is_home())) pageTitle = page.title + '｜' + config.title;
+  else if (is_category()) pageTitle = '分類：' + page.category + '｜' + config.title;
+  else if (is_tag()) pageTitle = '標籤：' + page.tag + '｜' + config.title;
+  else if (is_archive()) pageTitle = '封存｜' + config.title;
+  const description = (page.description || (page.excerpt ? strip_html(page.excerpt) : '') || config.description).replace(/\s+/g, ' ').trim().slice(0, 160);
+  const cover = page.thumbnail ? full_url_for(page.thumbnail) : '';
+%><!DOCTYPE html>
+<html lang="<%= config.language %>">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= pageTitle %></title>
+  <meta name="description" content="<%= description %>">
+  <meta name="author" content="<%= config.author %>">
+  <link rel="canonical" href="<%= full_url_for(page.path).replace(/index\.html$/, '') %>">
+  <meta property="og:type" content="<%= is_post() ? 'article' : 'website' %>">
+  <meta property="og:title" content="<%= page.title || config.title %>">
+  <meta property="og:description" content="<%= description %>">
+  <meta property="og:url" content="<%= full_url_for(page.path).replace(/index\.html$/, '') %>">
+  <meta property="og:site_name" content="<%= config.title %>">
+  <% if (cover) { %><meta property="og:image" content="<%= cover %>">
+  <meta name="twitter:card" content="summary_large_image"><% } %>
+  <% if (theme.favicon) { %><link rel="icon" href="<%- url_for(theme.favicon) %>"><% } %>
+  <% if (theme.rss) { %><link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%- url_for(theme.rss) %>"><% } %>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;700;900&display=swap">
+  <%- css('css/calendar') %>
+</head>
+<body>
+  <a class="skip" href="#main">跳到內容</a>
+  <header class="top">
+    <a class="brand" href="<%- url_for('/') %>"><i class="num" data-today-day><%= date(Date.now(), 'DD') %></i><%= brand %></a>
+    <nav aria-label="主選單">
+      <% Object.entries(theme.menu || {}).forEach(([name, link]) => {
+        const internal = link.startsWith('/');
+        const here = internal && (link === '/' ? is_home() : ('/' + page.path).startsWith(decodeURI(url_for(link)))); %>
+        <a href="<%- internal ? url_for(link) : link %>"<%- here ? ' class="on" aria-current="page"' : '' %><%- internal ? '' : ' rel="noopener"' %>><%= name %></a>
+      <% }) %>
+    </nav>
+    <span class="today" data-today-text></span>
+  </header>
+  <main id="main" class="wrap">
+    <%- body %>
+  </main>
+  <footer class="foot">
+    <span>© <%= date(Date.now(), 'YYYY') %> <%= config.author %></span>
+    <% if (theme.footer && theme.footer.license) { %><a href="<%- theme.footer.license_url %>" rel="license noopener"><%= theme.footer.license %></a><% } %>
+    <% if (theme.rss) { %><a href="<%- url_for(theme.rss) %>">RSS</a><% } %>
+    <% if (theme.footer && theme.footer.github) { %><a href="<%- theme.footer.github %>" rel="noopener">GitHub</a><% } %>
+  </footer>
+  <script id="post-days" type="application/json"><%- cal_post_days() %></script>
+  <%- js('js/calendar') %>
+</body>
+</html>

@@ -3,6 +3,8 @@ title: 11 月就把明年 5 月的所得稅算出來：提前精算的方法
 date: 2026-11-08 20:00:00
 thumbnail: precompute-income-tax/cover.png
 toc: true
+yi: 11 月試算明年 5 月的稅、年底前做完能做的決定
+ji: 等到報稅季才發現要補一大筆
 categories:
   - 理財
 tags:
